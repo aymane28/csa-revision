@@ -1,0 +1,38 @@
+{
+  "id": "q_servicecatalog_03",
+  "topic": "service-catalog",
+  "tags": [
+    "service-catalog",
+    "order-guide"
+  ],
+  "difficulty": "medium",
+  "question": "À quoi sert un Order Guide dans le Service Catalog ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "À configurer les variables d'un item unique"
+    },
+    {
+      "id": "b",
+      "text": "À permettre de commander plusieurs Catalog Items liés en une seule fois"
+    },
+    {
+      "id": "c",
+      "text": "À remplacer les Catalog Client Scripts"
+    },
+    {
+      "id": "d",
+      "text": "À gérer les approbations uniquement"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Un Order Guide regroupe plusieurs Catalog Items pouvant être commandés ensemble (ex: équipement complet pour un nouvel employé).",
+  "pieges": [
+    "Oublier qu'un Order Guide sert à grouper des items, pas à en configurer un seul plus finement."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

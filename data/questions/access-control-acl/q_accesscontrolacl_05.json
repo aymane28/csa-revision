@@ -1,0 +1,38 @@
+{
+  "id": "q_accesscontrolacl_05",
+  "topic": "access-control-acl",
+  "tags": [
+    "acl",
+    "security"
+  ],
+  "difficulty": "medium",
+  "question": "Une ACL de table en lecture (read) échoue pour un utilisateur. Que se passe-t-il pour les ACL de champ associées à cette même table ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Elles sont évaluées indépendamment malgré tout"
+    },
+    {
+      "id": "b",
+      "text": "Elles ne sont jamais atteintes car l'accès est déjà refusé au niveau table"
+    },
+    {
+      "id": "c",
+      "text": "Elles deviennent automatiquement permissives"
+    },
+    {
+      "id": "d",
+      "text": "Elles s'appliquent uniquement aux admins"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Si l'ACL de table échoue, l'utilisateur n'a de toute façon pas accès à l'enregistrement, donc les ACL de champ ne sont pas pertinentes/atteintes.",
+  "pieges": [
+    "Oublier la dépendance hiérarchique entre ACL de table et ACL de champ."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

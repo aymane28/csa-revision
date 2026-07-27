@@ -1,0 +1,37 @@
+{
+  "id": "q_servicecatalog_01",
+  "topic": "service-catalog",
+  "tags": [
+    "service-catalog"
+  ],
+  "difficulty": "easy",
+  "question": "Quel enregistrement est créé lorsqu'un utilisateur commande un Catalog Item standard depuis le panier ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Un Change Request"
+    },
+    {
+      "id": "b",
+      "text": "Un Requested Item (RITM) rattaché à une Request (REQ)"
+    },
+    {
+      "id": "c",
+      "text": "Un Incident"
+    },
+    {
+      "id": "d",
+      "text": "Un Update Set"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "La soumission d'une commande standard génère une Request (REQ) contenant un ou plusieurs Requested Items (RITM), qui pilotent le workflow d'exécution.",
+  "pieges": [
+    "Oublier la distinction entre la Request globale et les Requested Items individuels."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

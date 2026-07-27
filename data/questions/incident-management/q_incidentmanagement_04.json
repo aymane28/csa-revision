@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_04",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "problem"
+  ],
+  "difficulty": "easy",
+  "question": "Quel enregistrement sert à documenter la cause racine (root cause) liée à un ou plusieurs incidents ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Change Request"
+    },
+    {
+      "id": "b",
+      "text": "Problem"
+    },
+    {
+      "id": "c",
+      "text": "Knowledge Article"
+    },
+    {
+      "id": "d",
+      "text": "Service Catalog Request"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Le Problem Management vise à identifier et documenter la cause racine, alors que l'Incident Management vise le rétablissement rapide du service.",
+  "pieges": [
+    "Confondre Incident (symptôme, rétablissement rapide) et Problem (cause racine)."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

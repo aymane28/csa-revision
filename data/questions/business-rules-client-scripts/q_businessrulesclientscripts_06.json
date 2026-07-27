@@ -1,0 +1,37 @@
+{
+  "id": "q_businessrulesclientscripts_06",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "business-rule"
+  ],
+  "difficulty": "hard",
+  "question": "Une Business Rule 'display' sert principalement à quoi ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Exécuter du code après la suppression d'un enregistrement"
+    },
+    {
+      "id": "b",
+      "text": "Transférer des données serveur vers le client au chargement du formulaire"
+    },
+    {
+      "id": "c",
+      "text": "Bloquer la soumission du formulaire"
+    },
+    {
+      "id": "d",
+      "text": "Modifier des enregistrements liés de façon asynchrone"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Une Business Rule 'display' s'exécute au chargement du formulaire pour transférer des données calculées côté serveur vers le client (accessible ensuite via g_scratchpad par exemple).",
+  "pieges": [
+    "Confondre 'display' avec les règles before/after qui s'exécutent lors d'opérations d'écriture."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

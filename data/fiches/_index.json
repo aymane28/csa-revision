@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-07-27T09:00:00Z",
+  "fiches": [
+    {
+      "topic": "incident-management",
+      "title": "Gestion des incidents (Incident Management)",
+      "relatedQuestionIds": [
+        "q_incidentmanagement_01",
+        "q_incidentmanagement_02",
+        "q_incidentmanagement_03",
+        "q_incidentmanagement_04",
+        "q_incidentmanagement_05",
+        "q_incidentmanagement_06",
+        "q_incidentmanagement_07",
+        "q_incidentmanagement_08",
+        "q_incidentmanagement_09",
+        "q_incidentmanagement_10",
+        "q_incidentmanagement_11",
+        "q_incidentmanagement_12"
+      ]
+    },
+    {
+      "topic": "access-control-acl",
+      "title": "Contrôle d'accès (ACL)",
+      "relatedQuestionIds": [
+        "q_accesscontrolacl_01",
+        "q_accesscontrolacl_02",
+        "q_accesscontrolacl_03",
+        "q_accesscontrolacl_04",
+        "q_accesscontrolacl_05",
+        "q_accesscontrolacl_06",
+        "q_accesscontrolacl_07",
+        "q_accesscontrolacl_08"
+      ]
+    },
+    {
+      "topic": "update-sets",
+      "title": "Update Sets",
+      "relatedQuestionIds": [
+        "q_updatesets_01",
+        "q_updatesets_02",
+        "q_updatesets_03",
+        "q_updatesets_04",
+        "q_updatesets_05",
+        "q_updatesets_06",
+        "q_updatesets_07"
+      ]
+    },
+    {
+      "topic": "business-rules-client-scripts",
+      "title": "Business Rules & Client Scripts",
+      "relatedQuestionIds": [
+        "q_businessrulesclientscripts_01",
+        "q_businessrulesclientscripts_02",
+        "q_businessrulesclientscripts_03",
+        "q_businessrulesclientscripts_04",
+        "q_businessrulesclientscripts_05",
+        "q_businessrulesclientscripts_06",
+        "q_businessrulesclientscripts_07",
+        "q_businessrulesclientscripts_08"
+      ]
+    },
+    {
+      "topic": "service-catalog",
+      "title": "Service Catalog",
+      "relatedQuestionIds": [
+        "q_servicecatalog_01",
+        "q_servicecatalog_02",
+        "q_servicecatalog_03",
+        "q_servicecatalog_04",
+        "q_servicecatalog_05",
+        "q_servicecatalog_06",
+        "q_servicecatalog_07",
+        "q_servicecatalog_08"
+      ]
+    }
+  ]
+}

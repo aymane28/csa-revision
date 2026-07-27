@@ -1,0 +1,37 @@
+{
+  "id": "q_updatesets_02",
+  "topic": "update-sets",
+  "tags": [
+    "update-set"
+  ],
+  "difficulty": "easy",
+  "question": "Que faut-il faire avant de commencer un développement pour que les changements soient correctement isolés ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Rien, tous les changements vont automatiquement dans un Update Set dédié"
+    },
+    {
+      "id": "b",
+      "text": "Définir l'Update Set souhaité comme 'Current'"
+    },
+    {
+      "id": "c",
+      "text": "Supprimer le Default Update Set"
+    },
+    {
+      "id": "d",
+      "text": "Activer le rôle security_admin"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Il faut définir explicitement l'Update Set de travail comme 'Current' pour que les changements y soient capturés, sinon ils partent dans le Default set.",
+  "pieges": [
+    "Oublier de définir le bon Update Set comme 'Current' avant de commencer un développement."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

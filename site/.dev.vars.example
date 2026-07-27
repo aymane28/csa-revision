@@ -1,0 +1,7 @@
+## Copy to .dev.vars (gitignored) for local `wrangler pages dev` testing.
+## Generate real values with: npm run generate-vapid-keys
+
+VAPID_PUBLIC_KEY=
+VAPID_PRIVATE_KEY=
+VAPID_SUBJECT=mailto:ton-email@example.com
+REMINDER_SECRET=dev-secret-anything

@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_05",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "sla"
+  ],
+  "difficulty": "medium",
+  "question": "Que se passe-t-il typiquement quand un incident à l'état 'Resolved' est rouvert par un utilisateur ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Rien, le champ 'Reopen count' n'existe pas"
+    },
+    {
+      "id": "b",
+      "text": "Le champ 'Reopen count' s'incrémente"
+    },
+    {
+      "id": "c",
+      "text": "L'incident est automatiquement fermé (Closed)"
+    },
+    {
+      "id": "d",
+      "text": "Un nouveau Problem est créé automatiquement"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Le champ 'Reopen count' est incrémenté à chaque réouverture d'un incident précédemment Resolved/Closed, utile pour le suivi qualité.",
+  "pieges": [
+    "Oublier ce champ existe et sert d'indicateur de qualité de résolution."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "q_servicecatalog_07",
+  "topic": "service-catalog",
+  "tags": [
+    "service-catalog",
+    "approval"
+  ],
+  "difficulty": "hard",
+  "question": "Quel type d'enregistrement gère typiquement les étapes d'approbation générées lors d'une commande nécessitant validation ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "sysapproval_approver"
+    },
+    {
+      "id": "b",
+      "text": "sys_user_group"
+    },
+    {
+      "id": "c",
+      "text": "kb_knowledge"
+    },
+    {
+      "id": "d",
+      "text": "sys_update_set"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Les enregistrements de la table sysapproval_approver représentent les étapes d'approbation individuelles générées par le workflow de la demande.",
+  "pieges": [
+    "Confondre les enregistrements d'approbation avec les groupes d'utilisateurs eux-mêmes."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

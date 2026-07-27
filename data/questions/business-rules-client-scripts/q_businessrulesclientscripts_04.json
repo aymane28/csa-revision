@@ -1,0 +1,37 @@
+{
+  "id": "q_businessrulesclientscripts_04",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "client-script"
+  ],
+  "difficulty": "easy",
+  "question": "Quel type de Client Script peut empêcher la soumission d'un formulaire si une condition n'est pas respectée ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "onLoad"
+    },
+    {
+      "id": "b",
+      "text": "onChange"
+    },
+    {
+      "id": "c",
+      "text": "onSubmit"
+    },
+    {
+      "id": "d",
+      "text": "onCellEdit"
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "'onSubmit' s'exécute à la soumission et peut retourner false pour bloquer l'envoi du formulaire.",
+  "pieges": [
+    "Essayer de bloquer une soumission depuis un script onLoad, qui s'exécute trop tôt pour cela."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

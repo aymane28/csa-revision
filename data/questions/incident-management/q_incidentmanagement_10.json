@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_10",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "workflow"
+  ],
+  "difficulty": "medium",
+  "question": "Pourquoi un incident 'Resolved' ne passe-t-il pas immédiatement à 'Closed' ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Parce que c'est techniquement le même état"
+    },
+    {
+      "id": "b",
+      "text": "Pour laisser un délai de confirmation avant fermeture automatique/manuelle"
+    },
+    {
+      "id": "c",
+      "text": "Parce que 'Closed' n'existe pas dans Incident Management"
+    },
+    {
+      "id": "d",
+      "text": "Parce qu'un Problem doit d'abord être créé"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Une pratique courante consiste à laisser un incident en 'Resolved' pendant une période définie, permettant au demandeur de rouvrir si besoin, avant fermeture automatique.",
+  "pieges": [
+    "Croire que Resolved et Closed sont interchangeables et n'ont aucune distinction fonctionnelle."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

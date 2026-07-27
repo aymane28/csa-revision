@@ -1,0 +1,38 @@
+{
+  "id": "q_servicecatalog_08",
+  "topic": "service-catalog",
+  "tags": [
+    "service-catalog",
+    "ui-policy"
+  ],
+  "difficulty": "medium",
+  "question": "Un Catalog UI Policy permet de faire quoi sur les variables d'un Catalog Item ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Modifier le schéma de la base de données"
+    },
+    {
+      "id": "b",
+      "text": "Contrôler la visibilité/obligation d'une variable selon la valeur d'une autre, sans script"
+    },
+    {
+      "id": "c",
+      "text": "Créer automatiquement un Update Set"
+    },
+    {
+      "id": "d",
+      "text": "Générer un Knowledge Article"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Un Catalog UI Policy permet, de façon déclarative, de montrer/masquer ou rendre obligatoire une variable en fonction de la valeur d'une autre variable du formulaire.",
+  "pieges": [
+    "Écrire un Catalog Client Script complexe pour un cas que le Catalog UI Policy couvrirait nativement."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

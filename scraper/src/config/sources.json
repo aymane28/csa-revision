@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sn-docs-incident-management",
+    "type": "servicenow-docs",
+    "topic": "incident-management",
+    "url": "https://docs.servicenow.com/csh?topicname=c_IncidentManagement.html&version=latest"
+  },
+  {
+    "id": "sn-docs-business-rules",
+    "type": "servicenow-docs",
+    "topic": "business-rules-client-scripts",
+    "url": "https://docs.servicenow.com/csh?topicname=c_BusinessRules.html&version=latest"
+  },
+  {
+    "id": "sn-docs-access-control-acl",
+    "type": "servicenow-docs",
+    "topic": "access-control-acl",
+    "url": "TODO-find-url: va sur https://docs.servicenow.com, cherche \"access control rules\", copie l'URL de la page \"Access control rules (ACLs)\" et remplace cette valeur"
+  },
+  {
+    "id": "sn-docs-update-sets",
+    "type": "servicenow-docs",
+    "topic": "update-sets",
+    "url": "TODO-find-url: cherche \"update sets\" sur https://docs.servicenow.com et remplace cette valeur"
+  },
+  {
+    "id": "sn-docs-service-catalog",
+    "type": "servicenow-docs",
+    "topic": "service-catalog",
+    "url": "TODO-find-url: cherche \"service catalog\" sur https://docs.servicenow.com et remplace cette valeur"
+  }
+]

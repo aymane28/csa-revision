@@ -1,0 +1,38 @@
+{
+  "id": "q_businessrulesclientscripts_08",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "client-script",
+    "security"
+  ],
+  "difficulty": "medium",
+  "question": "Pourquoi une validation de sécurité critique ne doit-elle jamais reposer uniquement sur un Client Script ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Parce que les Client Scripts sont lents"
+    },
+    {
+      "id": "b",
+      "text": "Parce qu'un utilisateur peut contourner le code exécuté dans son navigateur"
+    },
+    {
+      "id": "c",
+      "text": "Parce que les Client Scripts ne peuvent pas accéder aux champs"
+    },
+    {
+      "id": "d",
+      "text": "Parce que cela consomme trop de licences"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Le code exécuté côté navigateur peut être inspecté ou contourné par l'utilisateur ; la validation critique doit être dupliquée côté serveur (Business Rule/ACL).",
+  "pieges": [
+    "Faire reposer une règle métier critique uniquement sur la validation côté client."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

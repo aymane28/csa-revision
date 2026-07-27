@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_07",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "sla"
+  ],
+  "difficulty": "medium",
+  "question": "Quelle est la distinction entre un SLA et une OLA ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Aucune, ce sont des synonymes"
+    },
+    {
+      "id": "b",
+      "text": "Le SLA est un engagement envers le client, l'OLA est un accord interne entre équipes"
+    },
+    {
+      "id": "c",
+      "text": "L'OLA concerne uniquement les Changes"
+    },
+    {
+      "id": "d",
+      "text": "Le SLA ne s'applique qu'aux Problems"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Le SLA (Service Level Agreement) est un engagement de délai généralement vis-à-vis du client/métier, l'OLA (Operational Level Agreement) est un accord équivalent entre équipes internes.",
+  "pieges": [
+    "Confondre les deux termes qui, bien que similaires dans leur mécanique technique, ont un périmètre contractuel différent."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

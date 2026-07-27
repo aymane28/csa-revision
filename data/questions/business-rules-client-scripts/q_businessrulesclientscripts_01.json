@@ -1,0 +1,37 @@
+{
+  "id": "q_businessrulesclientscripts_01",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "business-rule"
+  ],
+  "difficulty": "easy",
+  "question": "À quel moment une Business Rule de type 'before' s'exécute-t-elle par rapport à l'écriture en base ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Après l'écriture"
+    },
+    {
+      "id": "b",
+      "text": "Avant l'écriture, pouvant modifier ou annuler l'opération"
+    },
+    {
+      "id": "c",
+      "text": "En parallèle, de façon asynchrone"
+    },
+    {
+      "id": "d",
+      "text": "Uniquement au chargement du formulaire"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Une Business Rule 'before' s'exécute avant que l'enregistrement soit écrit en base, permettant de modifier des valeurs ou d'annuler l'opération (abortInsert/abortAction).",
+  "pieges": [
+    "Confondre 'before' et 'after' : modifier current dans une règle 'after' n'empêche pas l'écriture déjà effectuée."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

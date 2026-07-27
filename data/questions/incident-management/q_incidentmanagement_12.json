@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_12",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "knowledge"
+  ],
+  "difficulty": "easy",
+  "question": "Un agent souhaite documenter une solution de contournement (workaround) réutilisable pour un incident récurrent. Quel type d'enregistrement est le plus adapté pour capitaliser cette information ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Un Knowledge Article"
+    },
+    {
+      "id": "b",
+      "text": "Un nouvel incident dupliqué"
+    },
+    {
+      "id": "c",
+      "text": "Un Catalog Item"
+    },
+    {
+      "id": "d",
+      "text": "Un Update Set"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Un Knowledge Article permet de capitaliser une solution ou un workaround pour qu'il soit réutilisé par d'autres agents ou en libre-service.",
+  "pieges": [
+    "Dupliquer l'incident au lieu de créer un article de connaissance réutilisable."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

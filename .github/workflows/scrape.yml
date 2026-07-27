@@ -1,0 +1,39 @@
+name: Daily CSA question scrape
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # 04:00 UTC ≈ matin en France (heure d'été/hiver)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+        working-directory: scraper
+
+      - run: npm run scrape
+        working-directory: scraper
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit and push new questions if any
+        run: |
+          git config user.name "csa-scraper-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): daily scrape $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No new questions today."
+          fi

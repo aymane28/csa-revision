@@ -1,0 +1,34 @@
+{
+  "topic": "service-catalog",
+  "title": "Service Catalog",
+  "sections": [
+    {
+      "heading": "Concepts clés",
+      "content": "Le Service Catalog présente aux utilisateurs des Catalog Items organisés en catégories. Un Catalog Item peut avoir des Variables (champs de saisie) et des Variable Sets (groupes de variables réutilisables). Une commande génère un Requested Item (RITM), lui-même rattaché à une Request (REQ)."
+    },
+    {
+      "heading": "Types d'items",
+      "content": "Un Record Producer crée directement un enregistrement dans une autre table (ex: un incident) à partir d'un formulaire du catalogue, sans passer par le processus RITM standard. Un Order Guide permet de commander plusieurs Catalog Items liés en une seule fois."
+    },
+    {
+      "heading": "Automatisation",
+      "content": "La soumission d'un Catalog Item déclenche un Workflow (ou un Flow Designer flow) associé, qui peut inclure des étapes d'approbation (sysapproval_approver) et des tâches (Catalog Task). Les Catalog Client Scripts contrôlent le comportement des variables (visibilité, valeurs par défaut) et peuvent être marqués 'Isolate script' pour s'exécuter dans un environnement isolé."
+    }
+  ],
+  "pieges": [
+    "Confondre Record Producer et Catalog Item standard : le Record Producer ne crée pas de RITM, il crée directement l'enregistrement cible.",
+    "Oublier qu'un Order Guide sert à grouper plusieurs items, pas à en configurer un seul plus finement.",
+    "Penser que le Workflow/Flow se déclenche à l'ajout au panier plutôt qu'à la soumission de la commande (checkout)."
+  ],
+  "relatedQuestionIds": [
+    "q_servicecatalog_01",
+    "q_servicecatalog_02",
+    "q_servicecatalog_03",
+    "q_servicecatalog_04",
+    "q_servicecatalog_05",
+    "q_servicecatalog_06",
+    "q_servicecatalog_07",
+    "q_servicecatalog_08"
+  ],
+  "updatedAt": "2026-07-27T09:00:00Z"
+}

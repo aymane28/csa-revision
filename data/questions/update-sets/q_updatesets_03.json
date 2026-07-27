@@ -1,0 +1,37 @@
+{
+  "id": "q_updatesets_03",
+  "topic": "update-sets",
+  "tags": [
+    "update-set"
+  ],
+  "difficulty": "medium",
+  "question": "Quelle étape est recommandée avant de committer un Update Set récupéré (Retrieved) sur une instance cible ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Le committer directement sans vérification"
+    },
+    {
+      "id": "b",
+      "text": "Faire un Preview pour détecter les conflits (collisions)"
+    },
+    {
+      "id": "c",
+      "text": "Le marquer Ignored"
+    },
+    {
+      "id": "d",
+      "text": "Le renommer"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "La Preview permet d'identifier les conflits potentiels ('collisions') entre l'Update Set et l'état actuel de l'instance cible avant de committer.",
+  "pieges": [
+    "Committer un Update Set sans Preview préalable, ratant ainsi des conflits."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

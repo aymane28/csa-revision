@@ -1,0 +1,11 @@
+name = "csa-revision"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "dist"
+
+# Binding used by /functions/api/progress.ts. Create the namespace with
+# `wrangler kv namespace create PROGRESS_KV` (or via the Cloudflare dashboard),
+# then replace the id below and add the same binding in the Pages project
+# settings (Settings > Functions > KV namespace bindings) for production.
+[[kv_namespaces]]
+binding = "PROGRESS_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"

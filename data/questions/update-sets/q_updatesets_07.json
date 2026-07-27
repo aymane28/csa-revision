@@ -1,0 +1,37 @@
+{
+  "id": "q_updatesets_07",
+  "topic": "update-sets",
+  "tags": [
+    "update-set"
+  ],
+  "difficulty": "medium",
+  "question": "Quel est le risque principal de laisser le Default Update Set comme 'Current' pendant un développement structuré ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Aucun risque particulier"
+    },
+    {
+      "id": "b",
+      "text": "Mélanger des changements non liés, rendant difficile une migration ciblée et propre"
+    },
+    {
+      "id": "c",
+      "text": "Cela bloque automatiquement l'instance"
+    },
+    {
+      "id": "d",
+      "text": "Cela supprime les données existantes"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Travailler dans le Default set mélange tous les changements sans distinction, ce qui complique fortement une migration propre et sélective vers d'autres instances.",
+  "pieges": [
+    "Sous-estimer l'impact du désordre créé par l'usage prolongé du Default Update Set."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "q_accesscontrolacl_07",
+  "topic": "access-control-acl",
+  "tags": [
+    "acl",
+    "security"
+  ],
+  "difficulty": "easy",
+  "question": "Quelles opérations distinctes une ACL de table peut-elle typiquement contrôler ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Seulement read"
+    },
+    {
+      "id": "b",
+      "text": "create, read, write, delete"
+    },
+    {
+      "id": "c",
+      "text": "Seulement write et delete"
+    },
+    {
+      "id": "d",
+      "text": "Uniquement l'accès au module UI"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Les ACL de table peuvent être définies séparément pour create, read, write et delete, chacune avec ses propres conditions/rôles.",
+  "pieges": [
+    "Penser qu'une seule ACL couvre toutes les opérations CRUD d'une table."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

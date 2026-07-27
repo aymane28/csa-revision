@@ -1,0 +1,37 @@
+{
+  "id": "q_businessrulesclientscripts_03",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "client-script"
+  ],
+  "difficulty": "easy",
+  "question": "À quel moment un Client Script 'onLoad' s'exécute-t-il ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Au changement d'un champ"
+    },
+    {
+      "id": "b",
+      "text": "Au chargement du formulaire"
+    },
+    {
+      "id": "c",
+      "text": "À la soumission du formulaire"
+    },
+    {
+      "id": "d",
+      "text": "Lors de l'édition en ligne dans une liste"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "'onLoad' s'exécute lorsque le formulaire est chargé dans le navigateur, avant toute interaction de l'utilisateur.",
+  "pieges": [
+    "Confondre onLoad avec onChange, qui se déclenche sur modification d'un champ spécifique."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

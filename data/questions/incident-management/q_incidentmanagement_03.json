@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_03",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "assignment"
+  ],
+  "difficulty": "easy",
+  "question": "Quelle est la différence principale entre 'Assignment group' et 'Assigned to' sur un incident ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Ce sont deux noms pour le même champ"
+    },
+    {
+      "id": "b",
+      "text": "Assignment group désigne l'équipe responsable, Assigned to désigne la personne précise"
+    },
+    {
+      "id": "c",
+      "text": "Assigned to est obligatoire, Assignment group est optionnel"
+    },
+    {
+      "id": "d",
+      "text": "Assignment group ne concerne que les Problems"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "'Assignment group' identifie le groupe/équipe en charge, tandis que 'Assigned to' identifie l'individu spécifique au sein (ou non) de ce groupe.",
+  "pieges": [
+    "Penser que renseigner Assigned to dispense de définir Assignment group dans un processus de routage standard."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

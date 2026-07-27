@@ -1,0 +1,38 @@
+{
+  "id": "q_accesscontrolacl_03",
+  "topic": "access-control-acl",
+  "tags": [
+    "acl",
+    "client-script"
+  ],
+  "difficulty": "medium",
+  "question": "Un Client Script empêche l'affichage d'un bouton pour un utilisateur non autorisé. Cela suffit-il à sécuriser l'action côté serveur ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Oui, masquer le bouton suffit"
+    },
+    {
+      "id": "b",
+      "text": "Non, la sécurité réelle doit être appliquée via des ACL côté serveur"
+    },
+    {
+      "id": "c",
+      "text": "Oui, si le Client Script est marqué 'Isolate script'"
+    },
+    {
+      "id": "d",
+      "text": "Non, il faut désactiver le Client Script complètement"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Un Client Script s'exécute dans le navigateur et peut être contourné ; la sécurité effective doit toujours être garantie côté serveur via des ACL.",
+  "pieges": [
+    "Croire qu'un Client Script constitue une sécurité fiable."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_09",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "priority"
+  ],
+  "difficulty": "easy",
+  "question": "Quel champ permet de indiquer l'ampleur de l'effet d'un incident sur l'activité (ex: un seul utilisateur vs toute l'entreprise) ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Urgency"
+    },
+    {
+      "id": "b",
+      "text": "Impact"
+    },
+    {
+      "id": "c",
+      "text": "Priority"
+    },
+    {
+      "id": "d",
+      "text": "Severity"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "'Impact' mesure l'étendue de l'effet sur l'activité métier, tandis que 'Urgency' mesure la rapidité avec laquelle une résolution est nécessaire.",
+  "pieges": [
+    "Inverser Impact et Urgency dans leur définition respective."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

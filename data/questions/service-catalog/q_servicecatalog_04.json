@@ -1,0 +1,38 @@
+{
+  "id": "q_servicecatalog_04",
+  "topic": "service-catalog",
+  "tags": [
+    "service-catalog",
+    "variables"
+  ],
+  "difficulty": "medium",
+  "question": "Quel élément permet de regrouper des variables réutilisables sur plusieurs Catalog Items ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Un Variable Set"
+    },
+    {
+      "id": "b",
+      "text": "Un Order Guide"
+    },
+    {
+      "id": "c",
+      "text": "Un Catalog UI Policy"
+    },
+    {
+      "id": "d",
+      "text": "Un Workflow"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Un Variable Set regroupe un ensemble de variables réutilisables qui peuvent être appliquées à plusieurs Catalog Items sans les redéfinir à chaque fois.",
+  "pieges": [
+    "Confondre Variable Set (regroupement de champs) et Order Guide (regroupement d'items)."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

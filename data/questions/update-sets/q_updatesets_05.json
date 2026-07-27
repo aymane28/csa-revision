@@ -1,0 +1,37 @@
+{
+  "id": "q_updatesets_05",
+  "topic": "update-sets",
+  "tags": [
+    "update-set"
+  ],
+  "difficulty": "hard",
+  "question": "Plusieurs Update Sets ont des dépendances entre eux (l'un requiert des champs créés par l'autre). Pourquoi l'ordre de commit est-il important ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Il ne l'est jamais, ServiceNow réordonne automatiquement"
+    },
+    {
+      "id": "b",
+      "text": "Committer dans le mauvais ordre peut provoquer des erreurs ou des références manquantes"
+    },
+    {
+      "id": "c",
+      "text": "Seul le dernier Update Set committé compte"
+    },
+    {
+      "id": "d",
+      "text": "L'ordre n'affecte que la performance, jamais la fonctionnalité"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Si un Update Set dépend d'éléments créés par un autre, il faut committer dans le bon ordre sous peine d'erreurs ou de références cassées.",
+  "pieges": [
+    "Ignorer les dépendances entre Update Sets lors de migrations multiples."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

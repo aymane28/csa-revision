@@ -1,0 +1,34 @@
+{
+  "topic": "business-rules-client-scripts",
+  "title": "Business Rules & Client Scripts",
+  "sections": [
+    {
+      "heading": "Business Rules (serveur)",
+      "content": "Une Business Rule s'exécute côté serveur lors d'opérations base de données sur une table. Types : before (avant l'écriture, peut modifier/annuler), after (après l'écriture, ex: notifications), async (asynchrone, ne bloque pas l'utilisateur), display (exécutée au chargement du formulaire, transfère des données vers le client)."
+    },
+    {
+      "heading": "Client Scripts (navigateur)",
+      "content": "Un Client Script s'exécute côté navigateur. Types : onLoad (au chargement du formulaire), onChange (au changement d'un champ), onSubmit (à la soumission, peut bloquer l'envoi), onCellEdit (édition en ligne dans une liste)."
+    },
+    {
+      "heading": "UI Policies vs scripts",
+      "content": "Les UI Policies permettent de rendre un champ obligatoire, visible ou en lecture seule de façon déclarative (sans code), et sont préférées aux Client Scripts pour ces cas simples. Le champ 'Order' détermine l'ordre d'exécution entre règles/scripts du même type."
+    }
+  ],
+  "pieges": [
+    "Utiliser un Client Script pour appliquer une règle de sécurité : la validation critique doit toujours être dupliquée côté serveur (Business Rule/ACL).",
+    "Confondre 'before' et 'after' : modifier current dans une Business Rule 'after' n'empêche pas l'écriture déjà effectuée.",
+    "Écrire un Client Script complexe alors qu'une UI Policy suffirait pour rendre un champ visible/obligatoire."
+  ],
+  "relatedQuestionIds": [
+    "q_businessrulesclientscripts_01",
+    "q_businessrulesclientscripts_02",
+    "q_businessrulesclientscripts_03",
+    "q_businessrulesclientscripts_04",
+    "q_businessrulesclientscripts_05",
+    "q_businessrulesclientscripts_06",
+    "q_businessrulesclientscripts_07",
+    "q_businessrulesclientscripts_08"
+  ],
+  "updatedAt": "2026-07-27T09:00:00Z"
+}

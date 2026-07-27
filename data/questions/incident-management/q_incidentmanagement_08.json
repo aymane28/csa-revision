@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_08",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "workflow"
+  ],
+  "difficulty": "hard",
+  "question": "Un incident passe de 'New' directement à 'Resolved' sans jamais passer par 'In Progress'. Est-ce un problème par défaut dans ServiceNow ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Non, la transition d'état n'est pas restreinte par défaut sauf configuration spécifique (ex: state flow policy)"
+    },
+    {
+      "id": "b",
+      "text": "Oui, c'est techniquement impossible nativement"
+    },
+    {
+      "id": "c",
+      "text": "Oui, cela supprime automatiquement l'incident"
+    },
+    {
+      "id": "d",
+      "text": "Non, mais cela verrouille définitivement l'incident"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Par défaut, ServiceNow ne force pas un ordre strict de transition entre états sauf si une politique de transition d'état (State Flow / UI Policy / Business Rule) est explicitement configurée pour l'imposer.",
+  "pieges": [
+    "Supposer à tort qu'un ordre de transition est verrouillé nativement sans configuration additionnelle."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

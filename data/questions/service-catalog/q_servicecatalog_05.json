@@ -1,0 +1,38 @@
+{
+  "id": "q_servicecatalog_05",
+  "topic": "service-catalog",
+  "tags": [
+    "service-catalog",
+    "workflow"
+  ],
+  "difficulty": "medium",
+  "question": "À quel moment le Workflow (ou Flow Designer flow) associé à un Catalog Item se déclenche-t-il ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Dès l'ajout de l'item au panier"
+    },
+    {
+      "id": "b",
+      "text": "À la soumission de la commande (checkout)"
+    },
+    {
+      "id": "c",
+      "text": "Uniquement lors de l'approbation manuelle par un admin"
+    },
+    {
+      "id": "d",
+      "text": "Jamais automatiquement, il faut le lancer manuellement"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Le Workflow/Flow associé se déclenche lors de la soumission effective de la commande (checkout), pas au simple ajout au panier.",
+  "pieges": [
+    "Penser que le Workflow/Flow se déclenche à l'ajout au panier plutôt qu'à la soumission."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

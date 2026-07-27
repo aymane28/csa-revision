@@ -1,0 +1,37 @@
+{
+  "id": "q_updatesets_04",
+  "topic": "update-sets",
+  "tags": [
+    "update-set"
+  ],
+  "difficulty": "medium",
+  "question": "Un Update Set est marqué 'Complete'. Que devrait-on faire si des modifications supplémentaires sont nécessaires ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Rouvrir et modifier directement cet Update Set"
+    },
+    {
+      "id": "b",
+      "text": "Créer un nouvel Update Set pour les changements supplémentaires"
+    },
+    {
+      "id": "c",
+      "text": "Supprimer l'Update Set complet et tout refaire"
+    },
+    {
+      "id": "d",
+      "text": "Marquer l'instance en lecture seule"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Une fois 'Complete', un Update Set ne devrait plus être modifié ; les changements supplémentaires doivent aller dans un nouvel Update Set.",
+  "pieges": [
+    "Rouvrir et modifier un Update Set déjà marqué Complete, ce qui peut créer des incohérences."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

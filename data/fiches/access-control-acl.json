@@ -1,0 +1,34 @@
+{
+  "topic": "access-control-acl",
+  "title": "Contrôle d'accès (ACL)",
+  "sections": [
+    {
+      "heading": "Concepts clés",
+      "content": "Une ACL (Access Control List) définit les conditions requises (rôle, condition, script) pour effectuer une opération (create, read, write, delete) sur une table ou un champ. ServiceNow évalue d'abord les ACL de niveau table, puis les ACL de niveau champ pour la même opération."
+    },
+    {
+      "heading": "Rôles et sécurité",
+      "content": "Si une ACL ne spécifie aucun rôle et n'a ni condition ni script, elle autorise l'accès à tout utilisateur authentifié qui atteint cette ACL — un piège classique. Le rôle 'security_admin' avec élévation de rôle (Elevate Roles) est nécessaire pour modifier les ACL elles-mêmes dans la plupart des instances."
+    },
+    {
+      "heading": "Types d'ACL",
+      "content": "Il existe des ACL de table (record-level : create/read/write/delete), des ACL de champ (field-level, plus restrictives que la table), et des ACL de niveau 'ui' ou 'client_callable' pour sécuriser des scripts spécifiques (ex: Script Include exposés côté client)."
+    }
+  ],
+  "pieges": [
+    "Croire qu'un Client Script applique une sécurité serveur : la sécurité réelle est toujours appliquée côté serveur via les ACL, jamais uniquement côté client.",
+    "Oublier l'ordre d'évaluation : une ACL de champ n'est jamais atteinte si l'ACL de table correspondante échoue déjà.",
+    "Penser que le rôle admin contourne automatiquement toutes les ACL sans configuration explicite ('Admin overrides')."
+  ],
+  "relatedQuestionIds": [
+    "q_accesscontrolacl_01",
+    "q_accesscontrolacl_02",
+    "q_accesscontrolacl_03",
+    "q_accesscontrolacl_04",
+    "q_accesscontrolacl_05",
+    "q_accesscontrolacl_06",
+    "q_accesscontrolacl_07",
+    "q_accesscontrolacl_08"
+  ],
+  "updatedAt": "2026-07-27T09:00:00Z"
+}

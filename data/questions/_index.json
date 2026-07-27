@@ -1,0 +1,1455 @@
+{
+  "generatedAt": "2026-07-27T09:00:00Z",
+  "questions": [
+    {
+      "id": "q_incidentmanagement_01",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "workflow"
+      ],
+      "difficulty": "easy",
+      "question": "Dans le cycle de vie standard d'un incident ServiceNow, quel état suit généralement 'In Progress' lorsque l'agent attend une information du demandeur ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Resolved"
+        },
+        {
+          "id": "b",
+          "text": "On Hold"
+        },
+        {
+          "id": "c",
+          "text": "Closed"
+        },
+        {
+          "id": "d",
+          "text": "Canceled"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "L'état 'On Hold' est utilisé quand la résolution est suspendue en attendant une action externe (ex: réponse du demandeur), avec un 'Hold reason' associé.",
+      "pieges": [
+        "Confondre 'On Hold' avec 'Resolved', qui signifie que le problème est déjà traité."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_02",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "priority"
+      ],
+      "difficulty": "easy",
+      "question": "Comment la priorité d'un incident est-elle généralement déterminée dans une configuration standard ServiceNow ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Elle est saisie librement par l'utilisateur final"
+        },
+        {
+          "id": "b",
+          "text": "Elle résulte d'une matrice Impact x Urgency"
+        },
+        {
+          "id": "c",
+          "text": "Elle est toujours égale à l'urgence"
+        },
+        {
+          "id": "d",
+          "text": "Elle dépend uniquement du groupe d'assignation"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "La priorité est calculée automatiquement via une matrice de priorité croisant Impact et Urgency, configurable dans le système.",
+      "pieges": [
+        "Croire que la priorité est un champ libre saisi manuellement par défaut."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_03",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "assignment"
+      ],
+      "difficulty": "easy",
+      "question": "Quelle est la différence principale entre 'Assignment group' et 'Assigned to' sur un incident ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ce sont deux noms pour le même champ"
+        },
+        {
+          "id": "b",
+          "text": "Assignment group désigne l'équipe responsable, Assigned to désigne la personne précise"
+        },
+        {
+          "id": "c",
+          "text": "Assigned to est obligatoire, Assignment group est optionnel"
+        },
+        {
+          "id": "d",
+          "text": "Assignment group ne concerne que les Problems"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "'Assignment group' identifie le groupe/équipe en charge, tandis que 'Assigned to' identifie l'individu spécifique au sein (ou non) de ce groupe.",
+      "pieges": [
+        "Penser que renseigner Assigned to dispense de définir Assignment group dans un processus de routage standard."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_04",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "problem"
+      ],
+      "difficulty": "easy",
+      "question": "Quel enregistrement sert à documenter la cause racine (root cause) liée à un ou plusieurs incidents ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Change Request"
+        },
+        {
+          "id": "b",
+          "text": "Problem"
+        },
+        {
+          "id": "c",
+          "text": "Knowledge Article"
+        },
+        {
+          "id": "d",
+          "text": "Service Catalog Request"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Le Problem Management vise à identifier et documenter la cause racine, alors que l'Incident Management vise le rétablissement rapide du service.",
+      "pieges": [
+        "Confondre Incident (symptôme, rétablissement rapide) et Problem (cause racine)."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_05",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "sla"
+      ],
+      "difficulty": "medium",
+      "question": "Que se passe-t-il typiquement quand un incident à l'état 'Resolved' est rouvert par un utilisateur ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rien, le champ 'Reopen count' n'existe pas"
+        },
+        {
+          "id": "b",
+          "text": "Le champ 'Reopen count' s'incrémente"
+        },
+        {
+          "id": "c",
+          "text": "L'incident est automatiquement fermé (Closed)"
+        },
+        {
+          "id": "d",
+          "text": "Un nouveau Problem est créé automatiquement"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Le champ 'Reopen count' est incrémenté à chaque réouverture d'un incident précédemment Resolved/Closed, utile pour le suivi qualité.",
+      "pieges": [
+        "Oublier ce champ existe et sert d'indicateur de qualité de résolution."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_06",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "major-incident"
+      ],
+      "difficulty": "medium",
+      "question": "Un incident majeur impactant plusieurs utilisateurs génère souvent plusieurs incidents individuels. Comment sont-ils généralement organisés ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ils sont fusionnés en un seul enregistrement automatiquement"
+        },
+        {
+          "id": "b",
+          "text": "Ils sont rattachés en tant que 'child incidents' à un incident parent"
+        },
+        {
+          "id": "c",
+          "text": "Ils sont supprimés au profit du Problem uniquement"
+        },
+        {
+          "id": "d",
+          "text": "Ils ne peuvent pas être liés entre eux"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Le processus Major Incident permet de lier les incidents individuels similaires en tant qu'enfants d'un incident parent, pour centraliser la communication et la résolution.",
+      "pieges": [
+        "Penser qu'un incident majeur nécessite de tout regrouper dans un unique Problem dès le départ."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_07",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "sla"
+      ],
+      "difficulty": "medium",
+      "question": "Quelle est la distinction entre un SLA et une OLA ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aucune, ce sont des synonymes"
+        },
+        {
+          "id": "b",
+          "text": "Le SLA est un engagement envers le client, l'OLA est un accord interne entre équipes"
+        },
+        {
+          "id": "c",
+          "text": "L'OLA concerne uniquement les Changes"
+        },
+        {
+          "id": "d",
+          "text": "Le SLA ne s'applique qu'aux Problems"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Le SLA (Service Level Agreement) est un engagement de délai généralement vis-à-vis du client/métier, l'OLA (Operational Level Agreement) est un accord équivalent entre équipes internes.",
+      "pieges": [
+        "Confondre les deux termes qui, bien que similaires dans leur mécanique technique, ont un périmètre contractuel différent."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_08",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "workflow"
+      ],
+      "difficulty": "hard",
+      "question": "Un incident passe de 'New' directement à 'Resolved' sans jamais passer par 'In Progress'. Est-ce un problème par défaut dans ServiceNow ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Non, la transition d'état n'est pas restreinte par défaut sauf configuration spécifique (ex: state flow policy)"
+        },
+        {
+          "id": "b",
+          "text": "Oui, c'est techniquement impossible nativement"
+        },
+        {
+          "id": "c",
+          "text": "Oui, cela supprime automatiquement l'incident"
+        },
+        {
+          "id": "d",
+          "text": "Non, mais cela verrouille définitivement l'incident"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Par défaut, ServiceNow ne force pas un ordre strict de transition entre états sauf si une politique de transition d'état (State Flow / UI Policy / Business Rule) est explicitement configurée pour l'imposer.",
+      "pieges": [
+        "Supposer à tort qu'un ordre de transition est verrouillé nativement sans configuration additionnelle."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_09",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "priority"
+      ],
+      "difficulty": "easy",
+      "question": "Quel champ permet de indiquer l'ampleur de l'effet d'un incident sur l'activité (ex: un seul utilisateur vs toute l'entreprise) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Urgency"
+        },
+        {
+          "id": "b",
+          "text": "Impact"
+        },
+        {
+          "id": "c",
+          "text": "Priority"
+        },
+        {
+          "id": "d",
+          "text": "Severity"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "'Impact' mesure l'étendue de l'effet sur l'activité métier, tandis que 'Urgency' mesure la rapidité avec laquelle une résolution est nécessaire.",
+      "pieges": [
+        "Inverser Impact et Urgency dans leur définition respective."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_10",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "workflow"
+      ],
+      "difficulty": "medium",
+      "question": "Pourquoi un incident 'Resolved' ne passe-t-il pas immédiatement à 'Closed' ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Parce que c'est techniquement le même état"
+        },
+        {
+          "id": "b",
+          "text": "Pour laisser un délai de confirmation avant fermeture automatique/manuelle"
+        },
+        {
+          "id": "c",
+          "text": "Parce que 'Closed' n'existe pas dans Incident Management"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'un Problem doit d'abord être créé"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Une pratique courante consiste à laisser un incident en 'Resolved' pendant une période définie, permettant au demandeur de rouvrir si besoin, avant fermeture automatique.",
+      "pieges": [
+        "Croire que Resolved et Closed sont interchangeables et n'ont aucune distinction fonctionnelle."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_11",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "change"
+      ],
+      "difficulty": "medium",
+      "question": "Quel type d'enregistrement peut être créé à partir d'un incident pour demander une modification de configuration afin de corriger durablement la cause d'un problème récurrent ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un Knowledge Article"
+        },
+        {
+          "id": "b",
+          "text": "Une Change Request"
+        },
+        {
+          "id": "c",
+          "text": "Un Catalog Item"
+        },
+        {
+          "id": "d",
+          "text": "Un Update Set"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Une Change Request est utilisée pour implémenter une modification contrôlée visant à corriger durablement une cause racine identifiée, souvent liée à un Problem.",
+      "pieges": [
+        "Oublier le lien logique Incident → Problem → Change dans le traitement des causes racines."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_12",
+      "topic": "incident-management",
+      "tags": [
+        "incident",
+        "knowledge"
+      ],
+      "difficulty": "easy",
+      "question": "Un agent souhaite documenter une solution de contournement (workaround) réutilisable pour un incident récurrent. Quel type d'enregistrement est le plus adapté pour capitaliser cette information ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un Knowledge Article"
+        },
+        {
+          "id": "b",
+          "text": "Un nouvel incident dupliqué"
+        },
+        {
+          "id": "c",
+          "text": "Un Catalog Item"
+        },
+        {
+          "id": "d",
+          "text": "Un Update Set"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Un Knowledge Article permet de capitaliser une solution ou un workaround pour qu'il soit réutilisé par d'autres agents ou en libre-service.",
+      "pieges": [
+        "Dupliquer l'incident au lieu de créer un article de connaissance réutilisable."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_01",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "security"
+      ],
+      "difficulty": "medium",
+      "question": "Dans quel ordre ServiceNow évalue-t-il les ACL lors d'une tentative d'accès à un champ spécifique d'une table ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ACL de champ puis ACL de table"
+        },
+        {
+          "id": "b",
+          "text": "ACL de table puis ACL de champ"
+        },
+        {
+          "id": "c",
+          "text": "Les deux simultanément sans ordre défini"
+        },
+        {
+          "id": "d",
+          "text": "Uniquement l'ACL de champ, l'ACL de table est ignorée"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "ServiceNow vérifie d'abord l'ACL de niveau table pour l'opération demandée ; si elle échoue, l'ACL de champ n'est même pas évaluée.",
+      "pieges": [
+        "Confondre l'ordre d'évaluation ACL table vs champ."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_02",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "security"
+      ],
+      "difficulty": "hard",
+      "question": "Une ACL n'a aucun rôle renseigné, aucune condition et aucun script. Quel est le comportement résultant ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Personne n'a accès"
+        },
+        {
+          "id": "b",
+          "text": "Seuls les admins ont accès"
+        },
+        {
+          "id": "c",
+          "text": "Tout utilisateur authentifié atteignant cette ACL a accès"
+        },
+        {
+          "id": "d",
+          "text": "L'ACL est ignorée et une erreur système est levée"
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "Une ACL sans critère restrictif (ni rôle, ni condition, ni script) autorise l'accès à tout utilisateur authentifié — un piège de sécurité classique à surveiller.",
+      "pieges": [
+        "Oublier qu'une ACL 'vide' est permissive par défaut, pas restrictive."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_03",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "client-script"
+      ],
+      "difficulty": "medium",
+      "question": "Un Client Script empêche l'affichage d'un bouton pour un utilisateur non autorisé. Cela suffit-il à sécuriser l'action côté serveur ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Oui, masquer le bouton suffit"
+        },
+        {
+          "id": "b",
+          "text": "Non, la sécurité réelle doit être appliquée via des ACL côté serveur"
+        },
+        {
+          "id": "c",
+          "text": "Oui, si le Client Script est marqué 'Isolate script'"
+        },
+        {
+          "id": "d",
+          "text": "Non, il faut désactiver le Client Script complètement"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Un Client Script s'exécute dans le navigateur et peut être contourné ; la sécurité effective doit toujours être garantie côté serveur via des ACL.",
+      "pieges": [
+        "Croire qu'un Client Script constitue une sécurité fiable."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_04",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "roles"
+      ],
+      "difficulty": "medium",
+      "question": "Quel rôle est généralement nécessaire (avec élévation de rôle) pour modifier les ACL elles-mêmes dans une instance standard ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "itil"
+        },
+        {
+          "id": "b",
+          "text": "catalog_admin"
+        },
+        {
+          "id": "c",
+          "text": "security_admin"
+        },
+        {
+          "id": "d",
+          "text": "approver_user"
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "Le rôle 'security_admin', combiné à l'élévation de rôle (Elevate Roles), est requis par défaut pour modifier les enregistrements ACL.",
+      "pieges": [
+        "Penser que le rôle 'admin' seul suffit sans élévation explicite du rôle de sécurité."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_05",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "security"
+      ],
+      "difficulty": "medium",
+      "question": "Une ACL de table en lecture (read) échoue pour un utilisateur. Que se passe-t-il pour les ACL de champ associées à cette même table ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Elles sont évaluées indépendamment malgré tout"
+        },
+        {
+          "id": "b",
+          "text": "Elles ne sont jamais atteintes car l'accès est déjà refusé au niveau table"
+        },
+        {
+          "id": "c",
+          "text": "Elles deviennent automatiquement permissives"
+        },
+        {
+          "id": "d",
+          "text": "Elles s'appliquent uniquement aux admins"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Si l'ACL de table échoue, l'utilisateur n'a de toute façon pas accès à l'enregistrement, donc les ACL de champ ne sont pas pertinentes/atteintes.",
+      "pieges": [
+        "Oublier la dépendance hiérarchique entre ACL de table et ACL de champ."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_06",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "script-include"
+      ],
+      "difficulty": "hard",
+      "question": "Quel type d'ACL protège spécifiquement l'appel d'un Script Include depuis le client (client-callable) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ACL de table classique"
+        },
+        {
+          "id": "b",
+          "text": "ACL de type 'record'"
+        },
+        {
+          "id": "c",
+          "text": "ACL de type 'client_callable' / script"
+        },
+        {
+          "id": "d",
+          "text": "Il n'existe pas d'ACL pour cela"
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "Les Script Includes marqués 'Client callable' peuvent être protégés par une ACL dédiée de type script pour contrôler qui peut les invoquer depuis le client.",
+      "pieges": [
+        "Croire que cocher 'Client callable' seul suffit sans réfléchir à la sécurisation de l'appel."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_07",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "security"
+      ],
+      "difficulty": "easy",
+      "question": "Quelles opérations distinctes une ACL de table peut-elle typiquement contrôler ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Seulement read"
+        },
+        {
+          "id": "b",
+          "text": "create, read, write, delete"
+        },
+        {
+          "id": "c",
+          "text": "Seulement write et delete"
+        },
+        {
+          "id": "d",
+          "text": "Uniquement l'accès au module UI"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Les ACL de table peuvent être définies séparément pour create, read, write et delete, chacune avec ses propres conditions/rôles.",
+      "pieges": [
+        "Penser qu'une seule ACL couvre toutes les opérations CRUD d'une table."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_accesscontrolacl_08",
+      "topic": "access-control-acl",
+      "tags": [
+        "acl",
+        "roles"
+      ],
+      "difficulty": "hard",
+      "question": "Un utilisateur avec le rôle admin a-t-il automatiquement accès à toutes les données, quelles que soient les ACL ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Toujours oui, admin bypass tout"
+        },
+        {
+          "id": "b",
+          "text": "Pas nécessairement : cela dépend de la configuration 'Admin overrides' et des ACL elles-mêmes"
+        },
+        {
+          "id": "c",
+          "text": "Non, admin n'a jamais plus d'accès qu'un utilisateur standard"
+        },
+        {
+          "id": "d",
+          "text": "Oui, mais uniquement pour les tables systèmes"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "L'accès admin dépend de la configuration des ACL et de propriétés système comme les 'Admin overrides' — ce n'est pas un contournement automatique et inconditionnel.",
+      "pieges": [
+        "Supposer que le rôle admin garantit un accès total sans dépendre de la configuration des ACL."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_updatesets_01",
+      "topic": "update-sets",
+      "tags": [
+        "update-set"
+      ],
+      "difficulty": "easy",
+      "question": "Que capture principalement un Update Set ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les données métier créées par les utilisateurs (ex: incidents)"
+        },
+        {
+          "id": "b",
+          "text": "Les modifications de configuration/personnalisation de l'instance"
+        },
+        {
+          "id": "c",
+          "text": "Les logs système"
+        },
+        {
+          "id": "d",
+          "text": "Les sauvegardes complètes de la base de données"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Un Update Set capture les changements de configuration (champs, formulaires, scripts, etc.), pas les données métier créées par les utilisateurs.",
+      "pieges": [
+        "Croire qu'un Update Set migre les données (records) : il ne migre que la configuration."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_updatesets_02",
+      "topic": "update-sets",
+      "tags": [
+        "update-set"
+      ],
+      "difficulty": "easy",
+      "question": "Que faut-il faire avant de commencer un développement pour que les changements soient correctement isolés ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rien, tous les changements vont automatiquement dans un Update Set dédié"
+        },
+        {
+          "id": "b",
+          "text": "Définir l'Update Set souhaité comme 'Current'"
+        },
+        {
+          "id": "c",
+          "text": "Supprimer le Default Update Set"
+        },
+        {
+          "id": "d",
+          "text": "Activer le rôle security_admin"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Il faut définir explicitement l'Update Set de travail comme 'Current' pour que les changements y soient capturés, sinon ils partent dans le Default set.",
+      "pieges": [
+        "Oublier de définir le bon Update Set comme 'Current' avant de commencer un développement."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_updatesets_03",
+      "topic": "update-sets",
+      "tags": [
+        "update-set"
+      ],
+      "difficulty": "medium",
+      "question": "Quelle étape est recommandée avant de committer un Update Set récupéré (Retrieved) sur une instance cible ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le committer directement sans vérification"
+        },
+        {
+          "id": "b",
+          "text": "Faire un Preview pour détecter les conflits (collisions)"
+        },
+        {
+          "id": "c",
+          "text": "Le marquer Ignored"
+        },
+        {
+          "id": "d",
+          "text": "Le renommer"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "La Preview permet d'identifier les conflits potentiels ('collisions') entre l'Update Set et l'état actuel de l'instance cible avant de committer.",
+      "pieges": [
+        "Committer un Update Set sans Preview préalable, ratant ainsi des conflits."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_updatesets_04",
+      "topic": "update-sets",
+      "tags": [
+        "update-set"
+      ],
+      "difficulty": "medium",
+      "question": "Un Update Set est marqué 'Complete'. Que devrait-on faire si des modifications supplémentaires sont nécessaires ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rouvrir et modifier directement cet Update Set"
+        },
+        {
+          "id": "b",
+          "text": "Créer un nouvel Update Set pour les changements supplémentaires"
+        },
+        {
+          "id": "c",
+          "text": "Supprimer l'Update Set complet et tout refaire"
+        },
+        {
+          "id": "d",
+          "text": "Marquer l'instance en lecture seule"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Une fois 'Complete', un Update Set ne devrait plus être modifié ; les changements supplémentaires doivent aller dans un nouvel Update Set.",
+      "pieges": [
+        "Rouvrir et modifier un Update Set déjà marqué Complete, ce qui peut créer des incohérences."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_updatesets_05",
+      "topic": "update-sets",
+      "tags": [
+        "update-set"
+      ],
+      "difficulty": "hard",
+      "question": "Plusieurs Update Sets ont des dépendances entre eux (l'un requiert des champs créés par l'autre). Pourquoi l'ordre de commit est-il important ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il ne l'est jamais, ServiceNow réordonne automatiquement"
+        },
+        {
+          "id": "b",
+          "text": "Committer dans le mauvais ordre peut provoquer des erreurs ou des références manquantes"
+        },
+        {
+          "id": "c",
+          "text": "Seul le dernier Update Set committé compte"
+        },
+        {
+          "id": "d",
+          "text": "L'ordre n'affecte que la performance, jamais la fonctionnalité"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Si un Update Set dépend d'éléments créés par un autre, il faut committer dans le bon ordre sous peine d'erreurs ou de références cassées.",
+      "pieges": [
+        "Ignorer les dépendances entre Update Sets lors de migrations multiples."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_updatesets_06",
+      "topic": "update-sets",
+      "tags": [
+        "update-set",
+        "scoped-app"
+      ],
+      "difficulty": "hard",
+      "question": "Un développeur travaille dans une application scopée (scoped application). Où ses changements de configuration sont-ils capturés ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Toujours dans le Global Update Set uniquement"
+        },
+        {
+          "id": "b",
+          "text": "Dans l'Update Set courant, dans le contexte du scope de l'application"
+        },
+        {
+          "id": "c",
+          "text": "Nulle part, les scoped apps n'utilisent pas les Update Sets"
+        },
+        {
+          "id": "d",
+          "text": "Uniquement via un export XML manuel"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Les changements sont capturés dans l'Update Set courant, avec le contexte de l'application scopée active, comme pour les développements globaux.",
+      "pieges": [
+        "Croire que les applications scopées échappent totalement au mécanisme d'Update Set."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_updatesets_07",
+      "topic": "update-sets",
+      "tags": [
+        "update-set"
+      ],
+      "difficulty": "medium",
+      "question": "Quel est le risque principal de laisser le Default Update Set comme 'Current' pendant un développement structuré ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Aucun risque particulier"
+        },
+        {
+          "id": "b",
+          "text": "Mélanger des changements non liés, rendant difficile une migration ciblée et propre"
+        },
+        {
+          "id": "c",
+          "text": "Cela bloque automatiquement l'instance"
+        },
+        {
+          "id": "d",
+          "text": "Cela supprime les données existantes"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Travailler dans le Default set mélange tous les changements sans distinction, ce qui complique fortement une migration propre et sélective vers d'autres instances.",
+      "pieges": [
+        "Sous-estimer l'impact du désordre créé par l'usage prolongé du Default Update Set."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_01",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "business-rule"
+      ],
+      "difficulty": "easy",
+      "question": "À quel moment une Business Rule de type 'before' s'exécute-t-elle par rapport à l'écriture en base ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Après l'écriture"
+        },
+        {
+          "id": "b",
+          "text": "Avant l'écriture, pouvant modifier ou annuler l'opération"
+        },
+        {
+          "id": "c",
+          "text": "En parallèle, de façon asynchrone"
+        },
+        {
+          "id": "d",
+          "text": "Uniquement au chargement du formulaire"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Une Business Rule 'before' s'exécute avant que l'enregistrement soit écrit en base, permettant de modifier des valeurs ou d'annuler l'opération (abortInsert/abortAction).",
+      "pieges": [
+        "Confondre 'before' et 'after' : modifier current dans une règle 'after' n'empêche pas l'écriture déjà effectuée."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_02",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "business-rule"
+      ],
+      "difficulty": "medium",
+      "question": "Quel type de Business Rule est le plus adapté pour envoyer une notification externe sans bloquer l'utilisateur ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "before"
+        },
+        {
+          "id": "b",
+          "text": "display"
+        },
+        {
+          "id": "c",
+          "text": "async"
+        },
+        {
+          "id": "d",
+          "text": "on submit"
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "Une Business Rule 'async' s'exécute de façon asynchrone après l'écriture, idéale pour des actions non bloquantes comme des appels externes ou notifications lourdes.",
+      "pieges": [
+        "Utiliser une règle 'before' bloquante pour une action qui pourrait ralentir la sauvegarde."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_03",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "client-script"
+      ],
+      "difficulty": "easy",
+      "question": "À quel moment un Client Script 'onLoad' s'exécute-t-il ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Au changement d'un champ"
+        },
+        {
+          "id": "b",
+          "text": "Au chargement du formulaire"
+        },
+        {
+          "id": "c",
+          "text": "À la soumission du formulaire"
+        },
+        {
+          "id": "d",
+          "text": "Lors de l'édition en ligne dans une liste"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "'onLoad' s'exécute lorsque le formulaire est chargé dans le navigateur, avant toute interaction de l'utilisateur.",
+      "pieges": [
+        "Confondre onLoad avec onChange, qui se déclenche sur modification d'un champ spécifique."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_04",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "client-script"
+      ],
+      "difficulty": "easy",
+      "question": "Quel type de Client Script peut empêcher la soumission d'un formulaire si une condition n'est pas respectée ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "onLoad"
+        },
+        {
+          "id": "b",
+          "text": "onChange"
+        },
+        {
+          "id": "c",
+          "text": "onSubmit"
+        },
+        {
+          "id": "d",
+          "text": "onCellEdit"
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "'onSubmit' s'exécute à la soumission et peut retourner false pour bloquer l'envoi du formulaire.",
+      "pieges": [
+        "Essayer de bloquer une soumission depuis un script onLoad, qui s'exécute trop tôt pour cela."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_05",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "ui-policy",
+        "client-script"
+      ],
+      "difficulty": "medium",
+      "question": "Pourquoi préfère-t-on souvent une UI Policy à un Client Script pour rendre un champ obligatoire selon une condition ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les UI Policies sont plus rapides à écrire en JavaScript"
+        },
+        {
+          "id": "b",
+          "text": "Les UI Policies sont déclaratives, sans code, et plus simples à maintenir pour ce cas"
+        },
+        {
+          "id": "c",
+          "text": "Les Client Scripts ne peuvent pas rendre un champ obligatoire"
+        },
+        {
+          "id": "d",
+          "text": "Il n'y a aucune différence pratique"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Les UI Policies permettent de définir mandatory/visible/read-only de façon déclarative sans écrire de script, réduisant la complexité de maintenance pour les cas simples.",
+      "pieges": [
+        "Écrire un Client Script complexe alors qu'une UI Policy suffirait."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_06",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "business-rule"
+      ],
+      "difficulty": "hard",
+      "question": "Une Business Rule 'display' sert principalement à quoi ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Exécuter du code après la suppression d'un enregistrement"
+        },
+        {
+          "id": "b",
+          "text": "Transférer des données serveur vers le client au chargement du formulaire"
+        },
+        {
+          "id": "c",
+          "text": "Bloquer la soumission du formulaire"
+        },
+        {
+          "id": "d",
+          "text": "Modifier des enregistrements liés de façon asynchrone"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Une Business Rule 'display' s'exécute au chargement du formulaire pour transférer des données calculées côté serveur vers le client (accessible ensuite via g_scratchpad par exemple).",
+      "pieges": [
+        "Confondre 'display' avec les règles before/after qui s'exécutent lors d'opérations d'écriture."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_07",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "business-rule",
+        "client-script"
+      ],
+      "difficulty": "medium",
+      "question": "Que détermine le champ 'Order' sur une Business Rule ou un Client Script ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La priorité d'affichage dans les listes"
+        },
+        {
+          "id": "b",
+          "text": "L'ordre d'exécution relatif parmi les règles/scripts du même type"
+        },
+        {
+          "id": "c",
+          "text": "Le rôle requis pour l'exécuter"
+        },
+        {
+          "id": "d",
+          "text": "La table sur laquelle le script s'applique"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Le champ 'Order' détermine dans quel ordre s'exécutent plusieurs règles ou scripts du même type appliqués au même événement.",
+      "pieges": [
+        "Supposer que l'ordre d'exécution est purement aléatoire ou basé sur la date de création."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_08",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "client-script",
+        "security"
+      ],
+      "difficulty": "medium",
+      "question": "Pourquoi une validation de sécurité critique ne doit-elle jamais reposer uniquement sur un Client Script ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Parce que les Client Scripts sont lents"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'un utilisateur peut contourner le code exécuté dans son navigateur"
+        },
+        {
+          "id": "c",
+          "text": "Parce que les Client Scripts ne peuvent pas accéder aux champs"
+        },
+        {
+          "id": "d",
+          "text": "Parce que cela consomme trop de licences"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Le code exécuté côté navigateur peut être inspecté ou contourné par l'utilisateur ; la validation critique doit être dupliquée côté serveur (Business Rule/ACL).",
+      "pieges": [
+        "Faire reposer une règle métier critique uniquement sur la validation côté client."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_01",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog"
+      ],
+      "difficulty": "easy",
+      "question": "Quel enregistrement est créé lorsqu'un utilisateur commande un Catalog Item standard depuis le panier ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un Change Request"
+        },
+        {
+          "id": "b",
+          "text": "Un Requested Item (RITM) rattaché à une Request (REQ)"
+        },
+        {
+          "id": "c",
+          "text": "Un Incident"
+        },
+        {
+          "id": "d",
+          "text": "Un Update Set"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "La soumission d'une commande standard génère une Request (REQ) contenant un ou plusieurs Requested Items (RITM), qui pilotent le workflow d'exécution.",
+      "pieges": [
+        "Oublier la distinction entre la Request globale et les Requested Items individuels."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_02",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog",
+        "record-producer"
+      ],
+      "difficulty": "medium",
+      "question": "En quoi un Record Producer diffère-t-il d'un Catalog Item standard ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il n'existe aucune différence"
+        },
+        {
+          "id": "b",
+          "text": "Il crée directement un enregistrement dans une autre table, sans générer de RITM"
+        },
+        {
+          "id": "c",
+          "text": "Il ne peut pas avoir de variables"
+        },
+        {
+          "id": "d",
+          "text": "Il ne peut être utilisé que par les admins"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Un Record Producer crée directement un enregistrement cible (ex: un incident) à partir des données saisies, sans passer par le processus RITM standard.",
+      "pieges": [
+        "Confondre Record Producer et Catalog Item : le Record Producer ne crée pas de RITM."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_03",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog",
+        "order-guide"
+      ],
+      "difficulty": "medium",
+      "question": "À quoi sert un Order Guide dans le Service Catalog ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "À configurer les variables d'un item unique"
+        },
+        {
+          "id": "b",
+          "text": "À permettre de commander plusieurs Catalog Items liés en une seule fois"
+        },
+        {
+          "id": "c",
+          "text": "À remplacer les Catalog Client Scripts"
+        },
+        {
+          "id": "d",
+          "text": "À gérer les approbations uniquement"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Un Order Guide regroupe plusieurs Catalog Items pouvant être commandés ensemble (ex: équipement complet pour un nouvel employé).",
+      "pieges": [
+        "Oublier qu'un Order Guide sert à grouper des items, pas à en configurer un seul plus finement."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_04",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog",
+        "variables"
+      ],
+      "difficulty": "medium",
+      "question": "Quel élément permet de regrouper des variables réutilisables sur plusieurs Catalog Items ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un Variable Set"
+        },
+        {
+          "id": "b",
+          "text": "Un Order Guide"
+        },
+        {
+          "id": "c",
+          "text": "Un Catalog UI Policy"
+        },
+        {
+          "id": "d",
+          "text": "Un Workflow"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Un Variable Set regroupe un ensemble de variables réutilisables qui peuvent être appliquées à plusieurs Catalog Items sans les redéfinir à chaque fois.",
+      "pieges": [
+        "Confondre Variable Set (regroupement de champs) et Order Guide (regroupement d'items)."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_05",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog",
+        "workflow"
+      ],
+      "difficulty": "medium",
+      "question": "À quel moment le Workflow (ou Flow Designer flow) associé à un Catalog Item se déclenche-t-il ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Dès l'ajout de l'item au panier"
+        },
+        {
+          "id": "b",
+          "text": "À la soumission de la commande (checkout)"
+        },
+        {
+          "id": "c",
+          "text": "Uniquement lors de l'approbation manuelle par un admin"
+        },
+        {
+          "id": "d",
+          "text": "Jamais automatiquement, il faut le lancer manuellement"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Le Workflow/Flow associé se déclenche lors de la soumission effective de la commande (checkout), pas au simple ajout au panier.",
+      "pieges": [
+        "Penser que le Workflow/Flow se déclenche à l'ajout au panier plutôt qu'à la soumission."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_06",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog",
+        "client-script"
+      ],
+      "difficulty": "hard",
+      "question": "Qu'est-ce qu'un Catalog Client Script marqué 'Isolate script' implique ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il s'exécute dans un environnement isolé (scope Jelly), avec un accès limité au DOM global"
+        },
+        {
+          "id": "b",
+          "text": "Il ne s'exécute jamais côté client"
+        },
+        {
+          "id": "c",
+          "text": "Il devient un Business Rule automatiquement"
+        },
+        {
+          "id": "d",
+          "text": "Il désactive toutes les autres variables du formulaire"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "L'option 'Isolate script' exécute le script dans un scope isolé, limitant l'accès direct au DOM global, ce qui améliore la robustesse mais peut nécessiter des ajustements pour certaines manipulations directes du DOM.",
+      "pieges": [
+        "Ignorer l'impact de l'isolation sur les scripts qui manipulent directement le DOM."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_07",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog",
+        "approval"
+      ],
+      "difficulty": "hard",
+      "question": "Quel type d'enregistrement gère typiquement les étapes d'approbation générées lors d'une commande nécessitant validation ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "sysapproval_approver"
+        },
+        {
+          "id": "b",
+          "text": "sys_user_group"
+        },
+        {
+          "id": "c",
+          "text": "kb_knowledge"
+        },
+        {
+          "id": "d",
+          "text": "sys_update_set"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Les enregistrements de la table sysapproval_approver représentent les étapes d'approbation individuelles générées par le workflow de la demande.",
+      "pieges": [
+        "Confondre les enregistrements d'approbation avec les groupes d'utilisateurs eux-mêmes."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_servicecatalog_08",
+      "topic": "service-catalog",
+      "tags": [
+        "service-catalog",
+        "ui-policy"
+      ],
+      "difficulty": "medium",
+      "question": "Un Catalog UI Policy permet de faire quoi sur les variables d'un Catalog Item ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Modifier le schéma de la base de données"
+        },
+        {
+          "id": "b",
+          "text": "Contrôler la visibilité/obligation d'une variable selon la valeur d'une autre, sans script"
+        },
+        {
+          "id": "c",
+          "text": "Créer automatiquement un Update Set"
+        },
+        {
+          "id": "d",
+          "text": "Générer un Knowledge Article"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Un Catalog UI Policy permet, de façon déclarative, de montrer/masquer ou rendre obligatoire une variable en fonction de la valeur d'une autre variable du formulaire.",
+      "pieges": [
+        "Écrire un Catalog Client Script complexe pour un cas que le Catalog UI Policy couvrirait nativement."
+      ],
+      "addedAt": "2026-07-27T09:00:00Z"
+    }
+  ]
+}

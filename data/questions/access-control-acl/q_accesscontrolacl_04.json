@@ -1,0 +1,38 @@
+{
+  "id": "q_accesscontrolacl_04",
+  "topic": "access-control-acl",
+  "tags": [
+    "acl",
+    "roles"
+  ],
+  "difficulty": "medium",
+  "question": "Quel rôle est généralement nécessaire (avec élévation de rôle) pour modifier les ACL elles-mêmes dans une instance standard ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "itil"
+    },
+    {
+      "id": "b",
+      "text": "catalog_admin"
+    },
+    {
+      "id": "c",
+      "text": "security_admin"
+    },
+    {
+      "id": "d",
+      "text": "approver_user"
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "Le rôle 'security_admin', combiné à l'élévation de rôle (Elevate Roles), est requis par défaut pour modifier les enregistrements ACL.",
+  "pieges": [
+    "Penser que le rôle 'admin' seul suffit sans élévation explicite du rôle de sécurité."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

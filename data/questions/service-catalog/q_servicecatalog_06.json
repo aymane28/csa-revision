@@ -1,0 +1,38 @@
+{
+  "id": "q_servicecatalog_06",
+  "topic": "service-catalog",
+  "tags": [
+    "service-catalog",
+    "client-script"
+  ],
+  "difficulty": "hard",
+  "question": "Qu'est-ce qu'un Catalog Client Script marqué 'Isolate script' implique ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Il s'exécute dans un environnement isolé (scope Jelly), avec un accès limité au DOM global"
+    },
+    {
+      "id": "b",
+      "text": "Il ne s'exécute jamais côté client"
+    },
+    {
+      "id": "c",
+      "text": "Il devient un Business Rule automatiquement"
+    },
+    {
+      "id": "d",
+      "text": "Il désactive toutes les autres variables du formulaire"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "L'option 'Isolate script' exécute le script dans un scope isolé, limitant l'accès direct au DOM global, ce qui améliore la robustesse mais peut nécessiter des ajustements pour certaines manipulations directes du DOM.",
+  "pieges": [
+    "Ignorer l'impact de l'isolation sur les scripts qui manipulent directement le DOM."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

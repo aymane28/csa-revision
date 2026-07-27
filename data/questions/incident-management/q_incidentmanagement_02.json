@@ -1,0 +1,38 @@
+{
+  "id": "q_incidentmanagement_02",
+  "topic": "incident-management",
+  "tags": [
+    "incident",
+    "priority"
+  ],
+  "difficulty": "easy",
+  "question": "Comment la priorité d'un incident est-elle généralement déterminée dans une configuration standard ServiceNow ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Elle est saisie librement par l'utilisateur final"
+    },
+    {
+      "id": "b",
+      "text": "Elle résulte d'une matrice Impact x Urgency"
+    },
+    {
+      "id": "c",
+      "text": "Elle est toujours égale à l'urgence"
+    },
+    {
+      "id": "d",
+      "text": "Elle dépend uniquement du groupe d'assignation"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "La priorité est calculée automatiquement via une matrice de priorité croisant Impact et Urgency, configurable dans le système.",
+  "pieges": [
+    "Croire que la priorité est un champ libre saisi manuellement par défaut."
+  ],
+  "source": {
+    "type": "manual",
+    "retrievedAt": "2026-07-27T09:00:00Z"
+  },
+  "addedAt": "2026-07-27T09:00:00Z"
+}

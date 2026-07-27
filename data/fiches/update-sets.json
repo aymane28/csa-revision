@@ -1,0 +1,33 @@
+{
+  "topic": "update-sets",
+  "title": "Update Sets",
+  "sections": [
+    {
+      "heading": "Concept clés",
+      "content": "Un Update Set capture les modifications de configuration (personnalisations : champs, formulaires, business rules, UI policies, etc.) faites dans une instance pour les déplacer vers une autre (ex: Dev → Test → Prod). Il faut définir un Update Set comme 'Current' avant de commencer à travailler, sinon les changements partent dans le Default set."
+    },
+    {
+      "heading": "Cycle de vie",
+      "content": "Un Update Set passe par les états In Progress → Complete. Une fois marqué Complete, il ne doit plus être modifié. Sur l'instance cible, il est d'abord Retrieved, puis Previewed (pour détecter les conflits), puis Committed pour appliquer les changements."
+    },
+    {
+      "heading": "Limites importantes",
+      "content": "Un Update Set capture des changements de CONFIGURATION, pas les données métier (les enregistrements créés par les utilisateurs, comme les incidents eux-mêmes, ne sont pas inclus). L'ordre de commit compte si plusieurs Update Sets ont des dépendances entre eux."
+    }
+  ],
+  "pieges": [
+    "Croire qu'un Update Set migre les données (records) : il ne migre que la configuration/personnalisation.",
+    "Oublier de définir le bon Update Set comme 'Current' avant de commencer un développement, ce qui pollue le Default set.",
+    "Committer un Update Set sans faire de Preview au préalable, ratant ainsi des conflits ('collisions') avec l'instance cible."
+  ],
+  "relatedQuestionIds": [
+    "q_updatesets_01",
+    "q_updatesets_02",
+    "q_updatesets_03",
+    "q_updatesets_04",
+    "q_updatesets_05",
+    "q_updatesets_06",
+    "q_updatesets_07"
+  ],
+  "updatedAt": "2026-07-27T09:00:00Z"
+}
