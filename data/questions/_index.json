@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T09:00:00Z",
+  "generatedAt": "2026-07-27T15:01:52.626Z",
   "questions": [
     {
       "id": "q_incidentmanagement_01",
@@ -1450,6 +1450,266 @@
         "Écrire un Catalog Client Script complexe pour un cas que le Catalog UI Policy couvrirait nativement."
       ],
       "addedAt": "2026-07-27T09:00:00Z"
+    },
+    {
+      "id": "q_incidentmanagement_scr_ms3cta3x",
+      "topic": "incident-management",
+      "tags": [
+        "Incident Management",
+        "Major Incident",
+        "ServiceNow CSA"
+      ],
+      "difficulty": "medium",
+      "question": "Dans le cadre du processus d'Incident Management sur ServiceNow, quelle action spécifique est associée à la gestion des 'Major Incidents' ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Utiliser le Major Incident Workbench et le tableau de bord dédié pour superviser la résolution."
+        },
+        {
+          "id": "b",
+          "text": "Promouvoir automatiquement chaque incident de priorité 1 vers un Major Incident sans intervention manuelle."
+        },
+        {
+          "id": "c",
+          "text": "Utiliser exclusivement le Known Error Portal pour identifier la cause racine avant de déclarer l'incident comme majeur."
+        },
+        {
+          "id": "d",
+          "text": "Restaurer les services uniquement via l'automatisation par l'agentic AI sans possibilité d'intervention humaine."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "La documentation officielle précise que la gestion des incidents majeurs implique spécifiquement la création de ces incidents et l'utilisation du tableau de bord (overview dashboard) ainsi que du 'workbench' dédié pour suivre et gérer la situation.",
+      "pieges": [
+        "Croire que la promotion en Major Incident est un processus entièrement automatique sans supervision.",
+        "Confondre la gestion des incidents majeurs avec la simple recherche dans le Known Error Portal, qui est une ressource distincte.",
+        "Penser que l'agentic AI est le seul outil autorisé pour gérer les incidents majeurs, alors qu'il s'agit d'une option d'automatisation complémentaire."
+      ],
+      "addedAt": "2026-07-27T15:00:35.565Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_scr_ms3ctkg7",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "Scripting",
+        "Business Rules",
+        "Client Scripts",
+        "CSA"
+      ],
+      "difficulty": "medium",
+      "question": "Dans le contexte de ServiceNow, quelle est la distinction fondamentale entre une Business Rule et un Client Script selon les bonnes pratiques de la plateforme ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les Business Rules s'exécutent sur le serveur, tandis que les Client Scripts s'exécutent dans le navigateur de l'utilisateur."
+        },
+        {
+          "id": "b",
+          "text": "Les Business Rules sont utilisées pour manipuler l'interface utilisateur, alors que les Client Scripts gèrent les opérations de base de données."
+        },
+        {
+          "id": "c",
+          "text": "Les Business Rules ne peuvent s'exécuter que lors de la suppression d'un enregistrement, contrairement aux Client Scripts qui gèrent l'insertion."
+        },
+        {
+          "id": "d",
+          "text": "Les Business Rules sont obsolètes et doivent être remplacées par des Client Scripts pour toutes les nouvelles automatisations."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Les Business Rules sont des scripts côté serveur qui se déclenchent lors d'opérations sur la base de données (insertion, mise à jour, suppression, affichage ou requête). À l'inverse, les Client Scripts s'exécutent côté client (dans le navigateur) pour interagir avec le formulaire ou l'interface utilisateur.",
+      "pieges": [
+        "Confondre l'emplacement d'exécution (serveur vs client).",
+        "Penser que les Business Rules servent à modifier l'interface utilisateur (comme rendre un champ obligatoire), ce qui est le rôle des Client Scripts.",
+        "Croire que les Business Rules sont totalement remplacées par les Client Scripts, alors que ce sont deux outils complémentaires avec des rôles distincts."
+      ],
+      "addedAt": "2026-07-27T15:00:48.967Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms3ctnpa",
+      "topic": "access-control-acl",
+      "tags": [
+        "Security",
+        "ACL",
+        "Access Control"
+      ],
+      "difficulty": "medium",
+      "question": "Dans le cadre de la gestion de la sécurité sur ServiceNow, quel est le rôle principal d'une liste de contrôle d'accès (ACL) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Définir les rôles utilisateurs au niveau de l'instance globale uniquement."
+        },
+        {
+          "id": "b",
+          "text": "Restreindre l'accès aux données en exigeant que les utilisateurs satisfassent à des conditions spécifiques."
+        },
+        {
+          "id": "c",
+          "text": "Automatiser la création de comptes utilisateurs pour les nouvelles intégrations."
+        },
+        {
+          "id": "d",
+          "text": "Chiffrer les données sensibles stockées dans les tables de la base de données."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Les ACL (Access Control Lists) constituent le mécanisme central de sécurité de ServiceNow pour contrôler l'accès aux données. Elles imposent des exigences (rôles, conditions, scripts) qu'un utilisateur doit remplir pour interagir avec une ressource donnée.",
+      "pieges": [
+        "Confondre les ACL avec la gestion des rôles (User Administration), qui définit 'qui' est l'utilisateur, alors que les ACL définissent 'ce qu'il peut faire' sur les données.",
+        "Penser que les ACL servent au chiffrement des données, ce qui est une fonction différente gérée par d'autres modules de sécurité.",
+        "Croire que les ACL s'appliquent uniquement au niveau de l'instance globale, alors qu'elles sont granulaires et peuvent s'appliquer à des tables ou des champs spécifiques."
+      ],
+      "addedAt": "2026-07-27T15:00:53.182Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms3cu07u",
+      "topic": "access-control-acl",
+      "tags": [
+        "ACL",
+        "Security",
+        "CSA"
+      ],
+      "difficulty": "medium",
+      "question": "Lorsqu'une ACL (Access Control List) contient plusieurs conditions (rôles requis, attributs de sécurité, conditions de données et scripts), quelle est la règle régissant l'accès à l'objet ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L'utilisateur doit satisfaire au moins l'une des conditions spécifiées pour obtenir l'accès."
+        },
+        {
+          "id": "b",
+          "text": "L'utilisateur doit satisfaire toutes les conditions listées dans l'ACL pour obtenir l'accès."
+        },
+        {
+          "id": "c",
+          "text": "Le système évalue les conditions de manière séquentielle et accorde l'accès dès qu'une condition est validée."
+        },
+        {
+          "id": "d",
+          "text": "L'accès est accordé par défaut si au moins une condition de données est évaluée comme vraie, indépendamment des rôles."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Selon la documentation, si une ACL spécifie plusieurs conditions, l'utilisateur doit impérativement toutes les valider (rôles, attributs de sécurité, conditions de données et scripts) pour obtenir l'accès à l'objet et à l'opération concernés. L'échec de n'importe laquelle de ces conditions entraîne un refus d'accès.",
+      "pieges": [
+        "Croire qu'une relation 'OU' (OR) s'applique entre les différents types de conditions au sein d'une même ACL.",
+        "Penser que le script est optionnel et n'est pas pris en compte si les rôles sont déjà validés.",
+        "Confondre l'évaluation des conditions au sein d'une même ACL avec l'évaluation séquentielle de plusieurs ACLs différentes."
+      ],
+      "addedAt": "2026-07-27T15:01:09.402Z"
+    },
+    {
+      "id": "q_updatesets_scr_ms3cua6d",
+      "topic": "update-sets",
+      "tags": [
+        "Update Sets",
+        "Administration",
+        "Configuration Management"
+      ],
+      "difficulty": "easy",
+      "question": "Quel est l'objectif principal de l'utilisation des 'Update Sets' dans une instance ServiceNow ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sauvegarder l'intégralité des données transactionnelles et des incidents pour les transférer vers une instance de production."
+        },
+        {
+          "id": "b",
+          "text": "Regrouper une série de modifications de configuration pour les déplacer comme une unité unique vers une autre instance."
+        },
+        {
+          "id": "c",
+          "text": "Automatiser la création de comptes utilisateurs et l'attribution des rôles entre les instances de développement et de test."
+        },
+        {
+          "id": "d",
+          "text": "Synchroniser les mises à jour de sécurité du système d'exploitation de l'infrastructure serveur hébergeant ServiceNow."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Un 'Update Set' est un mécanisme de transport conçu spécifiquement pour déplacer des modifications de configuration (paramétrages, flux, formulaires, etc.) entre instances. Il ne capture pas les données transactionnelles (comme les tickets ou les utilisateurs) par défaut.",
+      "pieges": [
+        "Croire que les Update Sets servent à migrer des données métier ou des transactions.",
+        "Confondre les Update Sets avec les outils de mise à jour système (patching) gérés par ServiceNow au niveau de l'infrastructure.",
+        "Penser que les Update Sets permettent de synchroniser automatiquement les comptes utilisateurs."
+      ],
+      "addedAt": "2026-07-27T15:01:22.309Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms3cumbg",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Catalog",
+        "Service Portal",
+        "CSA"
+      ],
+      "difficulty": "medium",
+      "question": "Un administrateur ServiceNow souhaite s'assurer que les utilisateurs peuvent voir leurs demandes et approbations sur la page d'accueil du catalogue dans le Service Portal. Quelle configuration de la plateforme ServiceNow détermine les éléments affichés dans le widget 'Requests and Approvals' ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le module 'My Request Filter' dans la plateforme."
+        },
+        {
+          "id": "b",
+          "text": "La configuration des 'Catalog Categories' (sc_category)."
+        },
+        {
+          "id": "c",
+          "text": "L'activation du plugin 'Service Portal - Service Catalog v2'."
+        },
+        {
+          "id": "d",
+          "text": "La définition des 'Saved Bundles' dans le profil utilisateur."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Le contenu source précise explicitement que le widget 'Requests and Approvals' affiche une liste basée sur les configurations disponibles dans le module 'My Request Filter' au sein de la plateforme.",
+      "pieges": [
+        "Confondre la configuration des filtres de requêtes avec la simple activation du plugin.",
+        "Penser que les approbations sont gérées directement via les catégories du catalogue au lieu des filtres de plateforme.",
+        "Croire que les 'Saved Bundles' influencent la visibilité des approbations."
+      ],
+      "addedAt": "2026-07-27T15:01:38.044Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms3cuxki",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Catalog",
+        "CSA",
+        "Categories"
+      ],
+      "difficulty": "medium",
+      "question": "Dans le cadre de la configuration des catégories du Service Catalog, quelle condition est impérative pour qu'une catégorie soit visible par les utilisateurs dans le catalogue ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La catégorie doit être définie comme une catégorie racine sans parent."
+        },
+        {
+          "id": "b",
+          "text": "La catégorie doit contenir au moins un élément actif dans sa hiérarchie."
+        },
+        {
+          "id": "c",
+          "text": "L'utilisateur doit posséder le rôle catalog_admin pour voir la catégorie."
+        },
+        {
+          "id": "d",
+          "text": "La catégorie doit être associée à un Workflow spécifique pour être publiée."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Selon la documentation, si une catégorie et sa hiérarchie ne contiennent aucun élément actif, la catégorie n'apparaît pas dans le catalogue et ne peut pas y être ajoutée. La présence d'au moins un élément actif est donc une condition sine qua non pour l'affichage.",
+      "pieges": [
+        "Croire que les catégories sont visibles dès leur création, même si elles sont vides.",
+        "Penser que seuls les administrateurs peuvent voir les catégories, alors que c'est une question de contenu actif et de paramètres de disponibilité.",
+        "Confondre la visibilité avec les rôles (le rôle admin ou catalog_admin est nécessaire pour la configuration, mais la visibilité est régie par la présence d'éléments actifs)."
+      ],
+      "addedAt": "2026-07-27T15:01:52.626Z"
     }
   ]
 }

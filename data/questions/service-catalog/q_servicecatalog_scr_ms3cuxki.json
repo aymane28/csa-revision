@@ -1,0 +1,42 @@
+{
+  "id": "q_servicecatalog_scr_ms3cuxki",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Catalog",
+    "CSA",
+    "Categories"
+  ],
+  "difficulty": "medium",
+  "question": "Dans le cadre de la configuration des catégories du Service Catalog, quelle condition est impérative pour qu'une catégorie soit visible par les utilisateurs dans le catalogue ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "La catégorie doit être définie comme une catégorie racine sans parent."
+    },
+    {
+      "id": "b",
+      "text": "La catégorie doit contenir au moins un élément actif dans sa hiérarchie."
+    },
+    {
+      "id": "c",
+      "text": "L'utilisateur doit posséder le rôle catalog_admin pour voir la catégorie."
+    },
+    {
+      "id": "d",
+      "text": "La catégorie doit être associée à un Workflow spécifique pour être publiée."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Selon la documentation, si une catégorie et sa hiérarchie ne contiennent aucun élément actif, la catégorie n'apparaît pas dans le catalogue et ne peut pas y être ajoutée. La présence d'au moins un élément actif est donc une condition sine qua non pour l'affichage.",
+  "pieges": [
+    "Croire que les catégories sont visibles dès leur création, même si elles sont vides.",
+    "Penser que seuls les administrateurs peuvent voir les catégories, alors que c'est une question de contenu actif et de paramètres de disponibilité.",
+    "Confondre la visibilité avec les rôles (le rôle admin ou catalog_admin est nécessaire pour la configuration, mais la visibilité est régie par la présence d'éléments actifs)."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ServiceCatalogCategories.html&version=latest",
+    "retrievedAt": "2026-07-27T15:01:52.626Z"
+  },
+  "addedAt": "2026-07-27T15:01:52.626Z"
+}

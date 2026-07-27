@@ -1,0 +1,42 @@
+{
+  "id": "q_accesscontrolacl_scr_ms3cu07u",
+  "topic": "access-control-acl",
+  "tags": [
+    "ACL",
+    "Security",
+    "CSA"
+  ],
+  "difficulty": "medium",
+  "question": "Lorsqu'une ACL (Access Control List) contient plusieurs conditions (rôles requis, attributs de sécurité, conditions de données et scripts), quelle est la règle régissant l'accès à l'objet ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "L'utilisateur doit satisfaire au moins l'une des conditions spécifiées pour obtenir l'accès."
+    },
+    {
+      "id": "b",
+      "text": "L'utilisateur doit satisfaire toutes les conditions listées dans l'ACL pour obtenir l'accès."
+    },
+    {
+      "id": "c",
+      "text": "Le système évalue les conditions de manière séquentielle et accorde l'accès dès qu'une condition est validée."
+    },
+    {
+      "id": "d",
+      "text": "L'accès est accordé par défaut si au moins une condition de données est évaluée comme vraie, indépendamment des rôles."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Selon la documentation, si une ACL spécifie plusieurs conditions, l'utilisateur doit impérativement toutes les valider (rôles, attributs de sécurité, conditions de données et scripts) pour obtenir l'accès à l'objet et à l'opération concernés. L'échec de n'importe laquelle de ces conditions entraîne un refus d'accès.",
+  "pieges": [
+    "Croire qu'une relation 'OU' (OR) s'applique entre les différents types de conditions au sein d'une même ACL.",
+    "Penser que le script est optionnel et n'est pas pris en compte si les rôles sont déjà validés.",
+    "Confondre l'évaluation des conditions au sein d'une même ACL avec l'évaluation séquentielle de plusieurs ACLs différentes."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-access-control-list.html&version=latest",
+    "retrievedAt": "2026-07-27T15:01:09.402Z"
+  },
+  "addedAt": "2026-07-27T15:01:09.402Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "q_accesscontrolacl_scr_ms3ctnpa",
+  "topic": "access-control-acl",
+  "tags": [
+    "Security",
+    "ACL",
+    "Access Control"
+  ],
+  "difficulty": "medium",
+  "question": "Dans le cadre de la gestion de la sécurité sur ServiceNow, quel est le rôle principal d'une liste de contrôle d'accès (ACL) ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Définir les rôles utilisateurs au niveau de l'instance globale uniquement."
+    },
+    {
+      "id": "b",
+      "text": "Restreindre l'accès aux données en exigeant que les utilisateurs satisfassent à des conditions spécifiques."
+    },
+    {
+      "id": "c",
+      "text": "Automatiser la création de comptes utilisateurs pour les nouvelles intégrations."
+    },
+    {
+      "id": "d",
+      "text": "Chiffrer les données sensibles stockées dans les tables de la base de données."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Les ACL (Access Control Lists) constituent le mécanisme central de sécurité de ServiceNow pour contrôler l'accès aux données. Elles imposent des exigences (rôles, conditions, scripts) qu'un utilisateur doit remplir pour interagir avec une ressource donnée.",
+  "pieges": [
+    "Confondre les ACL avec la gestion des rôles (User Administration), qui définit 'qui' est l'utilisateur, alors que les ACL définissent 'ce qu'il peut faire' sur les données.",
+    "Penser que les ACL servent au chiffrement des données, ce qui est une fonction différente gérée par d'autres modules de sécurité.",
+    "Croire que les ACL s'appliquent uniquement au niveau de l'instance globale, alors qu'elles sont granulaires et peuvent s'appliquer à des tables ou des champs spécifiques."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=access-control-rules.html&version=latest",
+    "retrievedAt": "2026-07-27T15:00:53.182Z"
+  },
+  "addedAt": "2026-07-27T15:00:53.182Z"
+}

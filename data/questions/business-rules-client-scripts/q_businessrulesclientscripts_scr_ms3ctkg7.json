@@ -1,0 +1,43 @@
+{
+  "id": "q_businessrulesclientscripts_scr_ms3ctkg7",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "Scripting",
+    "Business Rules",
+    "Client Scripts",
+    "CSA"
+  ],
+  "difficulty": "medium",
+  "question": "Dans le contexte de ServiceNow, quelle est la distinction fondamentale entre une Business Rule et un Client Script selon les bonnes pratiques de la plateforme ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Les Business Rules s'exécutent sur le serveur, tandis que les Client Scripts s'exécutent dans le navigateur de l'utilisateur."
+    },
+    {
+      "id": "b",
+      "text": "Les Business Rules sont utilisées pour manipuler l'interface utilisateur, alors que les Client Scripts gèrent les opérations de base de données."
+    },
+    {
+      "id": "c",
+      "text": "Les Business Rules ne peuvent s'exécuter que lors de la suppression d'un enregistrement, contrairement aux Client Scripts qui gèrent l'insertion."
+    },
+    {
+      "id": "d",
+      "text": "Les Business Rules sont obsolètes et doivent être remplacées par des Client Scripts pour toutes les nouvelles automatisations."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Les Business Rules sont des scripts côté serveur qui se déclenchent lors d'opérations sur la base de données (insertion, mise à jour, suppression, affichage ou requête). À l'inverse, les Client Scripts s'exécutent côté client (dans le navigateur) pour interagir avec le formulaire ou l'interface utilisateur.",
+  "pieges": [
+    "Confondre l'emplacement d'exécution (serveur vs client).",
+    "Penser que les Business Rules servent à modifier l'interface utilisateur (comme rendre un champ obligatoire), ce qui est le rôle des Client Scripts.",
+    "Croire que les Business Rules sont totalement remplacées par les Client Scripts, alors que ce sont deux outils complémentaires avec des rôles distincts."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_BusinessRules.html&version=latest",
+    "retrievedAt": "2026-07-27T15:00:48.967Z"
+  },
+  "addedAt": "2026-07-27T15:00:48.967Z"
+}

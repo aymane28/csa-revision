@@ -1,0 +1,42 @@
+{
+  "id": "q_servicecatalog_scr_ms3cumbg",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Catalog",
+    "Service Portal",
+    "CSA"
+  ],
+  "difficulty": "medium",
+  "question": "Un administrateur ServiceNow souhaite s'assurer que les utilisateurs peuvent voir leurs demandes et approbations sur la page d'accueil du catalogue dans le Service Portal. Quelle configuration de la plateforme ServiceNow détermine les éléments affichés dans le widget 'Requests and Approvals' ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Le module 'My Request Filter' dans la plateforme."
+    },
+    {
+      "id": "b",
+      "text": "La configuration des 'Catalog Categories' (sc_category)."
+    },
+    {
+      "id": "c",
+      "text": "L'activation du plugin 'Service Portal - Service Catalog v2'."
+    },
+    {
+      "id": "d",
+      "text": "La définition des 'Saved Bundles' dans le profil utilisateur."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Le contenu source précise explicitement que le widget 'Requests and Approvals' affiche une liste basée sur les configurations disponibles dans le module 'My Request Filter' au sein de la plateforme.",
+  "pieges": [
+    "Confondre la configuration des filtres de requêtes avec la simple activation du plugin.",
+    "Penser que les approbations sont gérées directement via les catégories du catalogue au lieu des filtres de plateforme.",
+    "Croire que les 'Saved Bundles' influencent la visibilité des approbations."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=catalog-on-portal.html&version=latest",
+    "retrievedAt": "2026-07-27T15:01:38.044Z"
+  },
+  "addedAt": "2026-07-27T15:01:38.044Z"
+}

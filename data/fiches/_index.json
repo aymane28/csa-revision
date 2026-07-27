@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T09:00:00Z",
+  "generatedAt": "2026-07-27T15:01:52.626Z",
   "fiches": [
     {
       "topic": "incident-management",
@@ -16,7 +16,8 @@
         "q_incidentmanagement_09",
         "q_incidentmanagement_10",
         "q_incidentmanagement_11",
-        "q_incidentmanagement_12"
+        "q_incidentmanagement_12",
+        "q_incidentmanagement_scr_ms3cta3x"
       ]
     },
     {
@@ -30,7 +31,9 @@
         "q_accesscontrolacl_05",
         "q_accesscontrolacl_06",
         "q_accesscontrolacl_07",
-        "q_accesscontrolacl_08"
+        "q_accesscontrolacl_08",
+        "q_accesscontrolacl_scr_ms3ctnpa",
+        "q_accesscontrolacl_scr_ms3cu07u"
       ]
     },
     {
@@ -43,7 +46,8 @@
         "q_updatesets_04",
         "q_updatesets_05",
         "q_updatesets_06",
-        "q_updatesets_07"
+        "q_updatesets_07",
+        "q_updatesets_scr_ms3cua6d"
       ]
     },
     {
@@ -57,7 +61,8 @@
         "q_businessrulesclientscripts_05",
         "q_businessrulesclientscripts_06",
         "q_businessrulesclientscripts_07",
-        "q_businessrulesclientscripts_08"
+        "q_businessrulesclientscripts_08",
+        "q_businessrulesclientscripts_scr_ms3ctkg7"
       ]
     },
     {
@@ -71,7 +76,9 @@
         "q_servicecatalog_05",
         "q_servicecatalog_06",
         "q_servicecatalog_07",
-        "q_servicecatalog_08"
+        "q_servicecatalog_08",
+        "q_servicecatalog_scr_ms3cumbg",
+        "q_servicecatalog_scr_ms3cuxki"
       ]
     }
   ]

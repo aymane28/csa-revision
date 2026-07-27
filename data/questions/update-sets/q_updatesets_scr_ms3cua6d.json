@@ -1,0 +1,42 @@
+{
+  "id": "q_updatesets_scr_ms3cua6d",
+  "topic": "update-sets",
+  "tags": [
+    "Update Sets",
+    "Administration",
+    "Configuration Management"
+  ],
+  "difficulty": "easy",
+  "question": "Quel est l'objectif principal de l'utilisation des 'Update Sets' dans une instance ServiceNow ?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Sauvegarder l'intégralité des données transactionnelles et des incidents pour les transférer vers une instance de production."
+    },
+    {
+      "id": "b",
+      "text": "Regrouper une série de modifications de configuration pour les déplacer comme une unité unique vers une autre instance."
+    },
+    {
+      "id": "c",
+      "text": "Automatiser la création de comptes utilisateurs et l'attribution des rôles entre les instances de développement et de test."
+    },
+    {
+      "id": "d",
+      "text": "Synchroniser les mises à jour de sécurité du système d'exploitation de l'infrastructure serveur hébergeant ServiceNow."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Un 'Update Set' est un mécanisme de transport conçu spécifiquement pour déplacer des modifications de configuration (paramétrages, flux, formulaires, etc.) entre instances. Il ne capture pas les données transactionnelles (comme les tickets ou les utilisateurs) par défaut.",
+  "pieges": [
+    "Croire que les Update Sets servent à migrer des données métier ou des transactions.",
+    "Confondre les Update Sets avec les outils de mise à jour système (patching) gérés par ServiceNow au niveau de l'infrastructure.",
+    "Penser que les Update Sets permettent de synchroniser automatiquement les comptes utilisateurs."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=system-update-sets.html&version=latest",
+    "retrievedAt": "2026-07-27T15:01:22.309Z"
+  },
+  "addedAt": "2026-07-27T15:01:22.309Z"
+}
