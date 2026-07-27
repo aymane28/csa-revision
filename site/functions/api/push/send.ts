@@ -22,7 +22,20 @@ function jsonResponse(data: unknown, status = 200): Response {
 
 // Triggered by a GitHub Actions cron (see .github/workflows/reminders.yml) via a shared
 // secret header — this is not called from the browser, so no user auth beyond that secret.
-export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+export const onRequestPost: PagesFunction<Env> = async (context) => {
+  try {
+    return await handle(context);
+  } catch (err) {
+    // Surface the real failure instead of Cloudflare's generic 1101 error page —
+    // this is a cron-triggered endpoint, not browser-facing, so an error body is fine.
+    return jsonResponse(
+      { error: "internal", message: err instanceof Error ? err.message : String(err), stack: err instanceof Error ? err.stack : undefined },
+      500
+    );
+  }
+};
+
+async function handle({ request, env }: Parameters<PagesFunction<Env>>[0]): Promise<Response> {
   if (!env.REMINDER_SECRET || request.headers.get("x-reminder-secret") !== env.REMINDER_SECRET) {
     return jsonResponse({ error: "unauthorized" }, 401);
   }
@@ -94,4 +107,4 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   }
 
   return jsonResponse({ sent, total: subs.length, removed: subs.length - stillValid.length });
-};
+}
