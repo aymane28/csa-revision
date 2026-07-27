@@ -15,18 +15,30 @@
     "id": "sn-docs-access-control-acl",
     "type": "servicenow-docs",
     "topic": "access-control-acl",
-    "url": "TODO-find-url: va sur https://docs.servicenow.com, cherche \"access control rules\", copie l'URL de la page \"Access control rules (ACLs)\" et remplace cette valeur"
+    "url": "https://docs.servicenow.com/csh?topicname=access-control-rules.html&version=latest"
+  },
+  {
+    "id": "sn-docs-access-control-acl-explore",
+    "type": "servicenow-docs",
+    "topic": "access-control-acl",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-access-control-list.html&version=latest"
   },
   {
     "id": "sn-docs-update-sets",
     "type": "servicenow-docs",
     "topic": "update-sets",
-    "url": "TODO-find-url: cherche \"update sets\" sur https://docs.servicenow.com et remplace cette valeur"
+    "url": "https://docs.servicenow.com/csh?topicname=system-update-sets.html&version=latest"
   },
   {
     "id": "sn-docs-service-catalog",
     "type": "servicenow-docs",
     "topic": "service-catalog",
-    "url": "TODO-find-url: cherche \"service catalog\" sur https://docs.servicenow.com et remplace cette valeur"
+    "url": "https://docs.servicenow.com/csh?topicname=catalog-on-portal.html&version=latest"
+  },
+  {
+    "id": "sn-docs-service-catalog-categories",
+    "type": "servicenow-docs",
+    "topic": "service-catalog",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ServiceCatalogCategories.html&version=latest"
   }
 ]
