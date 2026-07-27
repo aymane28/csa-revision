@@ -1,8 +1,12 @@
 import type { GeneratedQuestion } from "../types";
 
-// gemini-2.0-flash dropped out of the free tier in late 2025/early 2026 — 2.5-flash
-// is the current free-tier default (10 RPM / 250 RPD, well above our ~7 req/day need).
-const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+// Google reshuffles which models get free-tier quota every few months (we've already
+// hit two dead defaults in testing: 2.0-flash has zero quota, 2.5-flash is 404 for new
+// accounts). Try a short list of current-ish free-tier candidates in order rather than
+// hardcoding one name; GEMINI_MODEL env var pins a single model if you know which works.
+const MODEL_CANDIDATES = process.env.GEMINI_MODEL
+  ? [process.env.GEMINI_MODEL]
+  : ["gemini-3.1-flash-lite", "gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-flash-latest"];
 
 const SCHEMA_HINT = `{
   "question": "string",
@@ -48,29 +52,39 @@ Contenu source (extrait) :
 ${params.sourceText}
 """`;
 
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${apiKey}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: "application/json", temperature: 0.6 },
-      }),
-    }
-  );
+  let text: string | undefined;
 
-  if (!res.ok) {
-    console.warn(`[enrich] Gemini API error ${res.status}: ${await res.text()}`);
-    return null;
+  for (const model of MODEL_CANDIDATES) {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { responseMimeType: "application/json", temperature: 0.6 },
+        }),
+      }
+    );
+
+    if (!res.ok) {
+      console.warn(`[enrich] ${model} error ${res.status}: ${await res.text()}`);
+      continue;
+    }
+
+    const data = (await res.json()) as {
+      candidates?: { content?: { parts?: { text?: string }[] } }[];
+    };
+    text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (text) {
+      console.log(`[enrich] succeeded with model ${model}`);
+      break;
+    }
+    console.warn(`[enrich] ${model} returned an empty response.`);
   }
 
-  const data = (await res.json()) as {
-    candidates?: { content?: { parts?: { text?: string }[] } }[];
-  };
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!text) {
-    console.warn("[enrich] Réponse Gemini vide.");
+    console.warn("[enrich] Tous les modèles candidats ont échoué.");
     return null;
   }
 
