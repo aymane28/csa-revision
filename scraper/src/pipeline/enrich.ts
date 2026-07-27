@@ -1,6 +1,8 @@
 import type { GeneratedQuestion } from "../types";
 
-const MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+// gemini-2.0-flash dropped out of the free tier in late 2025/early 2026 — 2.5-flash
+// is the current free-tier default (10 RPM / 250 RPD, well above our ~7 req/day need).
+const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 const SCHEMA_HINT = `{
   "question": "string",

@@ -61,7 +61,7 @@ async function main(): Promise<void> {
         continue;
       }
 
-      console.log(`[enrich] ${source.id} via ${process.env.GEMINI_MODEL || "gemini-2.0-flash"}…`);
+      console.log(`[enrich] ${source.id} via ${process.env.GEMINI_MODEL || "gemini-2.5-flash"}…`);
       const generated = await enrichToQuestion({
         topic: source.topic,
         sourceTitle: extracted.title,
