@@ -68,10 +68,9 @@ async function main(): Promise<void> {
         sourceText: extracted.text,
       });
 
-      // Mark as processed regardless of outcome so a broken/unparseable source isn't retried forever.
-      seen.add(source.url);
-
       if (!generated) {
+        // Transient failure (rate limit, malformed output, network error) — retry this
+        // source on the next run instead of blacklisting it forever.
         skipped++;
         continue;
       }
@@ -79,6 +78,9 @@ async function main(): Promise<void> {
       const existingTexts = loadExistingQuestionTexts();
       if (isDuplicateQuestion(generated.question, existingTexts)) {
         console.warn(`[skip] ${source.id}: question générée trop similaire à une question existante`);
+        // The LLM call succeeded but the content is already well covered — no need to
+        // keep re-spending a call on this source every day.
+        seen.add(source.url);
         skipped++;
         continue;
       }
@@ -88,6 +90,7 @@ async function main(): Promise<void> {
         url: source.url,
         retrievedAt: new Date().toISOString(),
       });
+      seen.add(source.url);
       written++;
       console.log(`[write] ${id} ajoutée pour "${source.topic}"`);
     } catch (err) {
