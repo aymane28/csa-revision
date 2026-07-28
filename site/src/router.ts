@@ -33,6 +33,6 @@ async function route(container: HTMLElement): Promise<void> {
       await renderFichesList(container);
     }
   } catch (err) {
-    container.innerHTML = `<p class="error">Une erreur est survenue : ${(err as Error).message}</p>`;
+    container.innerHTML = `<p class="error">Something went wrong: ${(err as Error).message}</p>`;
   }
 }

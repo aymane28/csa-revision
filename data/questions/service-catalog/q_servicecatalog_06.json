@@ -6,29 +6,29 @@
     "client-script"
   ],
   "difficulty": "hard",
-  "question": "Qu'est-ce qu'un Catalog Client Script marqué 'Isolate script' implique ?",
+  "question": "What does it mean for a Catalog Client Script to be marked 'Isolate script'?",
   "choices": [
     {
       "id": "a",
-      "text": "Il s'exécute dans un environnement isolé (scope Jelly), avec un accès limité au DOM global"
+      "text": "It runs in an isolated environment (Jelly scope), with limited access to the global DOM"
     },
     {
       "id": "b",
-      "text": "Il ne s'exécute jamais côté client"
+      "text": "It never runs on the client"
     },
     {
       "id": "c",
-      "text": "Il devient un Business Rule automatiquement"
+      "text": "It automatically becomes a Business Rule"
     },
     {
       "id": "d",
-      "text": "Il désactive toutes les autres variables du formulaire"
+      "text": "It disables all other variables on the form"
     }
   ],
   "correctChoiceId": "a",
-  "explanation": "L'option 'Isolate script' exécute le script dans un scope isolé, limitant l'accès direct au DOM global, ce qui améliore la robustesse mais peut nécessiter des ajustements pour certaines manipulations directes du DOM.",
+  "explanation": "The 'Isolate script' option runs the script in an isolated scope, limiting direct access to the global DOM, which improves robustness but may require adjustments for certain direct DOM manipulations.",
   "pieges": [
-    "Ignorer l'impact de l'isolation sur les scripts qui manipulent directement le DOM."
+    "Ignoring the impact of isolation on scripts that directly manipulate the DOM."
   ],
   "source": {
     "type": "manual",

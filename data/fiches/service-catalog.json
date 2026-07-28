@@ -3,22 +3,22 @@
   "title": "Service Catalog",
   "sections": [
     {
-      "heading": "Concepts clés",
-      "content": "Le Service Catalog présente aux utilisateurs des Catalog Items organisés en catégories. Un Catalog Item peut avoir des Variables (champs de saisie) et des Variable Sets (groupes de variables réutilisables). Une commande génère un Requested Item (RITM), lui-même rattaché à une Request (REQ)."
+      "heading": "Key concepts",
+      "content": "The Service Catalog presents users with Catalog Items organized into categories. A Catalog Item can have Variables (input fields) and Variable Sets (groups of reusable variables). An order generates a Requested Item (RITM), which is itself attached to a Request (REQ)."
     },
     {
-      "heading": "Types d'items",
-      "content": "Un Record Producer crée directement un enregistrement dans une autre table (ex: un incident) à partir d'un formulaire du catalogue, sans passer par le processus RITM standard. Un Order Guide permet de commander plusieurs Catalog Items liés en une seule fois."
+      "heading": "Types of items",
+      "content": "A Record Producer creates a record directly in another table (e.g. an incident) from a catalog form, without going through the standard RITM process. An Order Guide lets you order several related Catalog Items at once."
     },
     {
-      "heading": "Automatisation",
-      "content": "La soumission d'un Catalog Item déclenche un Workflow (ou un Flow Designer flow) associé, qui peut inclure des étapes d'approbation (sysapproval_approver) et des tâches (Catalog Task). Les Catalog Client Scripts contrôlent le comportement des variables (visibilité, valeurs par défaut) et peuvent être marqués 'Isolate script' pour s'exécuter dans un environnement isolé."
+      "heading": "Automation",
+      "content": "Submitting a Catalog Item triggers an associated Workflow (or Flow Designer flow), which can include approval steps (sysapproval_approver) and tasks (Catalog Task). Catalog Client Scripts control variable behavior (visibility, default values) and can be marked 'Isolate script' to run in an isolated environment."
     }
   ],
   "pieges": [
-    "Confondre Record Producer et Catalog Item standard : le Record Producer ne crée pas de RITM, il crée directement l'enregistrement cible.",
-    "Oublier qu'un Order Guide sert à grouper plusieurs items, pas à en configurer un seul plus finement.",
-    "Penser que le Workflow/Flow se déclenche à l'ajout au panier plutôt qu'à la soumission de la commande (checkout)."
+    "Confusing a Record Producer with a standard Catalog Item: a Record Producer does not create a RITM, it creates the target record directly.",
+    "Forgetting that an Order Guide is used to group several items, not to configure a single one in more detail.",
+    "Thinking the Workflow/Flow triggers when the item is added to the cart rather than when the order is submitted (checkout)."
   ],
   "relatedQuestionIds": [
     "q_servicecatalog_01",

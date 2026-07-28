@@ -5,29 +5,29 @@
     "update-set"
   ],
   "difficulty": "easy",
-  "question": "Que capture principalement un Update Set ?",
+  "question": "What does an Update Set primarily capture?",
   "choices": [
     {
       "id": "a",
-      "text": "Les données métier créées par les utilisateurs (ex: incidents)"
+      "text": "Business data created by users (e.g. incidents)"
     },
     {
       "id": "b",
-      "text": "Les modifications de configuration/personnalisation de l'instance"
+      "text": "Configuration/customization changes made to the instance"
     },
     {
       "id": "c",
-      "text": "Les logs système"
+      "text": "System logs"
     },
     {
       "id": "d",
-      "text": "Les sauvegardes complètes de la base de données"
+      "text": "Full database backups"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Un Update Set capture les changements de configuration (champs, formulaires, scripts, etc.), pas les données métier créées par les utilisateurs.",
+  "explanation": "An Update Set captures configuration changes (fields, forms, scripts, etc.), not business data created by users.",
   "pieges": [
-    "Croire qu'un Update Set migre les données (records) : il ne migre que la configuration."
+    "Believing that an Update Set migrates data (records): it only migrates configuration."
   ],
   "source": {
     "type": "manual",

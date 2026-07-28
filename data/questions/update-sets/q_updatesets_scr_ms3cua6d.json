@@ -7,31 +7,31 @@
     "Configuration Management"
   ],
   "difficulty": "easy",
-  "question": "Quel est l'objectif principal de l'utilisation des 'Update Sets' dans une instance ServiceNow ?",
+  "question": "What is the main purpose of using 'Update Sets' in a ServiceNow instance?",
   "choices": [
     {
       "id": "a",
-      "text": "Sauvegarder l'intégralité des données transactionnelles et des incidents pour les transférer vers une instance de production."
+      "text": "Backing up all transactional data and incidents to transfer them to a production instance."
     },
     {
       "id": "b",
-      "text": "Regrouper une série de modifications de configuration pour les déplacer comme une unité unique vers une autre instance."
+      "text": "Grouping a series of configuration changes to move them as a single unit to another instance."
     },
     {
       "id": "c",
-      "text": "Automatiser la création de comptes utilisateurs et l'attribution des rôles entre les instances de développement et de test."
+      "text": "Automating user account creation and role assignment between development and test instances."
     },
     {
       "id": "d",
-      "text": "Synchroniser les mises à jour de sécurité du système d'exploitation de l'infrastructure serveur hébergeant ServiceNow."
+      "text": "Synchronizing operating system security updates for the server infrastructure hosting ServiceNow."
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Un 'Update Set' est un mécanisme de transport conçu spécifiquement pour déplacer des modifications de configuration (paramétrages, flux, formulaires, etc.) entre instances. Il ne capture pas les données transactionnelles (comme les tickets ou les utilisateurs) par défaut.",
+  "explanation": "An 'Update Set' is a transport mechanism specifically designed to move configuration changes (settings, flows, forms, etc.) between instances. It does not capture transactional data (such as tickets or users) by default.",
   "pieges": [
-    "Croire que les Update Sets servent à migrer des données métier ou des transactions.",
-    "Confondre les Update Sets avec les outils de mise à jour système (patching) gérés par ServiceNow au niveau de l'infrastructure.",
-    "Penser que les Update Sets permettent de synchroniser automatiquement les comptes utilisateurs."
+    "Believing that Update Sets are used to migrate business data or transactions.",
+    "Confusing Update Sets with system update (patching) tools managed by ServiceNow at the infrastructure level.",
+    "Thinking that Update Sets automatically synchronize user accounts."
   ],
   "source": {
     "type": "generated",

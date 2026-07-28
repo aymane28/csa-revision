@@ -21,8 +21,8 @@ export function renderQuestionCard(container: HTMLElement, state: SessionQuestio
     <div class="quiz-card">
       <div class="quiz-card-header">
         <span class="quiz-topic-badge">${question.topic.replace(/-/g, " ")}</span>
-        <button class="flag-button ${cb.isFlagged ? "flag-active" : ""}" type="button" title="Marquer cette question pour la revoir">
-          ${cb.isFlagged ? "★ Marquée" : "☆ Marquer"}
+        <button class="flag-button ${cb.isFlagged ? "flag-active" : ""}" type="button" title="Flag this question to review later">
+          ${cb.isFlagged ? "★ Flagged" : "☆ Flag"}
         </button>
       </div>
       <h2 class="quiz-question">${question.question}</h2>
@@ -42,11 +42,11 @@ export function renderQuestionCard(container: HTMLElement, state: SessionQuestio
         answered
           ? `
       <div class="feedback ${isCorrect ? "feedback-ok" : "feedback-wrong"}">
-        <p class="feedback-headline">${isCorrect ? "✔ Correct" : `✘ Incorrect — bonne réponse : ${correctText}`}</p>
-        <p><strong>Explication :</strong> ${question.explanation}</p>
+        <p class="feedback-headline">${isCorrect ? "✔ Correct" : `✘ Incorrect — correct answer: ${correctText}`}</p>
+        <p><strong>Explanation:</strong> ${question.explanation}</p>
         ${
           question.pieges.length
-            ? `<p class="pieges-label"><strong>Pièges à éviter :</strong></p><ul>${question.pieges
+            ? `<p class="pieges-label"><strong>Common pitfalls:</strong></p><ul>${question.pieges
                 .map((p) => `<li>${p}</li>`)
                 .join("")}</ul>`
             : ""

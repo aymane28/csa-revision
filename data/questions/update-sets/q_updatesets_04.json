@@ -5,29 +5,29 @@
     "update-set"
   ],
   "difficulty": "medium",
-  "question": "Un Update Set est marqué 'Complete'. Que devrait-on faire si des modifications supplémentaires sont nécessaires ?",
+  "question": "An Update Set is marked 'Complete'. What should be done if additional changes are needed?",
   "choices": [
     {
       "id": "a",
-      "text": "Rouvrir et modifier directement cet Update Set"
+      "text": "Reopen and modify this Update Set directly"
     },
     {
       "id": "b",
-      "text": "Créer un nouvel Update Set pour les changements supplémentaires"
+      "text": "Create a new Update Set for the additional changes"
     },
     {
       "id": "c",
-      "text": "Supprimer l'Update Set complet et tout refaire"
+      "text": "Delete the completed Update Set and redo everything"
     },
     {
       "id": "d",
-      "text": "Marquer l'instance en lecture seule"
+      "text": "Set the instance to read-only"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Une fois 'Complete', un Update Set ne devrait plus être modifié ; les changements supplémentaires doivent aller dans un nouvel Update Set.",
+  "explanation": "Once 'Complete', an Update Set should no longer be modified; additional changes should go into a new Update Set.",
   "pieges": [
-    "Rouvrir et modifier un Update Set déjà marqué Complete, ce qui peut créer des incohérences."
+    "Reopening and modifying an Update Set already marked Complete, which can create inconsistencies."
   ],
   "source": {
     "type": "manual",

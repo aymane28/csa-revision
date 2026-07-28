@@ -3,22 +3,22 @@
   "title": "Update Sets",
   "sections": [
     {
-      "heading": "Concept clés",
-      "content": "Un Update Set capture les modifications de configuration (personnalisations : champs, formulaires, business rules, UI policies, etc.) faites dans une instance pour les déplacer vers une autre (ex: Dev → Test → Prod). Il faut définir un Update Set comme 'Current' avant de commencer à travailler, sinon les changements partent dans le Default set."
+      "heading": "Key concepts",
+      "content": "An Update Set captures configuration changes (customizations: fields, forms, business rules, UI policies, etc.) made on an instance so they can be moved to another one (e.g. Dev → Test → Prod). You must set an Update Set as 'Current' before starting work, otherwise changes go into the Default set."
     },
     {
-      "heading": "Cycle de vie",
-      "content": "Un Update Set passe par les états In Progress → Complete. Une fois marqué Complete, il ne doit plus être modifié. Sur l'instance cible, il est d'abord Retrieved, puis Previewed (pour détecter les conflits), puis Committed pour appliquer les changements."
+      "heading": "Lifecycle",
+      "content": "An Update Set moves through the states In Progress → Complete. Once marked Complete, it should no longer be modified. On the target instance, it is first Retrieved, then Previewed (to detect conflicts), then Committed to apply the changes."
     },
     {
-      "heading": "Limites importantes",
-      "content": "Un Update Set capture des changements de CONFIGURATION, pas les données métier (les enregistrements créés par les utilisateurs, comme les incidents eux-mêmes, ne sont pas inclus). L'ordre de commit compte si plusieurs Update Sets ont des dépendances entre eux."
+      "heading": "Important limitations",
+      "content": "An Update Set captures CONFIGURATION changes, not business data (records created by users, such as the incidents themselves, are not included). Commit order matters if several Update Sets have dependencies on each other."
     }
   ],
   "pieges": [
-    "Croire qu'un Update Set migre les données (records) : il ne migre que la configuration/personnalisation.",
-    "Oublier de définir le bon Update Set comme 'Current' avant de commencer un développement, ce qui pollue le Default set.",
-    "Committer un Update Set sans faire de Preview au préalable, ratant ainsi des conflits ('collisions') avec l'instance cible."
+    "Believing an Update Set migrates data (records): it only migrates configuration/customization.",
+    "Forgetting to set the correct Update Set as 'Current' before starting a development, which pollutes the Default set.",
+    "Committing an Update Set without doing a Preview first, thereby missing conflicts ('collisions') with the target instance."
   ],
   "relatedQuestionIds": [
     "q_updatesets_01",

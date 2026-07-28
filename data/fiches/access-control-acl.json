@@ -1,24 +1,24 @@
 {
   "topic": "access-control-acl",
-  "title": "Contrôle d'accès (ACL)",
+  "title": "Access Control (ACL)",
   "sections": [
     {
-      "heading": "Concepts clés",
-      "content": "Une ACL (Access Control List) définit les conditions requises (rôle, condition, script) pour effectuer une opération (create, read, write, delete) sur une table ou un champ. ServiceNow évalue d'abord les ACL de niveau table, puis les ACL de niveau champ pour la même opération."
+      "heading": "Key concepts",
+      "content": "An ACL (Access Control List) defines the requirements (role, condition, script) needed to perform an operation (create, read, write, delete) on a table or field. ServiceNow first evaluates table-level ACLs, then field-level ACLs for the same operation."
     },
     {
-      "heading": "Rôles et sécurité",
-      "content": "Si une ACL ne spécifie aucun rôle et n'a ni condition ni script, elle autorise l'accès à tout utilisateur authentifié qui atteint cette ACL — un piège classique. Le rôle 'security_admin' avec élévation de rôle (Elevate Roles) est nécessaire pour modifier les ACL elles-mêmes dans la plupart des instances."
+      "heading": "Roles and security",
+      "content": "If an ACL specifies no role and has neither a condition nor a script, it grants access to any authenticated user who reaches that ACL — a classic pitfall. The 'security_admin' role, combined with role elevation (Elevate Roles), is required to modify the ACLs themselves in most instances."
     },
     {
-      "heading": "Types d'ACL",
-      "content": "Il existe des ACL de table (record-level : create/read/write/delete), des ACL de champ (field-level, plus restrictives que la table), et des ACL de niveau 'ui' ou 'client_callable' pour sécuriser des scripts spécifiques (ex: Script Include exposés côté client)."
+      "heading": "Types of ACLs",
+      "content": "There are table ACLs (record-level: create/read/write/delete), field ACLs (field-level, more restrictive than the table), and 'ui' or 'client_callable' level ACLs to secure specific scripts (e.g. Script Includes exposed to the client)."
     }
   ],
   "pieges": [
-    "Croire qu'un Client Script applique une sécurité serveur : la sécurité réelle est toujours appliquée côté serveur via les ACL, jamais uniquement côté client.",
-    "Oublier l'ordre d'évaluation : une ACL de champ n'est jamais atteinte si l'ACL de table correspondante échoue déjà.",
-    "Penser que le rôle admin contourne automatiquement toutes les ACL sans configuration explicite ('Admin overrides')."
+    "Believing that a Client Script enforces server-side security: real security is always enforced server-side via ACLs, never on the client alone.",
+    "Forgetting the evaluation order: a field ACL is never reached if the corresponding table ACL already fails.",
+    "Thinking that the admin role automatically bypasses all ACLs without explicit configuration ('Admin overrides')."
   ],
   "relatedQuestionIds": [
     "q_accesscontrolacl_01",

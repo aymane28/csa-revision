@@ -6,13 +6,13 @@ import { renderQuestionCard, type SessionQuestionState } from "./quiz-question";
 import type { Question } from "../lib/types";
 
 export async function renderDailyQuiz(container: HTMLElement, date: string): Promise<void> {
-  container.innerHTML = `<p class="loading">Préparation du quiz du ${date}…</p>`;
+  container.innerHTML = `<p class="loading">Preparing the quiz for ${date}…</p>`;
 
   let index, daily;
   try {
     [index, daily] = await Promise.all([loadQuestionsIndex(), getDailyRecord(date)]);
   } catch (err) {
-    container.innerHTML = `<p class="error">${(err as Error).message}</p><a class="back-link" href="#/daily">← Retour</a>`;
+    container.innerHTML = `<p class="error">${(err as Error).message}</p><a class="back-link" href="#/daily">← Back</a>`;
     return;
   }
 
@@ -26,7 +26,7 @@ export async function renderDailyQuiz(container: HTMLElement, date: string): Pro
     });
 
   if (state.length === 0) {
-    container.innerHTML = `<p class="error">Aucune question disponible pour ce jour.</p><a class="back-link" href="#/daily">← Retour</a>`;
+    container.innerHTML = `<p class="error">No questions available for this day.</p><a class="back-link" href="#/daily">← Back</a>`;
     return;
   }
 
@@ -58,7 +58,7 @@ export async function renderDailyQuiz(container: HTMLElement, date: string): Pro
 
   function handleFinish(): void {
     const unanswered = state.filter((s) => !s.answered).length;
-    if (unanswered > 0 && !confirm(`${unanswered} question(s) sans réponse. Terminer quand même ?`)) return;
+    if (unanswered > 0 && !confirm(`${unanswered} question(s) unanswered. Finish anyway?`)) return;
     showSummary = true;
     render();
   }
@@ -73,10 +73,10 @@ export async function renderDailyQuiz(container: HTMLElement, date: string): Pro
 
     container.innerHTML = `
       <div class="quiz-shell">
-        <a class="back-link" href="#/daily">← Tous les jours</a>
+        <a class="back-link" href="#/daily">← All days</a>
         <div class="quiz-toolbar">
-          <span class="quiz-count">${formatDateLabel(date)} · ${answeredCount} / ${state.length} répondues</span>
-          <button class="button button-secondary finish-button" type="button">Terminer</button>
+          <span class="quiz-count">${formatDateLabel(date)} · ${answeredCount} / ${state.length} answered</span>
+          <button class="button button-secondary finish-button" type="button">Finish</button>
         </div>
         <div class="quiz-dots">
           ${state
@@ -91,8 +91,8 @@ export async function renderDailyQuiz(container: HTMLElement, date: string): Pro
         </div>
         <div id="quiz-question-slot"></div>
         <div class="quiz-pager">
-          <button class="button button-secondary prev-button" type="button" ${currentIndex === 0 ? "disabled" : ""}>← Précédente</button>
-          <button class="button next-button" type="button" ${currentIndex === state.length - 1 ? "disabled" : ""}>Suivante →</button>
+          <button class="button button-secondary prev-button" type="button" ${currentIndex === 0 ? "disabled" : ""}>← Previous</button>
+          <button class="button next-button" type="button" ${currentIndex === state.length - 1 ? "disabled" : ""}>Next →</button>
         </div>
       </div>
     `;
@@ -118,12 +118,12 @@ export async function renderDailyQuiz(container: HTMLElement, date: string): Pro
 
     container.innerHTML = `
       <section class="page quiz-summary">
-        <a class="back-link" href="#/daily">← Tous les jours</a>
-        <h1>Quiz du ${formatDateLabel(date)}</h1>
-        <p class="score">${correctCount} / ${answered.length} bonnes réponses</p>
+        <a class="back-link" href="#/daily">← All days</a>
+        <h1>Quiz for ${formatDateLabel(date)}</h1>
+        <p class="score">${correctCount} / ${answered.length} correct answers</p>
         ${
           wrongOnes.length
-            ? `<div class="summary-block"><h2>À revoir (${wrongOnes.length})</h2>
+            ? `<div class="summary-block"><h2>To review (${wrongOnes.length})</h2>
                 <ul class="summary-list">
                   ${wrongOnes
                     .map(
@@ -136,7 +136,7 @@ export async function renderDailyQuiz(container: HTMLElement, date: string): Pro
             : ""
         }
         <div class="cta-row">
-          <a class="button button-secondary" href="#/daily">Retour aux jours</a>
+          <a class="button button-secondary" href="#/daily">Back to all days</a>
         </div>
       </section>
     `;
@@ -153,7 +153,7 @@ export async function renderDailyQuiz(container: HTMLElement, date: string): Pro
 }
 
 function formatDateLabel(date: string): string {
-  if (date === todayISO()) return "aujourd'hui";
+  if (date === todayISO()) return "today";
   const d = new Date(`${date}T00:00:00Z`);
-  return d.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+  return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
 }

@@ -6,29 +6,29 @@
     "assignment"
   ],
   "difficulty": "easy",
-  "question": "Quelle est la différence principale entre 'Assignment group' et 'Assigned to' sur un incident ?",
+  "question": "What is the main difference between 'Assignment group' and 'Assigned to' on an incident?",
   "choices": [
     {
       "id": "a",
-      "text": "Ce sont deux noms pour le même champ"
+      "text": "They are two names for the same field"
     },
     {
       "id": "b",
-      "text": "Assignment group désigne l'équipe responsable, Assigned to désigne la personne précise"
+      "text": "Assignment group designates the responsible team, Assigned to designates the specific person"
     },
     {
       "id": "c",
-      "text": "Assigned to est obligatoire, Assignment group est optionnel"
+      "text": "Assigned to is mandatory, Assignment group is optional"
     },
     {
       "id": "d",
-      "text": "Assignment group ne concerne que les Problems"
+      "text": "Assignment group only applies to Problems"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "'Assignment group' identifie le groupe/équipe en charge, tandis que 'Assigned to' identifie l'individu spécifique au sein (ou non) de ce groupe.",
+  "explanation": "'Assignment group' identifies the team/group in charge, while 'Assigned to' identifies the specific individual within (or outside of) that group.",
   "pieges": [
-    "Penser que renseigner Assigned to dispense de définir Assignment group dans un processus de routage standard."
+    "Thinking that filling in Assigned to removes the need to define Assignment group in a standard routing process."
   ],
   "source": {
     "type": "manual",

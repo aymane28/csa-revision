@@ -7,7 +7,7 @@ import { renderQuestionCard, type SessionQuestionState } from "./quiz-question";
 import type { Question } from "../lib/types";
 
 export async function renderQuizSession(container: HTMLElement, topic?: string, forceNew = false): Promise<void> {
-  container.innerHTML = `<p class="loading">Préparation de la session…</p>`;
+  container.innerHTML = `<p class="loading">Preparing the session…</p>`;
 
   const [index, progress] = await Promise.all([loadQuestionsIndex(), getProgressMap()]);
   const byId = new Map(index.questions.map((q) => [q.id, q]));
@@ -32,8 +32,8 @@ export async function renderQuizSession(container: HTMLElement, topic?: string, 
 
   if (state.length === 0) {
     container.innerHTML = `
-      <p class="error">Aucune question disponible${topic ? ` pour le sujet "${topic}"` : ""}.</p>
-      <a class="back-link" href="#/fiches">← Retour aux fiches</a>
+      <p class="error">No questions available${topic ? ` for topic "${topic}"` : ""}.</p>
+      <a class="back-link" href="#/fiches">← Back to study sheets</a>
     `;
     return;
   }
@@ -78,7 +78,7 @@ export async function renderQuizSession(container: HTMLElement, topic?: string, 
 
   function handleFinish(): void {
     const unanswered = state.filter((s) => !s.answered).length;
-    if (unanswered > 0 && !confirm(`${unanswered} question(s) sans réponse. Terminer quand même ?`)) return;
+    if (unanswered > 0 && !confirm(`${unanswered} question(s) unanswered. Finish anyway?`)) return;
     showSummary = true;
     clearSession();
     render();
@@ -96,10 +96,10 @@ export async function renderQuizSession(container: HTMLElement, topic?: string, 
     container.innerHTML = `
       <div class="quiz-shell">
         <div class="quiz-toolbar">
-          <span class="quiz-count">${answeredCount} / ${state.length} répondues${resumed ? " · session reprise" : ""}</span>
+          <span class="quiz-count">${answeredCount} / ${state.length} answered${resumed ? " · session resumed" : ""}</span>
           <div class="quiz-toolbar-actions">
-            <a class="link-muted" href="${newSessionHref}">Nouvelle session</a>
-            <button class="button button-secondary finish-button" type="button">Terminer la session</button>
+            <a class="link-muted" href="${newSessionHref}">New session</a>
+            <button class="button button-secondary finish-button" type="button">Finish session</button>
           </div>
         </div>
         <div class="quiz-dots">
@@ -115,8 +115,8 @@ export async function renderQuizSession(container: HTMLElement, topic?: string, 
         </div>
         <div id="quiz-question-slot"></div>
         <div class="quiz-pager">
-          <button class="button button-secondary prev-button" type="button" ${currentIndex === 0 ? "disabled" : ""}>← Précédente</button>
-          <button class="button next-button" type="button" ${currentIndex === state.length - 1 ? "disabled" : ""}>Suivante →</button>
+          <button class="button button-secondary prev-button" type="button" ${currentIndex === 0 ? "disabled" : ""}>← Previous</button>
+          <button class="button next-button" type="button" ${currentIndex === state.length - 1 ? "disabled" : ""}>Next →</button>
         </div>
       </div>
     `;
@@ -154,17 +154,17 @@ export async function renderQuizSession(container: HTMLElement, topic?: string, 
 
     container.innerHTML = `
       <section class="page quiz-summary">
-        <h1>Session terminée</h1>
-        <p class="score">${correctCount} / ${answered.length} bonnes réponses</p>
-        ${wrongOnes.length ? `<div class="summary-block"><h2>À revoir (${wrongOnes.length})</h2>${renderList(wrongOnes)}</div>` : ""}
+        <h1>Session complete</h1>
+        <p class="score">${correctCount} / ${answered.length} correct answers</p>
+        ${wrongOnes.length ? `<div class="summary-block"><h2>To review (${wrongOnes.length})</h2>${renderList(wrongOnes)}</div>` : ""}
         ${
           flaggedOnes.length
-            ? `<div class="summary-block"><h2>Marquées (${flaggedOnes.length})</h2>${renderList(flaggedOnes)}</div>`
+            ? `<div class="summary-block"><h2>Flagged (${flaggedOnes.length})</h2>${renderList(flaggedOnes)}</div>`
             : ""
         }
         <div class="cta-row">
-          <a class="button" href="${restartHref}">Refaire une session</a>
-          <a class="button button-secondary" href="#/fiches">Retour aux fiches</a>
+          <a class="button" href="${restartHref}">Start another session</a>
+          <a class="button button-secondary" href="#/fiches">Back to study sheets</a>
         </div>
       </section>
     `;

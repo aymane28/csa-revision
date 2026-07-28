@@ -6,29 +6,29 @@
     "client-script"
   ],
   "difficulty": "medium",
-  "question": "Pourquoi préfère-t-on souvent une UI Policy à un Client Script pour rendre un champ obligatoire selon une condition ?",
+  "question": "Why is a UI Policy often preferred over a Client Script to make a field mandatory based on a condition?",
   "choices": [
     {
       "id": "a",
-      "text": "Les UI Policies sont plus rapides à écrire en JavaScript"
+      "text": "UI Policies are faster to write in JavaScript"
     },
     {
       "id": "b",
-      "text": "Les UI Policies sont déclaratives, sans code, et plus simples à maintenir pour ce cas"
+      "text": "UI Policies are declarative, code-free, and simpler to maintain for this case"
     },
     {
       "id": "c",
-      "text": "Les Client Scripts ne peuvent pas rendre un champ obligatoire"
+      "text": "Client Scripts cannot make a field mandatory"
     },
     {
       "id": "d",
-      "text": "Il n'y a aucune différence pratique"
+      "text": "There is no practical difference"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Les UI Policies permettent de définir mandatory/visible/read-only de façon déclarative sans écrire de script, réduisant la complexité de maintenance pour les cas simples.",
+  "explanation": "UI Policies let you define mandatory/visible/read-only declaratively without writing a script, reducing maintenance complexity for simple cases.",
   "pieges": [
-    "Écrire un Client Script complexe alors qu'une UI Policy suffirait."
+    "Writing a complex Client Script when a UI Policy would be enough."
   ],
   "source": {
     "type": "manual",

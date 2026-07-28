@@ -7,31 +7,31 @@
     "CSA"
   ],
   "difficulty": "medium",
-  "question": "Un administrateur ServiceNow souhaite s'assurer que les utilisateurs peuvent voir leurs demandes et approbations sur la page d'accueil du catalogue dans le Service Portal. Quelle configuration de la plateforme ServiceNow détermine les éléments affichés dans le widget 'Requests and Approvals' ?",
+  "question": "A ServiceNow administrator wants to make sure users can see their requests and approvals on the catalog home page in the Service Portal. Which ServiceNow platform configuration determines the items displayed in the 'Requests and Approvals' widget?",
   "choices": [
     {
       "id": "a",
-      "text": "Le module 'My Request Filter' dans la plateforme."
+      "text": "The 'My Request Filter' module in the platform."
     },
     {
       "id": "b",
-      "text": "La configuration des 'Catalog Categories' (sc_category)."
+      "text": "The configuration of 'Catalog Categories' (sc_category)."
     },
     {
       "id": "c",
-      "text": "L'activation du plugin 'Service Portal - Service Catalog v2'."
+      "text": "Activating the 'Service Portal - Service Catalog v2' plugin."
     },
     {
       "id": "d",
-      "text": "La définition des 'Saved Bundles' dans le profil utilisateur."
+      "text": "Defining 'Saved Bundles' in the user profile."
     }
   ],
   "correctChoiceId": "a",
-  "explanation": "Le contenu source précise explicitement que le widget 'Requests and Approvals' affiche une liste basée sur les configurations disponibles dans le module 'My Request Filter' au sein de la plateforme.",
+  "explanation": "The source content explicitly states that the 'Requests and Approvals' widget displays a list based on the configurations available in the 'My Request Filter' module within the platform.",
   "pieges": [
-    "Confondre la configuration des filtres de requêtes avec la simple activation du plugin.",
-    "Penser que les approbations sont gérées directement via les catégories du catalogue au lieu des filtres de plateforme.",
-    "Croire que les 'Saved Bundles' influencent la visibilité des approbations."
+    "Confusing the request filter configuration with simply activating the plugin.",
+    "Thinking that approvals are managed directly via catalog categories instead of platform filters.",
+    "Believing that 'Saved Bundles' influence the visibility of approvals."
   ],
   "source": {
     "type": "generated",

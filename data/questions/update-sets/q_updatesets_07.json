@@ -5,29 +5,29 @@
     "update-set"
   ],
   "difficulty": "medium",
-  "question": "Quel est le risque principal de laisser le Default Update Set comme 'Current' pendant un développement structuré ?",
+  "question": "What is the main risk of leaving the Default Update Set as 'Current' during structured development?",
   "choices": [
     {
       "id": "a",
-      "text": "Aucun risque particulier"
+      "text": "No particular risk"
     },
     {
       "id": "b",
-      "text": "Mélanger des changements non liés, rendant difficile une migration ciblée et propre"
+      "text": "Mixing unrelated changes together, making a clean, targeted migration difficult"
     },
     {
       "id": "c",
-      "text": "Cela bloque automatiquement l'instance"
+      "text": "It automatically locks the instance"
     },
     {
       "id": "d",
-      "text": "Cela supprime les données existantes"
+      "text": "It deletes existing data"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Travailler dans le Default set mélange tous les changements sans distinction, ce qui complique fortement une migration propre et sélective vers d'autres instances.",
+  "explanation": "Working in the Default set mixes all changes indiscriminately, which greatly complicates a clean, selective migration to other instances.",
   "pieges": [
-    "Sous-estimer l'impact du désordre créé par l'usage prolongé du Default Update Set."
+    "Underestimating the impact of the disorder created by extended use of the Default Update Set."
   ],
   "source": {
     "type": "manual",

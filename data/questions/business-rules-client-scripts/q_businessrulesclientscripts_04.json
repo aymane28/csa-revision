@@ -5,7 +5,7 @@
     "client-script"
   ],
   "difficulty": "easy",
-  "question": "Quel type de Client Script peut empêcher la soumission d'un formulaire si une condition n'est pas respectée ?",
+  "question": "Which type of Client Script can prevent a form from being submitted if a condition is not met?",
   "choices": [
     {
       "id": "a",
@@ -25,9 +25,9 @@
     }
   ],
   "correctChoiceId": "c",
-  "explanation": "'onSubmit' s'exécute à la soumission et peut retourner false pour bloquer l'envoi du formulaire.",
+  "explanation": "'onSubmit' runs on submission and can return false to block the submission of the form.",
   "pieges": [
-    "Essayer de bloquer une soumission depuis un script onLoad, qui s'exécute trop tôt pour cela."
+    "Trying to block a submission from an onLoad script, which runs too early for that."
   ],
   "source": {
     "type": "manual",

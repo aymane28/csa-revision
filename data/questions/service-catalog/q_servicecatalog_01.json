@@ -5,29 +5,29 @@
     "service-catalog"
   ],
   "difficulty": "easy",
-  "question": "Quel enregistrement est créé lorsqu'un utilisateur commande un Catalog Item standard depuis le panier ?",
+  "question": "Which record is created when a user orders a standard Catalog Item from the cart?",
   "choices": [
     {
       "id": "a",
-      "text": "Un Change Request"
+      "text": "A Change Request"
     },
     {
       "id": "b",
-      "text": "Un Requested Item (RITM) rattaché à une Request (REQ)"
+      "text": "A Requested Item (RITM) attached to a Request (REQ)"
     },
     {
       "id": "c",
-      "text": "Un Incident"
+      "text": "An Incident"
     },
     {
       "id": "d",
-      "text": "Un Update Set"
+      "text": "An Update Set"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "La soumission d'une commande standard génère une Request (REQ) contenant un ou plusieurs Requested Items (RITM), qui pilotent le workflow d'exécution.",
+  "explanation": "Submitting a standard order generates a Request (REQ) containing one or more Requested Items (RITM), which drive the fulfillment workflow.",
   "pieges": [
-    "Oublier la distinction entre la Request globale et les Requested Items individuels."
+    "Forgetting the distinction between the overall Request and the individual Requested Items."
   ],
   "source": {
     "type": "manual",

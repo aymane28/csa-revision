@@ -7,31 +7,31 @@
     "ServiceNow CSA"
   ],
   "difficulty": "medium",
-  "question": "Dans le cadre du processus d'Incident Management sur ServiceNow, quelle action spécifique est associée à la gestion des 'Major Incidents' ?",
+  "question": "As part of the Incident Management process on ServiceNow, which specific action is associated with managing 'Major Incidents'?",
   "choices": [
     {
       "id": "a",
-      "text": "Utiliser le Major Incident Workbench et le tableau de bord dédié pour superviser la résolution."
+      "text": "Using the Major Incident Workbench and the dedicated dashboard to oversee resolution."
     },
     {
       "id": "b",
-      "text": "Promouvoir automatiquement chaque incident de priorité 1 vers un Major Incident sans intervention manuelle."
+      "text": "Automatically promoting every priority 1 incident to a Major Incident without manual intervention."
     },
     {
       "id": "c",
-      "text": "Utiliser exclusivement le Known Error Portal pour identifier la cause racine avant de déclarer l'incident comme majeur."
+      "text": "Using exclusively the Known Error Portal to identify the root cause before declaring the incident major."
     },
     {
       "id": "d",
-      "text": "Restaurer les services uniquement via l'automatisation par l'agentic AI sans possibilité d'intervention humaine."
+      "text": "Restoring services only through agentic AI automation with no possibility of human intervention."
     }
   ],
   "correctChoiceId": "a",
-  "explanation": "La documentation officielle précise que la gestion des incidents majeurs implique spécifiquement la création de ces incidents et l'utilisation du tableau de bord (overview dashboard) ainsi que du 'workbench' dédié pour suivre et gérer la situation.",
+  "explanation": "The official documentation specifies that managing major incidents specifically involves creating these incidents and using the overview dashboard as well as the dedicated 'workbench' to track and manage the situation.",
   "pieges": [
-    "Croire que la promotion en Major Incident est un processus entièrement automatique sans supervision.",
-    "Confondre la gestion des incidents majeurs avec la simple recherche dans le Known Error Portal, qui est une ressource distincte.",
-    "Penser que l'agentic AI est le seul outil autorisé pour gérer les incidents majeurs, alors qu'il s'agit d'une option d'automatisation complémentaire."
+    "Believing that promotion to Major Incident is an entirely automatic process with no oversight.",
+    "Confusing major incident management with simply searching the Known Error Portal, which is a separate resource.",
+    "Thinking that agentic AI is the only tool allowed to manage major incidents, when it is actually a complementary automation option."
   ],
   "source": {
     "type": "generated",

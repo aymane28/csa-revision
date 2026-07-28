@@ -6,29 +6,29 @@
     "script-include"
   ],
   "difficulty": "hard",
-  "question": "Quel type d'ACL protège spécifiquement l'appel d'un Script Include depuis le client (client-callable) ?",
+  "question": "Which type of ACL specifically protects the calling of a Script Include from the client (client-callable)?",
   "choices": [
     {
       "id": "a",
-      "text": "ACL de table classique"
+      "text": "A classic table ACL"
     },
     {
       "id": "b",
-      "text": "ACL de type 'record'"
+      "text": "An ACL of type 'record'"
     },
     {
       "id": "c",
-      "text": "ACL de type 'client_callable' / script"
+      "text": "An ACL of type 'client_callable' / script"
     },
     {
       "id": "d",
-      "text": "Il n'existe pas d'ACL pour cela"
+      "text": "There is no ACL for this"
     }
   ],
   "correctChoiceId": "c",
-  "explanation": "Les Script Includes marqués 'Client callable' peuvent être protégés par une ACL dédiée de type script pour contrôler qui peut les invoquer depuis le client.",
+  "explanation": "Script Includes marked 'Client callable' can be protected by a dedicated script-type ACL to control who can invoke them from the client.",
   "pieges": [
-    "Croire que cocher 'Client callable' seul suffit sans réfléchir à la sécurisation de l'appel."
+    "Believing that checking 'Client callable' alone is enough without thinking about securing the call."
   ],
   "source": {
     "type": "manual",

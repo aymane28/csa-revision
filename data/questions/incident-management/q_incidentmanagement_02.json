@@ -6,29 +6,29 @@
     "priority"
   ],
   "difficulty": "easy",
-  "question": "Comment la priorité d'un incident est-elle généralement déterminée dans une configuration standard ServiceNow ?",
+  "question": "How is an incident's priority generally determined in a standard ServiceNow configuration?",
   "choices": [
     {
       "id": "a",
-      "text": "Elle est saisie librement par l'utilisateur final"
+      "text": "It is entered freely by the end user"
     },
     {
       "id": "b",
-      "text": "Elle résulte d'une matrice Impact x Urgency"
+      "text": "It results from an Impact x Urgency matrix"
     },
     {
       "id": "c",
-      "text": "Elle est toujours égale à l'urgence"
+      "text": "It is always equal to the urgency"
     },
     {
       "id": "d",
-      "text": "Elle dépend uniquement du groupe d'assignation"
+      "text": "It depends solely on the assignment group"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "La priorité est calculée automatiquement via une matrice de priorité croisant Impact et Urgency, configurable dans le système.",
+  "explanation": "Priority is automatically calculated via a priority matrix crossing Impact and Urgency, which is configurable in the system.",
   "pieges": [
-    "Croire que la priorité est un champ libre saisi manuellement par défaut."
+    "Believing that priority is a free-text field manually entered by default."
   ],
   "source": {
     "type": "manual",

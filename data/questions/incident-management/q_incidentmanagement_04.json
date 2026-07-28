@@ -6,7 +6,7 @@
     "problem"
   ],
   "difficulty": "easy",
-  "question": "Quel enregistrement sert à documenter la cause racine (root cause) liée à un ou plusieurs incidents ?",
+  "question": "Which record is used to document the root cause linked to one or more incidents?",
   "choices": [
     {
       "id": "a",
@@ -26,9 +26,9 @@
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Le Problem Management vise à identifier et documenter la cause racine, alors que l'Incident Management vise le rétablissement rapide du service.",
+  "explanation": "Problem Management aims to identify and document the root cause, whereas Incident Management aims for rapid restoration of service.",
   "pieges": [
-    "Confondre Incident (symptôme, rétablissement rapide) et Problem (cause racine)."
+    "Confusing Incident (symptom, rapid restoration) with Problem (root cause)."
   ],
   "source": {
     "type": "manual",

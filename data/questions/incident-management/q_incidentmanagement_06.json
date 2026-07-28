@@ -6,29 +6,29 @@
     "major-incident"
   ],
   "difficulty": "medium",
-  "question": "Un incident majeur impactant plusieurs utilisateurs génère souvent plusieurs incidents individuels. Comment sont-ils généralement organisés ?",
+  "question": "A major incident affecting multiple users often generates several individual incidents. How are they generally organized?",
   "choices": [
     {
       "id": "a",
-      "text": "Ils sont fusionnés en un seul enregistrement automatiquement"
+      "text": "They are automatically merged into a single record"
     },
     {
       "id": "b",
-      "text": "Ils sont rattachés en tant que 'child incidents' à un incident parent"
+      "text": "They are attached as 'child incidents' to a parent incident"
     },
     {
       "id": "c",
-      "text": "Ils sont supprimés au profit du Problem uniquement"
+      "text": "They are deleted in favor of the Problem only"
     },
     {
       "id": "d",
-      "text": "Ils ne peuvent pas être liés entre eux"
+      "text": "They cannot be linked together"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Le processus Major Incident permet de lier les incidents individuels similaires en tant qu'enfants d'un incident parent, pour centraliser la communication et la résolution.",
+  "explanation": "The Major Incident process links similar individual incidents as children of a parent incident, to centralize communication and resolution.",
   "pieges": [
-    "Penser qu'un incident majeur nécessite de tout regrouper dans un unique Problem dès le départ."
+    "Thinking that a major incident requires grouping everything into a single Problem from the outset."
   ],
   "source": {
     "type": "manual",

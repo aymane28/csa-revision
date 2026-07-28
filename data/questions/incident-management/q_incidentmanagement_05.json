@@ -6,29 +6,29 @@
     "sla"
   ],
   "difficulty": "medium",
-  "question": "Que se passe-t-il typiquement quand un incident à l'état 'Resolved' est rouvert par un utilisateur ?",
+  "question": "What typically happens when an incident in the 'Resolved' state is reopened by a user?",
   "choices": [
     {
       "id": "a",
-      "text": "Rien, le champ 'Reopen count' n'existe pas"
+      "text": "Nothing, the 'Reopen count' field does not exist"
     },
     {
       "id": "b",
-      "text": "Le champ 'Reopen count' s'incrémente"
+      "text": "The 'Reopen count' field is incremented"
     },
     {
       "id": "c",
-      "text": "L'incident est automatiquement fermé (Closed)"
+      "text": "The incident is automatically closed (Closed)"
     },
     {
       "id": "d",
-      "text": "Un nouveau Problem est créé automatiquement"
+      "text": "A new Problem is automatically created"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Le champ 'Reopen count' est incrémenté à chaque réouverture d'un incident précédemment Resolved/Closed, utile pour le suivi qualité.",
+  "explanation": "The 'Reopen count' field is incremented every time a previously Resolved/Closed incident is reopened, which is useful as a quality tracking indicator.",
   "pieges": [
-    "Oublier ce champ existe et sert d'indicateur de qualité de résolution."
+    "Forgetting this field exists and serves as a resolution quality indicator."
   ],
   "source": {
     "type": "manual",

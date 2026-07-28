@@ -6,29 +6,29 @@
     "client-script"
   ],
   "difficulty": "medium",
-  "question": "Que détermine le champ 'Order' sur une Business Rule ou un Client Script ?",
+  "question": "What does the 'Order' field determine on a Business Rule or Client Script?",
   "choices": [
     {
       "id": "a",
-      "text": "La priorité d'affichage dans les listes"
+      "text": "The display priority in lists"
     },
     {
       "id": "b",
-      "text": "L'ordre d'exécution relatif parmi les règles/scripts du même type"
+      "text": "The relative execution order among rules/scripts of the same type"
     },
     {
       "id": "c",
-      "text": "Le rôle requis pour l'exécuter"
+      "text": "The role required to run it"
     },
     {
       "id": "d",
-      "text": "La table sur laquelle le script s'applique"
+      "text": "The table the script applies to"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Le champ 'Order' détermine dans quel ordre s'exécutent plusieurs règles ou scripts du même type appliqués au même événement.",
+  "explanation": "The 'Order' field determines in what order multiple rules or scripts of the same type applied to the same event run.",
   "pieges": [
-    "Supposer que l'ordre d'exécution est purement aléatoire ou basé sur la date de création."
+    "Assuming the execution order is purely random or based on the creation date."
   ],
   "source": {
     "type": "manual",

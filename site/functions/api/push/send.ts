@@ -61,13 +61,13 @@ async function handle({ request, env }: Parameters<PagesFunction<Env>>[0]): Prom
   const payload = JSON.stringify(
     slot === "morning"
       ? {
-          title: "CSA Révision — session du matin",
-          body: "30 questions t'attendent avant de commencer la journée.",
+          title: "CSA Revision — morning session",
+          body: "30 questions are waiting before you start the day.",
           url: "/#/daily",
         }
       : {
-          title: "CSA Révision — session du soir",
-          body: "Un dernier tour de 30 questions avant de terminer la journée.",
+          title: "CSA Revision — evening session",
+          body: "One last round of 30 questions before you call it a day.",
           url: "/#/daily",
         }
   );

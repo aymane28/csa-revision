@@ -7,11 +7,11 @@ const app = document.getElementById("app")!;
 app.innerHTML = `
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="#/fiches">CSA Révision</a>
+      <a class="brand" href="#/fiches">CSA Revision</a>
       <nav>
-        <a href="#/fiches">Fiches</a>
-        <a href="#/quiz">Session libre</a>
-        <a href="#/daily">Quiz du jour</a>
+        <a href="#/fiches">Study Sheets</a>
+        <a href="#/quiz">Free Session</a>
+        <a href="#/daily">Daily Quiz</a>
         <button class="push-toggle" type="button" id="push-toggle" hidden></button>
       </nav>
     </div>
@@ -40,14 +40,14 @@ async function initPushToggle(): Promise<void> {
     }
     btn!.hidden = false;
     if (status === "subscribed") {
-      btn!.textContent = "🔔 Rappels activés";
+      btn!.textContent = "🔔 Reminders on";
       btn!.classList.add("push-toggle-on");
     } else {
-      btn!.textContent = "🔕 Activer les rappels";
+      btn!.textContent = "🔕 Enable reminders";
       btn!.classList.remove("push-toggle-on");
     }
     btn!.disabled = status === "denied";
-    if (status === "denied") btn!.title = "Notifications bloquées dans les réglages du navigateur";
+    if (status === "denied") btn!.title = "Notifications blocked in browser settings";
   }
 
   btn.addEventListener("click", async () => {

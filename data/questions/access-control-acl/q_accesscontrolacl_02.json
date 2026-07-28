@@ -6,29 +6,29 @@
     "security"
   ],
   "difficulty": "hard",
-  "question": "Une ACL n'a aucun rôle renseigné, aucune condition et aucun script. Quel est le comportement résultant ?",
+  "question": "An ACL has no role specified, no condition, and no script. What is the resulting behavior?",
   "choices": [
     {
       "id": "a",
-      "text": "Personne n'a accès"
+      "text": "No one has access"
     },
     {
       "id": "b",
-      "text": "Seuls les admins ont accès"
+      "text": "Only admins have access"
     },
     {
       "id": "c",
-      "text": "Tout utilisateur authentifié atteignant cette ACL a accès"
+      "text": "Any authenticated user reaching this ACL has access"
     },
     {
       "id": "d",
-      "text": "L'ACL est ignorée et une erreur système est levée"
+      "text": "The ACL is ignored and a system error is raised"
     }
   ],
   "correctChoiceId": "c",
-  "explanation": "Une ACL sans critère restrictif (ni rôle, ni condition, ni script) autorise l'accès à tout utilisateur authentifié — un piège de sécurité classique à surveiller.",
+  "explanation": "An ACL with no restrictive criteria (no role, no condition, no script) grants access to any authenticated user — a classic security pitfall to watch for.",
   "pieges": [
-    "Oublier qu'une ACL 'vide' est permissive par défaut, pas restrictive."
+    "Forgetting that an 'empty' ACL is permissive by default, not restrictive."
   ],
   "source": {
     "type": "manual",

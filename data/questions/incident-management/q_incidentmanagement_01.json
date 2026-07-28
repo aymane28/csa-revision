@@ -6,7 +6,7 @@
     "workflow"
   ],
   "difficulty": "easy",
-  "question": "Dans le cycle de vie standard d'un incident ServiceNow, quel état suit généralement 'In Progress' lorsque l'agent attend une information du demandeur ?",
+  "question": "In the standard lifecycle of a ServiceNow incident, which state generally follows 'In Progress' when the agent is waiting for information from the requester?",
   "choices": [
     {
       "id": "a",
@@ -26,9 +26,9 @@
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "L'état 'On Hold' est utilisé quand la résolution est suspendue en attendant une action externe (ex: réponse du demandeur), avec un 'Hold reason' associé.",
+  "explanation": "The 'On Hold' state is used when resolution is paused while waiting for an external action (e.g. a response from the requester), along with an associated 'Hold reason'.",
   "pieges": [
-    "Confondre 'On Hold' avec 'Resolved', qui signifie que le problème est déjà traité."
+    "Confusing 'On Hold' with 'Resolved', which means the issue has already been addressed."
   ],
   "source": {
     "type": "manual",

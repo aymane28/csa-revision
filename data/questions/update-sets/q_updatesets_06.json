@@ -6,29 +6,29 @@
     "scoped-app"
   ],
   "difficulty": "hard",
-  "question": "Un développeur travaille dans une application scopée (scoped application). Où ses changements de configuration sont-ils capturés ?",
+  "question": "A developer is working within a scoped application. Where are their configuration changes captured?",
   "choices": [
     {
       "id": "a",
-      "text": "Toujours dans le Global Update Set uniquement"
+      "text": "Always only in the Global Update Set"
     },
     {
       "id": "b",
-      "text": "Dans l'Update Set courant, dans le contexte du scope de l'application"
+      "text": "In the current Update Set, within the context of the application's scope"
     },
     {
       "id": "c",
-      "text": "Nulle part, les scoped apps n'utilisent pas les Update Sets"
+      "text": "Nowhere, scoped apps don't use Update Sets"
     },
     {
       "id": "d",
-      "text": "Uniquement via un export XML manuel"
+      "text": "Only via a manual XML export"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Les changements sont capturés dans l'Update Set courant, avec le contexte de l'application scopée active, comme pour les développements globaux.",
+  "explanation": "Changes are captured in the current Update Set, with the context of the active scoped application, just like for global development.",
   "pieges": [
-    "Croire que les applications scopées échappent totalement au mécanisme d'Update Set."
+    "Believing that scoped applications entirely bypass the Update Set mechanism."
   ],
   "source": {
     "type": "manual",

@@ -6,29 +6,29 @@
     "security"
   ],
   "difficulty": "medium",
-  "question": "Une ACL de table en lecture (read) échoue pour un utilisateur. Que se passe-t-il pour les ACL de champ associées à cette même table ?",
+  "question": "A table-level read ACL fails for a user. What happens to the field ACLs associated with that same table?",
   "choices": [
     {
       "id": "a",
-      "text": "Elles sont évaluées indépendamment malgré tout"
+      "text": "They are evaluated independently regardless"
     },
     {
       "id": "b",
-      "text": "Elles ne sont jamais atteintes car l'accès est déjà refusé au niveau table"
+      "text": "They are never reached because access is already denied at the table level"
     },
     {
       "id": "c",
-      "text": "Elles deviennent automatiquement permissives"
+      "text": "They automatically become permissive"
     },
     {
       "id": "d",
-      "text": "Elles s'appliquent uniquement aux admins"
+      "text": "They only apply to admins"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Si l'ACL de table échoue, l'utilisateur n'a de toute façon pas accès à l'enregistrement, donc les ACL de champ ne sont pas pertinentes/atteintes.",
+  "explanation": "If the table ACL fails, the user has no access to the record anyway, so the field ACLs are not relevant/reached.",
   "pieges": [
-    "Oublier la dépendance hiérarchique entre ACL de table et ACL de champ."
+    "Forgetting the hierarchical dependency between table ACLs and field ACLs."
   ],
   "source": {
     "type": "manual",

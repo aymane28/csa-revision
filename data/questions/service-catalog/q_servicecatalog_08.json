@@ -6,29 +6,29 @@
     "ui-policy"
   ],
   "difficulty": "medium",
-  "question": "Un Catalog UI Policy permet de faire quoi sur les variables d'un Catalog Item ?",
+  "question": "What does a Catalog UI Policy let you do with a Catalog Item's variables?",
   "choices": [
     {
       "id": "a",
-      "text": "Modifier le schéma de la base de données"
+      "text": "Modify the database schema"
     },
     {
       "id": "b",
-      "text": "Contrôler la visibilité/obligation d'une variable selon la valeur d'une autre, sans script"
+      "text": "Control the visibility/mandatory status of a variable based on the value of another, without scripting"
     },
     {
       "id": "c",
-      "text": "Créer automatiquement un Update Set"
+      "text": "Automatically create an Update Set"
     },
     {
       "id": "d",
-      "text": "Générer un Knowledge Article"
+      "text": "Generate a Knowledge Article"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Un Catalog UI Policy permet, de façon déclarative, de montrer/masquer ou rendre obligatoire une variable en fonction de la valeur d'une autre variable du formulaire.",
+  "explanation": "A Catalog UI Policy declaratively lets you show/hide or make mandatory a variable depending on the value of another variable on the form.",
   "pieges": [
-    "Écrire un Catalog Client Script complexe pour un cas que le Catalog UI Policy couvrirait nativement."
+    "Writing a complex Catalog Client Script for a case the Catalog UI Policy would cover natively."
   ],
   "source": {
     "type": "manual",

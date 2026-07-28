@@ -6,11 +6,11 @@
     "security"
   ],
   "difficulty": "easy",
-  "question": "Quelles opérations distinctes une ACL de table peut-elle typiquement contrôler ?",
+  "question": "Which distinct operations can a table ACL typically control?",
   "choices": [
     {
       "id": "a",
-      "text": "Seulement read"
+      "text": "Only read"
     },
     {
       "id": "b",
@@ -18,17 +18,17 @@
     },
     {
       "id": "c",
-      "text": "Seulement write et delete"
+      "text": "Only write and delete"
     },
     {
       "id": "d",
-      "text": "Uniquement l'accès au module UI"
+      "text": "Only access to the UI module"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Les ACL de table peuvent être définies séparément pour create, read, write et delete, chacune avec ses propres conditions/rôles.",
+  "explanation": "Table ACLs can be defined separately for create, read, write, and delete, each with its own conditions/roles.",
   "pieges": [
-    "Penser qu'une seule ACL couvre toutes les opérations CRUD d'une table."
+    "Thinking that a single ACL covers all CRUD operations for a table."
   ],
   "source": {
     "type": "manual",

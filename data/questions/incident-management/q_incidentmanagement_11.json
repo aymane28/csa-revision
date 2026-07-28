@@ -6,29 +6,29 @@
     "change"
   ],
   "difficulty": "medium",
-  "question": "Quel type d'enregistrement peut être créé à partir d'un incident pour demander une modification de configuration afin de corriger durablement la cause d'un problème récurrent ?",
+  "question": "Which type of record can be created from an incident to request a configuration change in order to permanently fix the cause of a recurring problem?",
   "choices": [
     {
       "id": "a",
-      "text": "Un Knowledge Article"
+      "text": "A Knowledge Article"
     },
     {
       "id": "b",
-      "text": "Une Change Request"
+      "text": "A Change Request"
     },
     {
       "id": "c",
-      "text": "Un Catalog Item"
+      "text": "A Catalog Item"
     },
     {
       "id": "d",
-      "text": "Un Update Set"
+      "text": "An Update Set"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Une Change Request est utilisée pour implémenter une modification contrôlée visant à corriger durablement une cause racine identifiée, souvent liée à un Problem.",
+  "explanation": "A Change Request is used to implement a controlled modification aimed at permanently fixing an identified root cause, often linked to a Problem.",
   "pieges": [
-    "Oublier le lien logique Incident → Problem → Change dans le traitement des causes racines."
+    "Forgetting the logical link Incident → Problem → Change when handling root causes."
   ],
   "source": {
     "type": "manual",

@@ -1,7 +1,7 @@
 import { getRecentDailyRecords, todayISO } from "../lib/daily-client";
 
 export async function renderDailyList(container: HTMLElement): Promise<void> {
-  container.innerHTML = `<p class="loading">Chargement des quiz du jour…</p>`;
+  container.innerHTML = `<p class="loading">Loading daily quizzes…</p>`;
 
   const records = await getRecentDailyRecords(14);
   const today = todayISO();
@@ -9,8 +9,8 @@ export async function renderDailyList(container: HTMLElement): Promise<void> {
 
   container.innerHTML = `
     <section class="page">
-      <h1>Quiz du jour</h1>
-      <p class="subtitle">30 questions fixées par jour — rate un jour, rattrape-le quand tu veux.</p>
+      <h1>Daily Quiz</h1>
+      <p class="subtitle">30 fixed questions every day — miss a day, catch up whenever you like.</p>
       <div class="daily-list">
         ${dates
           .map((d) => {
@@ -21,10 +21,10 @@ export async function renderDailyList(container: HTMLElement): Promise<void> {
             const done = total > 0 && answeredCount >= total;
             const statusClass = done ? "daily-status-done" : answeredCount > 0 ? "daily-status-progress" : "daily-status-todo";
             const statusText = done
-              ? `Terminé · ${correctCount}/${total}`
+              ? `Done · ${correctCount}/${total}`
               : answeredCount > 0
-                ? `En cours · ${answeredCount}/${total}`
-                : "Pas commencé";
+                ? `In progress · ${answeredCount}/${total}`
+                : "Not started";
 
             return `
               <a class="daily-row" href="#/daily/${d}">
@@ -43,7 +43,7 @@ export async function renderDailyList(container: HTMLElement): Promise<void> {
 
 function formatLabel(date: string, today: string): string {
   const diffDays = Math.round((Date.parse(today) - Date.parse(date)) / 86400000);
-  if (diffDays === 0) return "Aujourd'hui";
-  if (diffDays === 1) return "Hier";
-  return `Il y a ${diffDays} jours`;
+  if (diffDays === 0) return "Today";
+  if (diffDays === 1) return "Yesterday";
+  return `${diffDays} days ago`;
 }

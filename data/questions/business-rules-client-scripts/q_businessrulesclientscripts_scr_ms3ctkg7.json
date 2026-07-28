@@ -8,31 +8,31 @@
     "CSA"
   ],
   "difficulty": "medium",
-  "question": "Dans le contexte de ServiceNow, quelle est la distinction fondamentale entre une Business Rule et un Client Script selon les bonnes pratiques de la plateforme ?",
+  "question": "In the context of ServiceNow, what is the fundamental distinction between a Business Rule and a Client Script according to platform best practices?",
   "choices": [
     {
       "id": "a",
-      "text": "Les Business Rules s'exécutent sur le serveur, tandis que les Client Scripts s'exécutent dans le navigateur de l'utilisateur."
+      "text": "Business Rules run on the server, while Client Scripts run in the user's browser."
     },
     {
       "id": "b",
-      "text": "Les Business Rules sont utilisées pour manipuler l'interface utilisateur, alors que les Client Scripts gèrent les opérations de base de données."
+      "text": "Business Rules are used to manipulate the user interface, while Client Scripts handle database operations."
     },
     {
       "id": "c",
-      "text": "Les Business Rules ne peuvent s'exécuter que lors de la suppression d'un enregistrement, contrairement aux Client Scripts qui gèrent l'insertion."
+      "text": "Business Rules can only run when a record is deleted, unlike Client Scripts which handle insertion."
     },
     {
       "id": "d",
-      "text": "Les Business Rules sont obsolètes et doivent être remplacées par des Client Scripts pour toutes les nouvelles automatisations."
+      "text": "Business Rules are obsolete and must be replaced by Client Scripts for all new automations."
     }
   ],
   "correctChoiceId": "a",
-  "explanation": "Les Business Rules sont des scripts côté serveur qui se déclenchent lors d'opérations sur la base de données (insertion, mise à jour, suppression, affichage ou requête). À l'inverse, les Client Scripts s'exécutent côté client (dans le navigateur) pour interagir avec le formulaire ou l'interface utilisateur.",
+  "explanation": "Business Rules are server-side scripts that fire during database operations (insert, update, delete, display, or query). Conversely, Client Scripts run client-side (in the browser) to interact with the form or the user interface.",
   "pieges": [
-    "Confondre l'emplacement d'exécution (serveur vs client).",
-    "Penser que les Business Rules servent à modifier l'interface utilisateur (comme rendre un champ obligatoire), ce qui est le rôle des Client Scripts.",
-    "Croire que les Business Rules sont totalement remplacées par les Client Scripts, alors que ce sont deux outils complémentaires avec des rôles distincts."
+    "Confusing where the code runs (server vs client).",
+    "Thinking that Business Rules are used to modify the user interface (like making a field mandatory), which is the role of Client Scripts.",
+    "Believing that Business Rules have been fully replaced by Client Scripts, when they are two complementary tools with distinct roles."
   ],
   "source": {
     "type": "generated",

@@ -5,7 +5,7 @@
     "business-rule"
   ],
   "difficulty": "medium",
-  "question": "Quel type de Business Rule est le plus adapté pour envoyer une notification externe sans bloquer l'utilisateur ?",
+  "question": "Which type of Business Rule is best suited to send an external notification without blocking the user?",
   "choices": [
     {
       "id": "a",
@@ -25,9 +25,9 @@
     }
   ],
   "correctChoiceId": "c",
-  "explanation": "Une Business Rule 'async' s'exécute de façon asynchrone après l'écriture, idéale pour des actions non bloquantes comme des appels externes ou notifications lourdes.",
+  "explanation": "An 'async' Business Rule runs asynchronously after the write, ideal for non-blocking actions such as external calls or heavy notifications.",
   "pieges": [
-    "Utiliser une règle 'before' bloquante pour une action qui pourrait ralentir la sauvegarde."
+    "Using a blocking 'before' rule for an action that could slow down the save."
   ],
   "source": {
     "type": "manual",

@@ -6,7 +6,7 @@
     "roles"
   ],
   "difficulty": "medium",
-  "question": "Quel rôle est généralement nécessaire (avec élévation de rôle) pour modifier les ACL elles-mêmes dans une instance standard ?",
+  "question": "Which role is generally required (with role elevation) to modify the ACLs themselves in a standard instance?",
   "choices": [
     {
       "id": "a",
@@ -26,9 +26,9 @@
     }
   ],
   "correctChoiceId": "c",
-  "explanation": "Le rôle 'security_admin', combiné à l'élévation de rôle (Elevate Roles), est requis par défaut pour modifier les enregistrements ACL.",
+  "explanation": "The 'security_admin' role, combined with role elevation (Elevate Roles), is required by default to modify ACL records.",
   "pieges": [
-    "Penser que le rôle 'admin' seul suffit sans élévation explicite du rôle de sécurité."
+    "Thinking that the 'admin' role alone is enough without explicit security role elevation."
   ],
   "source": {
     "type": "manual",

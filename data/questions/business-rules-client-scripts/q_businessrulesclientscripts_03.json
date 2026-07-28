@@ -5,29 +5,29 @@
     "client-script"
   ],
   "difficulty": "easy",
-  "question": "À quel moment un Client Script 'onLoad' s'exécute-t-il ?",
+  "question": "When does an 'onLoad' Client Script run?",
   "choices": [
     {
       "id": "a",
-      "text": "Au changement d'un champ"
+      "text": "When a field changes"
     },
     {
       "id": "b",
-      "text": "Au chargement du formulaire"
+      "text": "When the form loads"
     },
     {
       "id": "c",
-      "text": "À la soumission du formulaire"
+      "text": "When the form is submitted"
     },
     {
       "id": "d",
-      "text": "Lors de l'édition en ligne dans une liste"
+      "text": "During inline editing in a list"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "'onLoad' s'exécute lorsque le formulaire est chargé dans le navigateur, avant toute interaction de l'utilisateur.",
+  "explanation": "'onLoad' runs when the form is loaded in the browser, before any user interaction.",
   "pieges": [
-    "Confondre onLoad avec onChange, qui se déclenche sur modification d'un champ spécifique."
+    "Confusing onLoad with onChange, which fires when a specific field is modified."
   ],
   "source": {
     "type": "manual",

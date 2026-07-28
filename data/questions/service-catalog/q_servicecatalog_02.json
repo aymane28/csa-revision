@@ -6,29 +6,29 @@
     "record-producer"
   ],
   "difficulty": "medium",
-  "question": "En quoi un Record Producer diffère-t-il d'un Catalog Item standard ?",
+  "question": "How does a Record Producer differ from a standard Catalog Item?",
   "choices": [
     {
       "id": "a",
-      "text": "Il n'existe aucune différence"
+      "text": "There is no difference"
     },
     {
       "id": "b",
-      "text": "Il crée directement un enregistrement dans une autre table, sans générer de RITM"
+      "text": "It creates a record directly in another table, without generating a RITM"
     },
     {
       "id": "c",
-      "text": "Il ne peut pas avoir de variables"
+      "text": "It cannot have variables"
     },
     {
       "id": "d",
-      "text": "Il ne peut être utilisé que par les admins"
+      "text": "It can only be used by admins"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Un Record Producer crée directement un enregistrement cible (ex: un incident) à partir des données saisies, sans passer par le processus RITM standard.",
+  "explanation": "A Record Producer creates a target record directly (e.g. an incident) from the entered data, without going through the standard RITM process.",
   "pieges": [
-    "Confondre Record Producer et Catalog Item : le Record Producer ne crée pas de RITM."
+    "Confusing Record Producer and Catalog Item: the Record Producer does not create a RITM."
   ],
   "source": {
     "type": "manual",

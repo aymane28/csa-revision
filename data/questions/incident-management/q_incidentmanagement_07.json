@@ -6,29 +6,29 @@
     "sla"
   ],
   "difficulty": "medium",
-  "question": "Quelle est la distinction entre un SLA et une OLA ?",
+  "question": "What is the distinction between an SLA and an OLA?",
   "choices": [
     {
       "id": "a",
-      "text": "Aucune, ce sont des synonymes"
+      "text": "None, they are synonyms"
     },
     {
       "id": "b",
-      "text": "Le SLA est un engagement envers le client, l'OLA est un accord interne entre équipes"
+      "text": "The SLA is a commitment to the customer, the OLA is an internal agreement between teams"
     },
     {
       "id": "c",
-      "text": "L'OLA concerne uniquement les Changes"
+      "text": "The OLA only applies to Changes"
     },
     {
       "id": "d",
-      "text": "Le SLA ne s'applique qu'aux Problems"
+      "text": "The SLA only applies to Problems"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Le SLA (Service Level Agreement) est un engagement de délai généralement vis-à-vis du client/métier, l'OLA (Operational Level Agreement) est un accord équivalent entre équipes internes.",
+  "explanation": "The SLA (Service Level Agreement) is a time commitment generally made to the customer/business, while the OLA (Operational Level Agreement) is an equivalent agreement between internal teams.",
   "pieges": [
-    "Confondre les deux termes qui, bien que similaires dans leur mécanique technique, ont un périmètre contractuel différent."
+    "Confusing the two terms which, although mechanically similar, have a different contractual scope."
   ],
   "source": {
     "type": "manual",

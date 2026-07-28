@@ -7,31 +7,31 @@
     "CSA"
   ],
   "difficulty": "medium",
-  "question": "Lorsqu'une ACL (Access Control List) contient plusieurs conditions (rôles requis, attributs de sécurité, conditions de données et scripts), quelle est la règle régissant l'accès à l'objet ?",
+  "question": "When an ACL (Access Control List) contains multiple conditions (required roles, security attributes, data conditions, and scripts), what rule governs access to the object?",
   "choices": [
     {
       "id": "a",
-      "text": "L'utilisateur doit satisfaire au moins l'une des conditions spécifiées pour obtenir l'accès."
+      "text": "The user must satisfy at least one of the specified conditions to gain access."
     },
     {
       "id": "b",
-      "text": "L'utilisateur doit satisfaire toutes les conditions listées dans l'ACL pour obtenir l'accès."
+      "text": "The user must satisfy all the conditions listed in the ACL to gain access."
     },
     {
       "id": "c",
-      "text": "Le système évalue les conditions de manière séquentielle et accorde l'accès dès qu'une condition est validée."
+      "text": "The system evaluates the conditions sequentially and grants access as soon as one condition is met."
     },
     {
       "id": "d",
-      "text": "L'accès est accordé par défaut si au moins une condition de données est évaluée comme vraie, indépendamment des rôles."
+      "text": "Access is granted by default if at least one data condition evaluates to true, regardless of roles."
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Selon la documentation, si une ACL spécifie plusieurs conditions, l'utilisateur doit impérativement toutes les valider (rôles, attributs de sécurité, conditions de données et scripts) pour obtenir l'accès à l'objet et à l'opération concernés. L'échec de n'importe laquelle de ces conditions entraîne un refus d'accès.",
+  "explanation": "According to the documentation, if an ACL specifies multiple conditions, the user must satisfy all of them (roles, security attributes, data conditions, and scripts) to gain access to the object and the operation in question. Failing any one of these conditions results in access being denied.",
   "pieges": [
-    "Croire qu'une relation 'OU' (OR) s'applique entre les différents types de conditions au sein d'une même ACL.",
-    "Penser que le script est optionnel et n'est pas pris en compte si les rôles sont déjà validés.",
-    "Confondre l'évaluation des conditions au sein d'une même ACL avec l'évaluation séquentielle de plusieurs ACLs différentes."
+    "Believing that an 'OR' relationship applies between the different types of conditions within the same ACL.",
+    "Thinking that the script is optional and not taken into account if the roles are already satisfied.",
+    "Confusing the evaluation of conditions within a single ACL with the sequential evaluation of multiple different ACLs."
   ],
   "source": {
     "type": "generated",

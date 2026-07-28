@@ -5,29 +5,29 @@
     "update-set"
   ],
   "difficulty": "medium",
-  "question": "Quelle étape est recommandée avant de committer un Update Set récupéré (Retrieved) sur une instance cible ?",
+  "question": "Which step is recommended before committing a Retrieved Update Set on a target instance?",
   "choices": [
     {
       "id": "a",
-      "text": "Le committer directement sans vérification"
+      "text": "Commit it directly without checking"
     },
     {
       "id": "b",
-      "text": "Faire un Preview pour détecter les conflits (collisions)"
+      "text": "Do a Preview to detect conflicts (collisions)"
     },
     {
       "id": "c",
-      "text": "Le marquer Ignored"
+      "text": "Mark it Ignored"
     },
     {
       "id": "d",
-      "text": "Le renommer"
+      "text": "Rename it"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "La Preview permet d'identifier les conflits potentiels ('collisions') entre l'Update Set et l'état actuel de l'instance cible avant de committer.",
+  "explanation": "The Preview lets you identify potential conflicts ('collisions') between the Update Set and the current state of the target instance before committing.",
   "pieges": [
-    "Committer un Update Set sans Preview préalable, ratant ainsi des conflits."
+    "Committing an Update Set without a prior Preview, thereby missing conflicts."
   ],
   "source": {
     "type": "manual",

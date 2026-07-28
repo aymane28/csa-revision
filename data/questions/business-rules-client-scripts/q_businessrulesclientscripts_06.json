@@ -5,29 +5,29 @@
     "business-rule"
   ],
   "difficulty": "hard",
-  "question": "Une Business Rule 'display' sert principalement à quoi ?",
+  "question": "What is a 'display' Business Rule mainly used for?",
   "choices": [
     {
       "id": "a",
-      "text": "Exécuter du code après la suppression d'un enregistrement"
+      "text": "Running code after a record is deleted"
     },
     {
       "id": "b",
-      "text": "Transférer des données serveur vers le client au chargement du formulaire"
+      "text": "Transferring data from the server to the client when the form loads"
     },
     {
       "id": "c",
-      "text": "Bloquer la soumission du formulaire"
+      "text": "Blocking form submission"
     },
     {
       "id": "d",
-      "text": "Modifier des enregistrements liés de façon asynchrone"
+      "text": "Modifying related records asynchronously"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Une Business Rule 'display' s'exécute au chargement du formulaire pour transférer des données calculées côté serveur vers le client (accessible ensuite via g_scratchpad par exemple).",
+  "explanation": "A 'display' Business Rule runs when the form loads to transfer server-side calculated data to the client (then accessible via g_scratchpad, for example).",
   "pieges": [
-    "Confondre 'display' avec les règles before/after qui s'exécutent lors d'opérations d'écriture."
+    "Confusing 'display' with before/after rules, which run during write operations."
   ],
   "source": {
     "type": "manual",

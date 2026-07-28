@@ -6,29 +6,29 @@
     "workflow"
   ],
   "difficulty": "medium",
-  "question": "À quel moment le Workflow (ou Flow Designer flow) associé à un Catalog Item se déclenche-t-il ?",
+  "question": "When does the Workflow (or Flow Designer flow) associated with a Catalog Item trigger?",
   "choices": [
     {
       "id": "a",
-      "text": "Dès l'ajout de l'item au panier"
+      "text": "As soon as the item is added to the cart"
     },
     {
       "id": "b",
-      "text": "À la soumission de la commande (checkout)"
+      "text": "When the order is submitted (checkout)"
     },
     {
       "id": "c",
-      "text": "Uniquement lors de l'approbation manuelle par un admin"
+      "text": "Only upon manual approval by an admin"
     },
     {
       "id": "d",
-      "text": "Jamais automatiquement, il faut le lancer manuellement"
+      "text": "Never automatically, it must be started manually"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Le Workflow/Flow associé se déclenche lors de la soumission effective de la commande (checkout), pas au simple ajout au panier.",
+  "explanation": "The associated Workflow/Flow triggers when the order is actually submitted (checkout), not simply when the item is added to the cart.",
   "pieges": [
-    "Penser que le Workflow/Flow se déclenche à l'ajout au panier plutôt qu'à la soumission."
+    "Thinking the Workflow/Flow triggers when the item is added to the cart rather than on submission."
   ],
   "source": {
     "type": "manual",

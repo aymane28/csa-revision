@@ -5,29 +5,29 @@
     "business-rule"
   ],
   "difficulty": "easy",
-  "question": "À quel moment une Business Rule de type 'before' s'exécute-t-elle par rapport à l'écriture en base ?",
+  "question": "When does a 'before' Business Rule run relative to the database write?",
   "choices": [
     {
       "id": "a",
-      "text": "Après l'écriture"
+      "text": "After the write"
     },
     {
       "id": "b",
-      "text": "Avant l'écriture, pouvant modifier ou annuler l'opération"
+      "text": "Before the write, and it can modify or cancel the operation"
     },
     {
       "id": "c",
-      "text": "En parallèle, de façon asynchrone"
+      "text": "In parallel, asynchronously"
     },
     {
       "id": "d",
-      "text": "Uniquement au chargement du formulaire"
+      "text": "Only when the form loads"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Une Business Rule 'before' s'exécute avant que l'enregistrement soit écrit en base, permettant de modifier des valeurs ou d'annuler l'opération (abortInsert/abortAction).",
+  "explanation": "A 'before' Business Rule runs before the record is written to the database, allowing values to be changed or the operation to be aborted (abortInsert/abortAction).",
   "pieges": [
-    "Confondre 'before' et 'after' : modifier current dans une règle 'after' n'empêche pas l'écriture déjà effectuée."
+    "Confusing 'before' and 'after': modifying current in an 'after' rule does not prevent the write that has already occurred."
   ],
   "source": {
     "type": "manual",

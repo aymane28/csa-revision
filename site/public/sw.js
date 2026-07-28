@@ -37,7 +37,7 @@ self.addEventListener("fetch", (event) => {
 });
 
 self.addEventListener("push", (event) => {
-  let payload = { title: "CSA Révision", body: "C'est l'heure de réviser !", url: "/#/daily" };
+  let payload = { title: "CSA Revision", body: "Time to review!", url: "/#/daily" };
   if (event.data) {
     try {
       payload = { ...payload, ...event.data.json() };

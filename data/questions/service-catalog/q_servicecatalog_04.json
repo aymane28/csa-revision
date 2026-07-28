@@ -6,29 +6,29 @@
     "variables"
   ],
   "difficulty": "medium",
-  "question": "Quel élément permet de regrouper des variables réutilisables sur plusieurs Catalog Items ?",
+  "question": "Which element lets you group reusable variables across several Catalog Items?",
   "choices": [
     {
       "id": "a",
-      "text": "Un Variable Set"
+      "text": "A Variable Set"
     },
     {
       "id": "b",
-      "text": "Un Order Guide"
+      "text": "An Order Guide"
     },
     {
       "id": "c",
-      "text": "Un Catalog UI Policy"
+      "text": "A Catalog UI Policy"
     },
     {
       "id": "d",
-      "text": "Un Workflow"
+      "text": "A Workflow"
     }
   ],
   "correctChoiceId": "a",
-  "explanation": "Un Variable Set regroupe un ensemble de variables réutilisables qui peuvent être appliquées à plusieurs Catalog Items sans les redéfinir à chaque fois.",
+  "explanation": "A Variable Set groups a set of reusable variables that can be applied to several Catalog Items without redefining them each time.",
   "pieges": [
-    "Confondre Variable Set (regroupement de champs) et Order Guide (regroupement d'items)."
+    "Confusing Variable Set (grouping of fields) with Order Guide (grouping of items)."
   ],
   "source": {
     "type": "manual",

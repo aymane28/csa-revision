@@ -3,22 +3,22 @@
   "title": "Business Rules & Client Scripts",
   "sections": [
     {
-      "heading": "Business Rules (serveur)",
-      "content": "Une Business Rule s'exécute côté serveur lors d'opérations base de données sur une table. Types : before (avant l'écriture, peut modifier/annuler), after (après l'écriture, ex: notifications), async (asynchrone, ne bloque pas l'utilisateur), display (exécutée au chargement du formulaire, transfère des données vers le client)."
+      "heading": "Business Rules (server)",
+      "content": "A Business Rule runs server-side during database operations on a table. Types: before (before the write, can modify/abort), after (after the write, e.g. notifications), async (asynchronous, does not block the user), display (runs when the form loads, transfers data to the client)."
     },
     {
-      "heading": "Client Scripts (navigateur)",
-      "content": "Un Client Script s'exécute côté navigateur. Types : onLoad (au chargement du formulaire), onChange (au changement d'un champ), onSubmit (à la soumission, peut bloquer l'envoi), onCellEdit (édition en ligne dans une liste)."
+      "heading": "Client Scripts (browser)",
+      "content": "A Client Script runs in the browser. Types: onLoad (when the form loads), onChange (when a field changes), onSubmit (on submission, can block the submit), onCellEdit (inline editing in a list)."
     },
     {
       "heading": "UI Policies vs scripts",
-      "content": "Les UI Policies permettent de rendre un champ obligatoire, visible ou en lecture seule de façon déclarative (sans code), et sont préférées aux Client Scripts pour ces cas simples. Le champ 'Order' détermine l'ordre d'exécution entre règles/scripts du même type."
+      "content": "UI Policies let you make a field mandatory, visible, or read-only in a declarative way (no code), and are preferred over Client Scripts for these simple cases. The 'Order' field determines the execution order between rules/scripts of the same type."
     }
   ],
   "pieges": [
-    "Utiliser un Client Script pour appliquer une règle de sécurité : la validation critique doit toujours être dupliquée côté serveur (Business Rule/ACL).",
-    "Confondre 'before' et 'after' : modifier current dans une Business Rule 'after' n'empêche pas l'écriture déjà effectuée.",
-    "Écrire un Client Script complexe alors qu'une UI Policy suffirait pour rendre un champ visible/obligatoire."
+    "Using a Client Script to enforce a security rule: critical validation must always be duplicated server-side (Business Rule/ACL).",
+    "Confusing 'before' and 'after': modifying current in an 'after' Business Rule does not prevent the write that has already happened.",
+    "Writing a complex Client Script when a UI Policy would be enough to make a field visible/mandatory."
   ],
   "relatedQuestionIds": [
     "q_businessrulesclientscripts_01",

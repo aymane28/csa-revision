@@ -6,29 +6,29 @@
     "knowledge"
   ],
   "difficulty": "easy",
-  "question": "Un agent souhaite documenter une solution de contournement (workaround) réutilisable pour un incident récurrent. Quel type d'enregistrement est le plus adapté pour capitaliser cette information ?",
+  "question": "An agent wants to document a reusable workaround for a recurring incident. Which type of record is best suited to capture this information?",
   "choices": [
     {
       "id": "a",
-      "text": "Un Knowledge Article"
+      "text": "A Knowledge Article"
     },
     {
       "id": "b",
-      "text": "Un nouvel incident dupliqué"
+      "text": "A new duplicate incident"
     },
     {
       "id": "c",
-      "text": "Un Catalog Item"
+      "text": "A Catalog Item"
     },
     {
       "id": "d",
-      "text": "Un Update Set"
+      "text": "An Update Set"
     }
   ],
   "correctChoiceId": "a",
-  "explanation": "Un Knowledge Article permet de capitaliser une solution ou un workaround pour qu'il soit réutilisé par d'autres agents ou en libre-service.",
+  "explanation": "A Knowledge Article captures a solution or workaround so it can be reused by other agents or in self-service.",
   "pieges": [
-    "Dupliquer l'incident au lieu de créer un article de connaissance réutilisable."
+    "Duplicating the incident instead of creating a reusable knowledge article."
   ],
   "source": {
     "type": "manual",

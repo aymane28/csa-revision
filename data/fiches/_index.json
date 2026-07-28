@@ -3,7 +3,7 @@
   "fiches": [
     {
       "topic": "incident-management",
-      "title": "Gestion des incidents (Incident Management)",
+      "title": "Incident Management",
       "relatedQuestionIds": [
         "q_incidentmanagement_01",
         "q_incidentmanagement_02",
@@ -22,7 +22,7 @@
     },
     {
       "topic": "access-control-acl",
-      "title": "Contrôle d'accès (ACL)",
+      "title": "Access Control (ACL)",
       "relatedQuestionIds": [
         "q_accesscontrolacl_01",
         "q_accesscontrolacl_02",

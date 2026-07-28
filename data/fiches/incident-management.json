@@ -1,24 +1,24 @@
 {
   "topic": "incident-management",
-  "title": "Gestion des incidents (Incident Management)",
+  "title": "Incident Management",
   "sections": [
     {
-      "heading": "Concepts clés",
-      "content": "Un incident représente une interruption non planifiée d'un service ou une dégradation de sa qualité. Le cycle de vie standard des états est : New → In Progress → On Hold → Resolved → Closed (avec Canceled comme état alternatif). La priorité n'est pas saisie directement par l'utilisateur : elle est calculée à partir d'une matrice Impact x Urgency."
+      "heading": "Key concepts",
+      "content": "An incident represents an unplanned interruption to a service or a degradation of its quality. The standard state lifecycle is: New → In Progress → On Hold → Resolved → Closed (with Canceled as an alternative state). Priority is not entered directly by the user: it is calculated from an Impact x Urgency matrix."
     },
     {
-      "heading": "Champs et relations importants",
-      "content": "Assignment group (groupe responsable) est distinct de Assigned to (personne précise). Un incident majeur est marqué via le champ/processus 'Major Incident'. Les incidents peuvent être liés à des Problems (cause racine) et à des Changes (origine du problème), et un incident peut avoir des enfants (child incidents) rattachés à un incident parent lors d'un incident majeur touchant plusieurs utilisateurs."
+      "heading": "Important fields and relationships",
+      "content": "Assignment group (the responsible team) is distinct from Assigned to (the specific person). A major incident is flagged via the 'Major Incident' field/process. Incidents can be linked to Problems (root cause) and to Changes (origin of the problem), and an incident can have children (child incidents) attached to a parent incident during a major incident affecting multiple users."
     },
     {
       "heading": "SLA",
-      "content": "Les SLA (Service Level Agreement) définissent des délais contractuels de résolution/réponse. Les OLA (Operational Level Agreement) sont les équivalents internes entre équipes. Le champ 'Reopen count' s'incrémente quand un incident Resolved/Closed est rouvert."
+      "content": "SLAs (Service Level Agreements) define contractual resolution/response times. OLAs (Operational Level Agreements) are the internal equivalent between teams. The 'Reopen count' field increments whenever a Resolved/Closed incident is reopened."
     }
   ],
   "pieges": [
-    "Confondre priorité et urgence : la priorité est dérivée (Impact x Urgency), elle n'est généralement pas modifiable directement selon la configuration.",
-    "Penser qu'un incident Resolved est équivalent à Closed : Resolved attend une confirmation/fermeture automatique après un délai avant de passer à Closed.",
-    "Oublier qu'un Problem sert à traiter la cause racine, alors que l'Incident vise le rétablissement rapide du service."
+    "Confusing priority and urgency: priority is derived (Impact x Urgency) and is generally not directly editable depending on the configuration.",
+    "Thinking a Resolved incident is equivalent to Closed: Resolved awaits confirmation/automatic closure after a delay before moving to Closed.",
+    "Forgetting that a Problem is used to address the root cause, while an Incident aims for rapid service restoration."
   ],
   "relatedQuestionIds": [
     "q_incidentmanagement_01",

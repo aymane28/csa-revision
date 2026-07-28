@@ -7,31 +7,31 @@
     "Access Control"
   ],
   "difficulty": "medium",
-  "question": "Dans le cadre de la gestion de la sécurité sur ServiceNow, quel est le rôle principal d'une liste de contrôle d'accès (ACL) ?",
+  "question": "In the context of security management on ServiceNow, what is the main role of an Access Control List (ACL)?",
   "choices": [
     {
       "id": "a",
-      "text": "Définir les rôles utilisateurs au niveau de l'instance globale uniquement."
+      "text": "Defining user roles at the global instance level only."
     },
     {
       "id": "b",
-      "text": "Restreindre l'accès aux données en exigeant que les utilisateurs satisfassent à des conditions spécifiques."
+      "text": "Restricting access to data by requiring users to meet specific conditions."
     },
     {
       "id": "c",
-      "text": "Automatiser la création de comptes utilisateurs pour les nouvelles intégrations."
+      "text": "Automating the creation of user accounts for new integrations."
     },
     {
       "id": "d",
-      "text": "Chiffrer les données sensibles stockées dans les tables de la base de données."
+      "text": "Encrypting sensitive data stored in database tables."
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Les ACL (Access Control Lists) constituent le mécanisme central de sécurité de ServiceNow pour contrôler l'accès aux données. Elles imposent des exigences (rôles, conditions, scripts) qu'un utilisateur doit remplir pour interagir avec une ressource donnée.",
+  "explanation": "ACLs (Access Control Lists) are ServiceNow's central security mechanism for controlling access to data. They impose requirements (roles, conditions, scripts) that a user must meet to interact with a given resource.",
   "pieges": [
-    "Confondre les ACL avec la gestion des rôles (User Administration), qui définit 'qui' est l'utilisateur, alors que les ACL définissent 'ce qu'il peut faire' sur les données.",
-    "Penser que les ACL servent au chiffrement des données, ce qui est une fonction différente gérée par d'autres modules de sécurité.",
-    "Croire que les ACL s'appliquent uniquement au niveau de l'instance globale, alors qu'elles sont granulaires et peuvent s'appliquer à des tables ou des champs spécifiques."
+    "Confusing ACLs with role management (User Administration), which defines 'who' the user is, whereas ACLs define 'what they can do' with the data.",
+    "Thinking that ACLs are used for data encryption, which is a different function handled by other security modules.",
+    "Believing that ACLs only apply at the global instance level, when they are granular and can apply to specific tables or fields."
   ],
   "source": {
     "type": "generated",

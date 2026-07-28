@@ -34,20 +34,21 @@ export async function enrichToQuestion(params: EnrichParams): Promise<GeneratedQ
     throw new Error("GEMINI_API_KEY manquant.");
   }
 
-  const prompt = `Tu es un générateur de questions pour la préparation à la certification ServiceNow CSA (Certified System Administrator).
+  const prompt = `You are a question generator for ServiceNow CSA (Certified System Administrator) exam preparation.
 
-À partir du contenu de documentation officielle ci-dessous (sujet : "${params.topic}"), génère UNE question à choix multiple ORIGINALE de niveau examen CSA, avec 4 choix de réponse, une explication pédagogique de la bonne réponse, et 1 à 3 pièges à éviter (erreurs de compréhension courantes).
+Based on the official documentation excerpt below (topic: "${params.topic}"), generate ONE ORIGINAL multiple-choice question at CSA exam level, with 4 answer choices, a pedagogical explanation of the correct answer, and 1 to 3 common pitfalls (common misunderstandings candidates should avoid).
 
-Règles strictes :
-- N'invente rien qui contredise le contenu source.
-- N'essaie JAMAIS de reproduire une vraie question d'examen : invente une question originale, seulement inspirée par le contenu fourni.
-- Les 4 choix doivent être plausibles, un seul strictement correct.
-- Réponds UNIQUEMENT avec un JSON valide conforme à ce schéma, sans markdown ni texte autour :
+Strict rules:
+- Do not invent anything that contradicts the source content.
+- NEVER try to reproduce a real exam question: invent an original question, only inspired by the provided content.
+- The 4 choices must be plausible, with only one strictly correct.
+- Write everything in English.
+- Respond ONLY with valid JSON matching this schema, no markdown or surrounding text:
 ${SCHEMA_HINT}
 
-Titre de la source : ${params.sourceTitle}
+Source title: ${params.sourceTitle}
 
-Contenu source (extrait) :
+Source content (excerpt):
 """
 ${params.sourceText}
 """`;

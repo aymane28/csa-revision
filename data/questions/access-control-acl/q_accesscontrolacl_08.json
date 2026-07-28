@@ -6,29 +6,29 @@
     "roles"
   ],
   "difficulty": "hard",
-  "question": "Un utilisateur avec le rôle admin a-t-il automatiquement accès à toutes les données, quelles que soient les ACL ?",
+  "question": "Does a user with the admin role automatically have access to all data, regardless of the ACLs?",
   "choices": [
     {
       "id": "a",
-      "text": "Toujours oui, admin bypass tout"
+      "text": "Always yes, admin bypasses everything"
     },
     {
       "id": "b",
-      "text": "Pas nécessairement : cela dépend de la configuration 'Admin overrides' et des ACL elles-mêmes"
+      "text": "Not necessarily: it depends on the 'Admin overrides' configuration and the ACLs themselves"
     },
     {
       "id": "c",
-      "text": "Non, admin n'a jamais plus d'accès qu'un utilisateur standard"
+      "text": "No, admin never has more access than a standard user"
     },
     {
       "id": "d",
-      "text": "Oui, mais uniquement pour les tables systèmes"
+      "text": "Yes, but only for system tables"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "L'accès admin dépend de la configuration des ACL et de propriétés système comme les 'Admin overrides' — ce n'est pas un contournement automatique et inconditionnel.",
+  "explanation": "Admin access depends on the ACL configuration and system properties such as 'Admin overrides' — it is not an automatic, unconditional bypass.",
   "pieges": [
-    "Supposer que le rôle admin garantit un accès total sans dépendre de la configuration des ACL."
+    "Assuming that the admin role guarantees full access regardless of the ACL configuration."
   ],
   "source": {
     "type": "manual",

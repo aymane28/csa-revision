@@ -6,29 +6,29 @@
     "security"
   ],
   "difficulty": "medium",
-  "question": "Dans quel ordre ServiceNow évalue-t-il les ACL lors d'une tentative d'accès à un champ spécifique d'une table ?",
+  "question": "In what order does ServiceNow evaluate ACLs when attempting to access a specific field on a table?",
   "choices": [
     {
       "id": "a",
-      "text": "ACL de champ puis ACL de table"
+      "text": "Field ACL then table ACL"
     },
     {
       "id": "b",
-      "text": "ACL de table puis ACL de champ"
+      "text": "Table ACL then field ACL"
     },
     {
       "id": "c",
-      "text": "Les deux simultanément sans ordre défini"
+      "text": "Both simultaneously with no defined order"
     },
     {
       "id": "d",
-      "text": "Uniquement l'ACL de champ, l'ACL de table est ignorée"
+      "text": "Only the field ACL, the table ACL is ignored"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "ServiceNow vérifie d'abord l'ACL de niveau table pour l'opération demandée ; si elle échoue, l'ACL de champ n'est même pas évaluée.",
+  "explanation": "ServiceNow first checks the table-level ACL for the requested operation; if it fails, the field ACL is not even evaluated.",
   "pieges": [
-    "Confondre l'ordre d'évaluation ACL table vs champ."
+    "Confusing the evaluation order of table ACL vs field ACL."
   ],
   "source": {
     "type": "manual",

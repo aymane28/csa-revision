@@ -7,31 +7,31 @@
     "Categories"
   ],
   "difficulty": "medium",
-  "question": "Dans le cadre de la configuration des catégories du Service Catalog, quelle condition est impérative pour qu'une catégorie soit visible par les utilisateurs dans le catalogue ?",
+  "question": "When configuring Service Catalog categories, which condition is mandatory for a category to be visible to users in the catalog?",
   "choices": [
     {
       "id": "a",
-      "text": "La catégorie doit être définie comme une catégorie racine sans parent."
+      "text": "The category must be defined as a root category with no parent."
     },
     {
       "id": "b",
-      "text": "La catégorie doit contenir au moins un élément actif dans sa hiérarchie."
+      "text": "The category must contain at least one active item within its hierarchy."
     },
     {
       "id": "c",
-      "text": "L'utilisateur doit posséder le rôle catalog_admin pour voir la catégorie."
+      "text": "The user must have the catalog_admin role to see the category."
     },
     {
       "id": "d",
-      "text": "La catégorie doit être associée à un Workflow spécifique pour être publiée."
+      "text": "The category must be associated with a specific Workflow to be published."
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Selon la documentation, si une catégorie et sa hiérarchie ne contiennent aucun élément actif, la catégorie n'apparaît pas dans le catalogue et ne peut pas y être ajoutée. La présence d'au moins un élément actif est donc une condition sine qua non pour l'affichage.",
+  "explanation": "According to the documentation, if a category and its hierarchy contain no active items, the category does not appear in the catalog and cannot be added to it. Having at least one active item is therefore a prerequisite for it to display.",
   "pieges": [
-    "Croire que les catégories sont visibles dès leur création, même si elles sont vides.",
-    "Penser que seuls les administrateurs peuvent voir les catégories, alors que c'est une question de contenu actif et de paramètres de disponibilité.",
-    "Confondre la visibilité avec les rôles (le rôle admin ou catalog_admin est nécessaire pour la configuration, mais la visibilité est régie par la présence d'éléments actifs)."
+    "Believing that categories are visible as soon as they are created, even if empty.",
+    "Thinking that only administrators can see categories, when it is actually a matter of active content and availability settings.",
+    "Confusing visibility with roles (the admin or catalog_admin role is needed for configuration, but visibility is governed by the presence of active items)."
   ],
   "source": {
     "type": "generated",

@@ -6,7 +6,7 @@
     "priority"
   ],
   "difficulty": "easy",
-  "question": "Quel champ permet de indiquer l'ampleur de l'effet d'un incident sur l'activité (ex: un seul utilisateur vs toute l'entreprise) ?",
+  "question": "Which field indicates the extent of an incident's effect on the business (e.g. a single user vs the whole company)?",
   "choices": [
     {
       "id": "a",
@@ -26,9 +26,9 @@
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "'Impact' mesure l'étendue de l'effet sur l'activité métier, tandis que 'Urgency' mesure la rapidité avec laquelle une résolution est nécessaire.",
+  "explanation": "'Impact' measures the extent of the effect on the business, while 'Urgency' measures how quickly a resolution is needed.",
   "pieges": [
-    "Inverser Impact et Urgency dans leur définition respective."
+    "Swapping Impact and Urgency in their respective definitions."
   ],
   "source": {
     "type": "manual",
