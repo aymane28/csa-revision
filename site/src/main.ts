@@ -1,6 +1,7 @@
 import "./styles/main.css";
 import { initRouter } from "./router";
 import { registerServiceWorker, getPushStatus, enablePushReminders, disablePushReminders } from "./lib/push-client";
+import { flushDailyQueue } from "./lib/daily-client";
 
 const app = document.getElementById("app")!;
 app.innerHTML = `
@@ -21,6 +22,11 @@ app.innerHTML = `
 initRouter(document.getElementById("view")!);
 void registerServiceWorker();
 void initPushToggle();
+
+// Retry any daily-quiz answers that failed to sync on a previous visit (e.g. flaky
+// mobile connection) as soon as we're back online, so other devices see them promptly.
+void flushDailyQueue();
+window.addEventListener("online", () => void flushDailyQueue());
 
 async function initPushToggle(): Promise<void> {
   const btn = document.getElementById("push-toggle") as HTMLButtonElement | null;
