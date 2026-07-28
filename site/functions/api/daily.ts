@@ -1,5 +1,6 @@
 export interface Env {
   PROGRESS_KV: KVNamespace;
+  REMINDER_SECRET: string;
 }
 
 interface DailyAnswer {
@@ -115,4 +116,24 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   record.answers[questionId] = { chosenChoiceId, correct, answeredAt: new Date().toISOString() };
   await env.PROGRESS_KV.put(keyFor(date), JSON.stringify(record));
   return jsonResponse(record);
+};
+
+// Admin-only reset (same shared secret as the reminder cron) — clears every persisted
+// daily-quiz selection so dates regenerate against the current question bank (a date's
+// question list is otherwise cached in KV the first time it's loaded, by design).
+export const onRequestDelete: PagesFunction<Env> = async ({ request, env }) => {
+  if (!env.REMINDER_SECRET || request.headers.get("x-reminder-secret") !== env.REMINDER_SECRET) {
+    return jsonResponse({ error: "unauthorized" }, 401);
+  }
+  let deleted = 0;
+  let cursor: string | undefined;
+  do {
+    const page = await env.PROGRESS_KV.list({ prefix: "daily:", cursor });
+    for (const key of page.keys) {
+      await env.PROGRESS_KV.delete(key.name);
+      deleted++;
+    }
+    cursor = page.list_complete ? undefined : page.cursor;
+  } while (cursor);
+  return jsonResponse({ ok: true, deleted });
 };

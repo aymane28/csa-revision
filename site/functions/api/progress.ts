@@ -1,5 +1,6 @@
 export interface Env {
   PROGRESS_KV: KVNamespace;
+  REMINDER_SECRET: string;
 }
 
 interface ProgressRecord {
@@ -61,4 +62,15 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
   await env.PROGRESS_KV.put(KEY, JSON.stringify(map));
   return jsonResponse(map[questionId]);
+};
+
+// Admin-only reset (same shared secret as the reminder cron) — used after a content
+// overhaul (e.g. translation, difficulty rewrite) where old per-question stats no
+// longer correspond to the current question text.
+export const onRequestDelete: PagesFunction<Env> = async ({ request, env }) => {
+  if (!env.REMINDER_SECRET || request.headers.get("x-reminder-secret") !== env.REMINDER_SECRET) {
+    return jsonResponse({ error: "unauthorized" }, 401);
+  }
+  await env.PROGRESS_KV.delete(KEY);
+  return jsonResponse({ ok: true });
 };
