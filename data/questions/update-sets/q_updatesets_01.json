@@ -2,32 +2,34 @@
   "id": "q_updatesets_01",
   "topic": "update-sets",
   "tags": [
-    "update-set"
+    "update-set",
+    "configuration-vs-data"
   ],
-  "difficulty": "easy",
-  "question": "What does an Update Set primarily capture?",
+  "difficulty": "medium",
+  "question": "A developer moves an Update Set containing five new Business Rules from a dev instance to production. After the move, QA notices that the test incident records they created while developing are missing from production. Why weren't those incidents included?",
   "choices": [
     {
       "id": "a",
-      "text": "Business data created by users (e.g. incidents)"
+      "text": "The Update Set move failed silently and needs to be retried"
     },
     {
       "id": "b",
-      "text": "Configuration/customization changes made to the instance"
+      "text": "Update Sets capture configuration/customization changes (like Business Rules), not business data created by users (like incident records) — those were never going to move with it"
     },
     {
       "id": "c",
-      "text": "System logs"
+      "text": "Incident records are excluded from Update Sets only if they are in a Resolved or Closed state"
     },
     {
       "id": "d",
-      "text": "Full database backups"
+      "text": "The developer needed to manually add each incident record to the Update Set before moving it"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "An Update Set captures configuration changes (fields, forms, scripts, etc.), not business data created by users.",
+  "explanation": "Update Sets track configuration changes — new/modified records in tables like sys_script (Business Rules), sys_dictionary, forms, etc. — not ordinary business/transactional data such as incidents, which live outside that change-tracking mechanism entirely.",
   "pieges": [
-    "Believing that an Update Set migrates data (records): it only migrates configuration."
+    "Expecting an Update Set to behave like a full data export/import that carries business records along with configuration.",
+    "Thinking test data needs to be manually curated into the Update Set — it structurally isn't the right tool for that at all."
   ],
   "source": {
     "type": "manual",

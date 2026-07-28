@@ -2,32 +2,34 @@
   "id": "q_businessrulesclientscripts_03",
   "topic": "business-rules-client-scripts",
   "tags": [
-    "client-script"
+    "client-script",
+    "onload-onchange"
   ],
-  "difficulty": "easy",
-  "question": "When does an 'onLoad' Client Script run?",
+  "difficulty": "medium",
+  "question": "A form should hide the 'Escalation reason' field unless the Priority field is set to Critical — both the moment the form is first opened (if Priority is already Critical) and immediately afterward if the user changes Priority to Critical mid-edit. Which combination of Client Scripts achieves this?",
   "choices": [
     {
       "id": "a",
-      "text": "When a field changes"
+      "text": "A single onLoad script is enough, since it re-evaluates automatically whenever any field changes"
     },
     {
       "id": "b",
-      "text": "When the form loads"
+      "text": "An onLoad script (to handle the form's initial state) together with an onChange script on Priority (to react to later edits)"
     },
     {
       "id": "c",
-      "text": "When the form is submitted"
+      "text": "A single onChange script on Priority is enough, since it also fires once when the form first loads"
     },
     {
       "id": "d",
-      "text": "During inline editing in a list"
+      "text": "An onSubmit script, since visibility only needs to be correct at the moment of submission"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "'onLoad' runs when the form is loaded in the browser, before any user interaction.",
+  "explanation": "onLoad only fires once, when the form finishes loading — it won't react to later field edits. onChange on Priority only fires on subsequent changes — it doesn't run for the form's initial state. Covering both moments requires both script types working together.",
   "pieges": [
-    "Confusing onLoad with onChange, which fires when a specific field is modified."
+    "Assuming onLoad re-runs automatically whenever any field changes — it doesn't, it only fires once per form load.",
+    "Assuming onChange also covers the form's initial state — it only fires in response to a user-driven change."
   ],
   "source": {
     "type": "manual",

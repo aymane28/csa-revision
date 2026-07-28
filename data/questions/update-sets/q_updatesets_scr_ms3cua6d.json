@@ -2,36 +2,34 @@
   "id": "q_updatesets_scr_ms3cua6d",
   "topic": "update-sets",
   "tags": [
-    "Update Sets",
-    "Administration",
-    "Configuration Management"
+    "update-set",
+    "collision-detection"
   ],
-  "difficulty": "easy",
-  "question": "What is the main purpose of using 'Update Sets' in a ServiceNow instance?",
+  "difficulty": "hard",
+  "question": "Two developers, working in separate Update Sets, both modify the same Business Rule during the same sprint. The first developer's Update Set is moved to production and committed without issue. What happens when the second developer's Update Set is later committed on top of it?",
   "choices": [
     {
       "id": "a",
-      "text": "Backing up all transactional data and incidents to transfer them to a production instance."
+      "text": "The second commit is automatically rejected and discarded to protect the first developer's change"
     },
     {
       "id": "b",
-      "text": "Grouping a series of configuration changes to move them as a single unit to another instance."
+      "text": "The platform detects the update collides with a record already modified by another Update Set and flags it for the admin to review before choosing which version to keep"
     },
     {
       "id": "c",
-      "text": "Automating user account creation and role assignment between development and test instances."
+      "text": "Both versions of the Business Rule are merged line-by-line automatically"
     },
     {
       "id": "d",
-      "text": "Synchronizing operating system security updates for the server infrastructure hosting ServiceNow."
+      "text": "The second Update Set silently overwrites the first with no indication a collision occurred"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "An 'Update Set' is a transport mechanism specifically designed to move configuration changes (settings, flows, forms, etc.) between instances. It does not capture transactional data (such as tickets or users) by default.",
+  "explanation": "When committing an Update Set, the platform checks whether each captured record has already been modified since the Update Set's base state and flags any such collisions for manual review — it does not silently overwrite or auto-merge conflicting changes.",
   "pieges": [
-    "Believing that Update Sets are used to migrate business data or transactions.",
-    "Confusing Update Sets with system update (patching) tools managed by ServiceNow at the infrastructure level.",
-    "Thinking that Update Sets automatically synchronize user accounts."
+    "Assuming Update Set commits behave like a version-control auto-merge — they don't do line-level merging.",
+    "Assuming the platform silently overwrites without any collision detection, which would make concurrent development unsafe."
   ],
   "source": {
     "type": "generated",

@@ -3,32 +3,34 @@
   "topic": "incident-management",
   "tags": [
     "incident",
-    "workflow"
+    "workflow",
+    "hold-reason"
   ],
-  "difficulty": "easy",
-  "question": "In the standard lifecycle of a ServiceNow incident, which state generally follows 'In Progress' when the agent is waiting for information from the requester?",
+  "difficulty": "medium",
+  "question": "An agent is troubleshooting an incident and needs the requester to confirm whether a workaround resolved the issue before continuing. The requester is unavailable today. Which state should the agent set, and what else should they configure so the incident doesn't just sit idle indefinitely?",
   "choices": [
     {
       "id": "a",
-      "text": "Resolved"
+      "text": "Set the state to Resolved, and add a note asking the requester to reopen if needed"
     },
     {
       "id": "b",
-      "text": "On Hold"
+      "text": "Set the state to On Hold, and select a Hold reason (e.g. 'Awaiting Caller')"
     },
     {
       "id": "c",
-      "text": "Closed"
+      "text": "Set the state to Closed, and recreate a new incident if the requester responds later"
     },
     {
       "id": "d",
-      "text": "Canceled"
+      "text": "Leave the state as In Progress, and set a reminder for themselves"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "The 'On Hold' state is used when resolution is paused while waiting for an external action (e.g. a response from the requester), along with an associated 'Hold reason'.",
+  "explanation": "On Hold pauses the SLA/resolution clock while waiting on something outside the agent's control, but ServiceNow requires a Hold reason (e.g. Awaiting Caller, Awaiting Vendor) so it's clear *why* — this also drives reporting on hold causes.",
   "pieges": [
-    "Confusing 'On Hold' with 'Resolved', which means the issue has already been addressed."
+    "Setting On Hold without a Hold reason — most standard configurations require one before the state change is accepted.",
+    "Marking it Resolved prematurely just because the agent is done for now, which stops the SLA clock incorrectly and may misrepresent the incident's true status."
   ],
   "source": {
     "type": "manual",

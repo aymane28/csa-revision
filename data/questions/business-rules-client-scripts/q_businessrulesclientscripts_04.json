@@ -2,32 +2,34 @@
   "id": "q_businessrulesclientscripts_04",
   "topic": "business-rules-client-scripts",
   "tags": [
-    "client-script"
+    "client-script",
+    "onsubmit-validation"
   ],
-  "difficulty": "easy",
-  "question": "Which type of Client Script can prevent a form from being submitted if a condition is not met?",
+  "difficulty": "medium",
+  "question": "A form must prevent submission unless a 'Justification' field is filled in whenever Priority is set to Critical, with the check enforced client-side at the moment the user tries to submit. Which Client Script type is designed for exactly this?",
   "choices": [
     {
       "id": "a",
-      "text": "onLoad"
+      "text": "onLoad, returning false if Justification is empty"
     },
     {
       "id": "b",
-      "text": "onChange"
+      "text": "onChange on Priority, returning false if Justification is empty"
     },
     {
       "id": "c",
-      "text": "onSubmit"
+      "text": "onSubmit, returning false if Justification is empty when Priority is Critical"
     },
     {
       "id": "d",
-      "text": "onCellEdit"
+      "text": "onCellEdit, since it runs whenever any field's value changes in a list"
     }
   ],
   "correctChoiceId": "c",
-  "explanation": "'onSubmit' runs on submission and can return false to block the submission of the form.",
+  "explanation": "onSubmit runs at the point of form submission and, by returning false, can block the submission entirely — which is exactly the semantics needed for a validation gate like this. onLoad and onChange run at the wrong moments (form load / individual field edits) to reliably gate the final submit action.",
   "pieges": [
-    "Trying to block a submission from an onLoad script, which runs too early for that."
+    "Trying to block submission from onChange, which fires per keystroke/field-change rather than at the submit action itself, making it an unreliable place to gate the final submit.",
+    "Confusing onCellEdit (list/inline editing) with form-level submission validation, which is a different context entirely."
   ],
   "source": {
     "type": "manual",

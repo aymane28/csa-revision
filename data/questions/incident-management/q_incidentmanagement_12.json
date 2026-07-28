@@ -3,32 +3,34 @@
   "topic": "incident-management",
   "tags": [
     "incident",
-    "knowledge"
+    "knowledge",
+    "self-service"
   ],
-  "difficulty": "easy",
-  "question": "An agent wants to document a reusable workaround for a recurring incident. Which type of record is best suited to capture this information?",
+  "difficulty": "medium",
+  "question": "The same printer-driver workaround has now been explained verbally by three different agents to three different callers this month, with no record kept anywhere. What is the best long-term fix, and why is it better than continuing to resolve each incident individually?",
   "choices": [
     {
       "id": "a",
-      "text": "A Knowledge Article"
+      "text": "Nothing needs to change — resolving each incident individually already documents the fix in that incident's resolution notes"
     },
     {
       "id": "b",
-      "text": "A new duplicate incident"
+      "text": "Create a Knowledge Article documenting the workaround, and link it from the incidents so future agents (and self-service users) can find it without re-solving the problem each time"
     },
     {
       "id": "c",
-      "text": "A Catalog Item"
+      "text": "Convert every future occurrence into a Problem record instead of an incident"
     },
     {
       "id": "d",
-      "text": "An Update Set"
+      "text": "Create a new Catalog Item so users can request the fix themselves as a service request"
     }
   ],
-  "correctChoiceId": "a",
-  "explanation": "A Knowledge Article captures a solution or workaround so it can be reused by other agents or in self-service.",
+  "correctChoiceId": "b",
+  "explanation": "A Knowledge Article makes a workaround reusable and searchable — by other agents and often directly by end users via self-service — which is exactly the gap when the same fix is repeatedly explained ad hoc instead of documented once.",
   "pieges": [
-    "Duplicating the incident instead of creating a reusable knowledge article."
+    "Believing per-incident resolution notes are an adequate substitute for a searchable, reusable Knowledge Article.",
+    "Reaching for a Catalog Item, which is for requesting something, not for solving a recurring known issue."
   ],
   "source": {
     "type": "manual",

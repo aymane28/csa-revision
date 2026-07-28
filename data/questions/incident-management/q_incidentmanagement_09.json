@@ -3,32 +3,34 @@
   "topic": "incident-management",
   "tags": [
     "incident",
-    "priority"
+    "priority",
+    "impact-urgency-matrix"
   ],
-  "difficulty": "easy",
-  "question": "Which field indicates the extent of an incident's effect on the business (e.g. a single user vs the whole company)?",
+  "difficulty": "hard",
+  "question": "A single executive's laptop won't turn on (affects one person) but they need it working within the hour for a board presentation. A separate ticket reports the shared file server is down, affecting the whole finance department, with no immediate deadline. Which statement correctly applies Impact and Urgency to these two cases?",
   "choices": [
     {
       "id": "a",
-      "text": "Urgency"
+      "text": "Both tickets should have identical priority since one person's issue and a department's issue both 'affect the business'"
     },
     {
       "id": "b",
-      "text": "Impact"
+      "text": "The laptop ticket has low Impact but high Urgency; the file server ticket has high Impact but comparatively lower Urgency — the matrix, not either field alone, determines which ends up higher priority"
     },
     {
       "id": "c",
-      "text": "Priority"
+      "text": "Impact only applies to hardware issues and Urgency only applies to software issues"
     },
     {
       "id": "d",
-      "text": "Severity"
+      "text": "The file server ticket must always outrank the laptop ticket because Impact is weighted more heavily than Urgency in every configuration"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "'Impact' measures the extent of the effect on the business, while 'Urgency' measures how quickly a resolution is needed.",
+  "explanation": "Impact reflects scope (how many people/services are affected), Urgency reflects time pressure. These two scenarios deliberately pull in opposite directions on each axis — the actual resulting priority depends on how the Impact x Urgency matrix is configured, which is exactly why understanding the matrix (not assuming a fixed rule) matters for the exam.",
   "pieges": [
-    "Swapping Impact and Urgency in their respective definitions."
+    "Assuming Impact always outweighs Urgency (or vice versa) instead of recognizing the matrix combines both.",
+    "Conflating 'affects one VIP' with automatically high Impact — Impact is about scope, not seniority, in the standard model."
   ],
   "source": {
     "type": "manual",

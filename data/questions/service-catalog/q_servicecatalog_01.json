@@ -2,32 +2,34 @@
   "id": "q_servicecatalog_01",
   "topic": "service-catalog",
   "tags": [
-    "service-catalog"
+    "service-catalog",
+    "req-ritm"
   ],
-  "difficulty": "easy",
-  "question": "Which record is created when a user orders a standard Catalog Item from the cart?",
+  "difficulty": "medium",
+  "question": "A user adds three different laptop models to their cart in a single checkout and submits the order. How many Request (REQ) and Requested Item (RITM) records are created as a result?",
   "choices": [
     {
       "id": "a",
-      "text": "A Change Request"
+      "text": "Three REQs, each with one RITM"
     },
     {
       "id": "b",
-      "text": "A Requested Item (RITM) attached to a Request (REQ)"
+      "text": "One REQ, containing three RITMs — one per Catalog Item ordered"
     },
     {
       "id": "c",
-      "text": "An Incident"
+      "text": "One REQ and one RITM covering all three items together"
     },
     {
       "id": "d",
-      "text": "An Update Set"
+      "text": "Three REQs and nine RITMs, since each item generates its own request and sub-items"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Submitting a standard order generates a Request (REQ) containing one or more Requested Items (RITM), which drive the fulfillment workflow.",
+  "explanation": "A single checkout produces one Request (REQ) representing the overall order, with one Requested Item (RITM) per distinct Catalog Item in the cart — each RITM then drives its own fulfillment workflow independently.",
   "pieges": [
-    "Forgetting the distinction between the overall Request and the individual Requested Items."
+    "Assuming each cart item spawns its own separate Request, when in fact they share a single REQ from one checkout.",
+    "Assuming a single RITM covers the whole order, losing the ability to track/fulfill each item independently."
   ],
   "source": {
     "type": "manual",

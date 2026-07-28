@@ -3,32 +3,34 @@
   "topic": "incident-management",
   "tags": [
     "incident",
-    "problem"
+    "problem",
+    "root-cause"
   ],
-  "difficulty": "easy",
-  "question": "Which record is used to document the root cause linked to one or more incidents?",
+  "difficulty": "medium",
+  "question": "Five separate incidents come in over one afternoon, all reporting the same intermittent email delivery failure. The team wants to investigate the underlying cause once, without resolving each incident as an unrelated one-off. What is the correct approach?",
   "choices": [
     {
       "id": "a",
-      "text": "Change Request"
+      "text": "Resolve all five incidents independently with the same generic note"
     },
     {
       "id": "b",
-      "text": "Problem"
+      "text": "Create a Problem record, investigate the root cause there, and link the five incidents to it as related incidents"
     },
     {
       "id": "c",
-      "text": "Knowledge Article"
+      "text": "Merge all five incidents into a single incident record and delete the duplicates"
     },
     {
       "id": "d",
-      "text": "Service Catalog Request"
+      "text": "Escalate all five directly to a Change Request without creating a Problem"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Problem Management aims to identify and document the root cause, whereas Incident Management aims for rapid restoration of service.",
+  "explanation": "Problem Management exists precisely for this: a Problem record centralizes root-cause investigation, and related Incidents stay linked to it so their eventual resolution can reference the Problem's findings (or a published workaround) once identified.",
   "pieges": [
-    "Confusing Incident (symptom, rapid restoration) with Problem (root cause)."
+    "Deleting or merging incidents instead of linking them — incident history should generally be preserved, not discarded.",
+    "Jumping straight to a Change Request before root cause is even confirmed via Problem investigation."
   ],
   "source": {
     "type": "manual",

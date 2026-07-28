@@ -2,32 +2,34 @@
   "id": "q_updatesets_02",
   "topic": "update-sets",
   "tags": [
-    "update-set"
+    "update-set",
+    "default-update-set"
   ],
-  "difficulty": "easy",
-  "question": "What must be done before starting development so that changes are properly isolated?",
+  "difficulty": "medium",
+  "question": "A developer spends a sprint building several Business Rules and UI Policies but never explicitly selected a custom Update Set beforehand. Where do these changes end up, and what problem does this typically create later?",
   "choices": [
     {
       "id": "a",
-      "text": "Nothing, all changes automatically go into a dedicated Update Set"
+      "text": "They are lost entirely and must be rebuilt from scratch"
     },
     {
       "id": "b",
-      "text": "Set the desired Update Set as 'Current'"
+      "text": "They land in the Default Update Set, which is generally not meant to be moved to production, so the changes can't be cleanly promoted without extra rework"
     },
     {
       "id": "c",
-      "text": "Delete the Default Update Set"
+      "text": "They are automatically split into per-developer Update Sets by the platform"
     },
     {
       "id": "d",
-      "text": "Activate the security_admin role"
+      "text": "They are saved only locally in the developer's browser until manually exported"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "You must explicitly set the working Update Set as 'Current' so that changes are captured in it, otherwise they go into the Default set.",
+  "explanation": "Any change made while no custom Update Set is set as 'Current' is captured in the Default Update Set, which best practice treats as a catch-all not intended for promotion — recovering those changes cleanly (e.g. via 'Update Set from Update Set' tools) is extra, avoidable work.",
   "pieges": [
-    "Forgetting to set the correct Update Set as 'Current' before starting development."
+    "Assuming forgotten changes are simply lost — they're captured, just in the wrong (Default) container.",
+    "Not realizing that moving the Default Update Set to production is generally considered unsafe/unsupported practice."
   ],
   "source": {
     "type": "manual",

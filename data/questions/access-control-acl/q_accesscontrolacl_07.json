@@ -3,32 +3,34 @@
   "topic": "access-control-acl",
   "tags": [
     "acl",
-    "security"
+    "security",
+    "field-level-acl"
   ],
-  "difficulty": "easy",
-  "question": "Which distinct operations can a table ACL typically control?",
+  "difficulty": "medium",
+  "question": "A user can open and view incident records, including the Priority field, but gets an error trying to change the Priority value specifically — all other fields save fine. What does this behavior most likely indicate about the ACL configuration?",
   "choices": [
     {
       "id": "a",
-      "text": "Only read"
+      "text": "The user is missing the table-level read ACL entirely"
     },
     {
       "id": "b",
-      "text": "create, read, write, delete"
+      "text": "There is a field-level write ACL on Priority (separate from the table-level read/write ACLs) that the user's roles don't satisfy"
     },
     {
       "id": "c",
-      "text": "Only write and delete"
+      "text": "ACLs cannot be scoped to individual fields, so this behavior would not normally occur"
     },
     {
       "id": "d",
-      "text": "Only access to the UI module"
+      "text": "The user's role was removed from the incident table's read ACL only"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Table ACLs can be defined separately for create, read, write, and delete, each with its own conditions/roles.",
+  "explanation": "ACLs can be defined at the field level as well as the table level, each independently for create/read/write/delete. A field-level write ACL on Priority failing (while the table-level read ACL and other field writes succeed) exactly matches this symptom.",
   "pieges": [
-    "Thinking that a single ACL covers all CRUD operations for a table."
+    "Assuming a single table-level ACL governs every field uniformly — field-level ACLs can be more restrictive than the table-level ones.",
+    "Concluding the user lacks read access, when the symptom (viewing works, one specific field's write fails) points to a write ACL, not a read ACL."
   ],
   "source": {
     "type": "manual",

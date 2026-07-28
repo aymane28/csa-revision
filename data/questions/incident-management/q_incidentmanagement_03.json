@@ -3,32 +3,34 @@
   "topic": "incident-management",
   "tags": [
     "incident",
-    "assignment"
+    "assignment",
+    "routing"
   ],
-  "difficulty": "easy",
-  "question": "What is the main difference between 'Assignment group' and 'Assigned to' on an incident?",
+  "difficulty": "medium",
+  "question": "An incident is auto-routed by an assignment rule to the Network team's queue based on the affected CI, but no analyst has picked it up yet. Which field is populated as a result of the routing, and which field remains empty until someone takes ownership?",
   "choices": [
     {
       "id": "a",
-      "text": "They are two names for the same field"
+      "text": "Assigned to is populated with the team; Assignment group stays empty until a manager sets it"
     },
     {
       "id": "b",
-      "text": "Assignment group designates the responsible team, Assigned to designates the specific person"
+      "text": "Assignment group is populated with the team; Assigned to stays empty until an individual takes the incident"
     },
     {
       "id": "c",
-      "text": "Assigned to is mandatory, Assignment group is optional"
+      "text": "Both fields are populated automatically with the same team name"
     },
     {
       "id": "d",
-      "text": "Assignment group only applies to Problems"
+      "text": "Neither field is populated until the incident is manually triaged by a supervisor"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "'Assignment group' identifies the team/group in charge, while 'Assigned to' identifies the specific individual within (or outside of) that group.",
+  "explanation": "Assignment group identifies the responsible team and is what routing rules typically populate; Assigned to identifies a specific person and is usually set later, either manually when someone takes ownership or via further automation.",
   "pieges": [
-    "Thinking that filling in Assigned to removes the need to define Assignment group in a standard routing process."
+    "Assuming a populated Assignment group means a specific person is already working the ticket.",
+    "Thinking Assigned to must always be filled in before an incident can be actively worked by a team."
   ],
   "source": {
     "type": "manual",

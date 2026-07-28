@@ -2,32 +2,34 @@
   "id": "q_businessrulesclientscripts_01",
   "topic": "business-rules-client-scripts",
   "tags": [
-    "business-rule"
+    "business-rule",
+    "before-after-async"
   ],
-  "difficulty": "easy",
-  "question": "When does a 'before' Business Rule run relative to the database write?",
+  "difficulty": "hard",
+  "question": "A developer needs a field's value to be automatically calculated from other fields on the same record, and wants that calculated value to already be present in the database — and visible to a Client Script's onLoad handler — by the time the form finishes loading. Which approach fits, and why?",
   "choices": [
     {
       "id": "a",
-      "text": "After the write"
+      "text": "An 'after' Business Rule, since it runs closest to when the user will view the record"
     },
     {
       "id": "b",
-      "text": "Before the write, and it can modify or cancel the operation"
+      "text": "A 'before' Business Rule, since it runs before the write completes and can set the field's value so it's already persisted when the record is next read"
     },
     {
       "id": "c",
-      "text": "In parallel, asynchronously"
+      "text": "An 'async' Business Rule, since asynchronous execution is fastest"
     },
     {
       "id": "d",
-      "text": "Only when the form loads"
+      "text": "An onLoad Client Script alone, since it runs before the user sees the form"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "A 'before' Business Rule runs before the record is written to the database, allowing values to be changed or the operation to be aborted (abortInsert/abortAction).",
+  "explanation": "A 'before' Business Rule runs before the database write completes, letting it modify the current record's fields so the calculated value is part of what actually gets persisted — an onLoad Client Script only runs client-side after the record is already loaded, and an 'after'/'async' rule runs too late (or unpredictably relative to the read) to guarantee the value is already saved.",
   "pieges": [
-    "Confusing 'before' and 'after': modifying current in an 'after' rule does not prevent the write that has already occurred."
+    "Assuming a Client Script can substitute for server-side, persisted calculation — it only affects what's shown in the browser, not what's stored.",
+    "Choosing 'async' by assuming it means 'faster and therefore better', when async execution isn't guaranteed to complete before the record is next read."
   ],
   "source": {
     "type": "manual",

@@ -3,32 +3,34 @@
   "topic": "incident-management",
   "tags": [
     "incident",
-    "priority"
+    "priority",
+    "impact-urgency-matrix"
   ],
-  "difficulty": "easy",
-  "question": "How is an incident's priority generally determined in a standard ServiceNow configuration?",
+  "difficulty": "medium",
+  "question": "A company-wide email outage is reported (affects everyone), but the caller who logged it selects Urgency = Low because they personally aren't blocked right now. What determines the incident's final Priority in a standard configuration?",
   "choices": [
     {
       "id": "a",
-      "text": "It is entered freely by the end user"
+      "text": "The caller's selected Urgency alone, since only they can judge how urgent it is"
     },
     {
       "id": "b",
-      "text": "It results from an Impact x Urgency matrix"
+      "text": "The combination of Impact and Urgency via the priority matrix — a high Impact can still produce a high priority even with a low Urgency value"
     },
     {
       "id": "c",
-      "text": "It is always equal to the urgency"
+      "text": "The Assignment group's default priority setting, which overrides individual field values"
     },
     {
       "id": "d",
-      "text": "It depends solely on the assignment group"
+      "text": "Priority must be manually set by an admin in every case, regardless of Impact or Urgency"
     }
   ],
   "correctChoiceId": "b",
-  "explanation": "Priority is automatically calculated via a priority matrix crossing Impact and Urgency, which is configurable in the system.",
+  "explanation": "Priority is derived automatically from the Impact x Urgency matrix, not typed in directly. A high Impact (many users affected) combined with even a low Urgency can still land on a meaningfully elevated priority, because the matrix — not either field alone — drives the outcome.",
   "pieges": [
-    "Believing that priority is a free-text field manually entered by default."
+    "Assuming Urgency alone decides priority, ignoring that Impact is an equal input to the matrix.",
+    "Believing the requester's subjective judgment of urgency is what the system uses, rather than the configured matrix logic."
   ],
   "source": {
     "type": "manual",
