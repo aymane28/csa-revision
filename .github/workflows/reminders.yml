@@ -2,8 +2,10 @@ name: Push reminders
 
 on:
   schedule:
-    - cron: "0 7 * * *" # ~9h Paris (été) / ~8h (hiver) — rappel du matin
-    - cron: "0 18 * * *" # ~20h Paris (été) / ~19h (hiver) — rappel du soir
+    # Minutes décalées (pas ":00") car GitHub retarde/saute parfois les cron pile à l'heure
+    # ronde à cause de la charge — cf. https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#schedule
+    - cron: "7 7 * * *" # ~9h07 Paris (été) / ~8h07 (hiver) — rappel du matin
+    - cron: "7 18 * * *" # ~20h07 Paris (été) / ~19h07 (hiver) — rappel du soir
   workflow_dispatch:
     inputs:
       slot:
@@ -18,7 +20,7 @@ jobs:
       - name: Determine slot
         id: slot
         run: |
-          if [ "${{ github.event.schedule }}" = "0 18 * * *" ]; then
+          if [ "${{ github.event.schedule }}" = "7 18 * * *" ]; then
             echo "slot=evening" >> "$GITHUB_OUTPUT"
           elif [ -n "${{ inputs.slot }}" ]; then
             echo "slot=${{ inputs.slot }}" >> "$GITHUB_OUTPUT"
