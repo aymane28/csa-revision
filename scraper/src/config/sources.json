@@ -40,5 +40,53 @@
     "type": "servicenow-docs",
     "topic": "service-catalog",
     "url": "https://docs.servicenow.com/csh?topicname=c_ServiceCatalogCategories.html&version=latest"
+  },
+  {
+    "id": "sn-docs-problem-management",
+    "type": "servicenow-docs",
+    "topic": "problem-management",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ProblemManagement.html&version=latest"
+  },
+  {
+    "id": "sn-docs-change-management",
+    "type": "servicenow-docs",
+    "topic": "change-management",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILChangeManagement.html&version=latest"
+  },
+  {
+    "id": "sn-docs-knowledge-management",
+    "type": "servicenow-docs",
+    "topic": "knowledge-management",
+    "url": "https://docs.servicenow.com/csh?topicname=c_KnowledgeHomepage.html&version=latest"
+  },
+  {
+    "id": "sn-docs-service-level-management",
+    "type": "servicenow-docs",
+    "topic": "service-level-management",
+    "url": "https://docs.servicenow.com/csh?topicname=sla-breakdown-definition.html&version=latest"
+  },
+  {
+    "id": "sn-docs-cmdb",
+    "type": "servicenow-docs",
+    "topic": "cmdb",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILConfigurationManagement.html&version=latest"
+  },
+  {
+    "id": "sn-docs-ui-policies",
+    "type": "servicenow-docs",
+    "topic": "ui-policies",
+    "url": "https://docs.servicenow.com/csh?topicname=t_CreateAUIPolicy.html&version=latest"
+  },
+  {
+    "id": "sn-docs-notifications",
+    "type": "servicenow-docs",
+    "topic": "notifications",
+    "url": "https://docs.servicenow.com/csh?topicname=c_EmailNotifications.html&version=latest"
+  },
+  {
+    "id": "sn-docs-users-groups-roles",
+    "type": "servicenow-docs",
+    "topic": "users-groups-roles",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-user-administration.html&version=latest"
   }
 ]

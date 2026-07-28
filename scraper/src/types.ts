@@ -14,3 +14,5 @@ export interface GeneratedQuestion {
   difficulty: "easy" | "medium" | "hard";
   tags: string[];
 }
+
+export const QUESTIONS_PER_SOURCE = 3;

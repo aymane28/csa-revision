@@ -4,7 +4,7 @@ import { CONFIG_ROOT, DATA_ROOT } from "./lib/paths";
 import { loadSeenUrls, saveSeenUrls } from "./lib/seen-sources";
 import { isDuplicateQuestion } from "./lib/similarity";
 import { fetchAndExtract } from "./pipeline/fetch-extract";
-import { enrichToQuestion } from "./pipeline/enrich";
+import { enrichToQuestions } from "./pipeline/enrich";
 import { writeQuestion } from "./pipeline/write";
 import type { SourceConfig } from "./types";
 
@@ -62,37 +62,46 @@ async function main(): Promise<void> {
       }
 
       console.log(`[enrich] ${source.id}…`);
-      const generated = await enrichToQuestion({
+      const batch = await enrichToQuestions({
         topic: source.topic,
         sourceTitle: extracted.title,
         sourceText: extracted.text,
       });
 
-      if (!generated) {
+      if (!batch) {
         // Transient failure (rate limit, malformed output, network error) — retry this
         // source on the next run instead of blacklisting it forever.
         skipped++;
         continue;
       }
 
+      // Accumulates as we write, so later questions in the same batch are also checked
+      // against earlier ones from this same source (not just against pre-existing questions).
       const existingTexts = loadExistingQuestionTexts();
-      if (isDuplicateQuestion(generated.question, existingTexts)) {
-        console.warn(`[skip] ${source.id}: question générée trop similaire à une question existante`);
-        // The LLM call succeeded but the content is already well covered — no need to
-        // keep re-spending a call on this source every day.
-        seen.add(source.url);
-        skipped++;
-        continue;
+      let writtenFromBatch = 0;
+
+      for (const generated of batch) {
+        if (isDuplicateQuestion(generated.question, existingTexts)) {
+          console.warn(`[skip] ${source.id}: question générée trop similaire à une question existante ("${generated.question.slice(0, 60)}…")`);
+          continue;
+        }
+
+        const id = writeQuestion(source.topic, generated, {
+          type: "generated",
+          url: source.url,
+          retrievedAt: new Date().toISOString(),
+        });
+        existingTexts.push(generated.question);
+        written++;
+        writtenFromBatch++;
+        console.log(`[write] ${id} ajoutée pour "${source.topic}"`);
       }
 
-      const id = writeQuestion(source.topic, generated, {
-        type: "generated",
-        url: source.url,
-        retrievedAt: new Date().toISOString(),
-      });
+      if (writtenFromBatch === 0) skipped++;
+      // Mark the source as seen once we got a usable batch from it (even if every question
+      // in the batch was a near-duplicate) — the LLM call succeeded, no need to keep
+      // re-spending a call on this exact source every day.
       seen.add(source.url);
-      written++;
-      console.log(`[write] ${id} ajoutée pour "${source.topic}"`);
     } catch (err) {
       console.error(`[error] ${source.id}:`, err);
       skipped++;
