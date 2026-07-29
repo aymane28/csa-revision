@@ -1,0 +1,40 @@
+{
+  "id": "q_changemanagement_scr_ms5pjope",
+  "topic": "change-management",
+  "tags": [
+    "Change Management",
+    "AI"
+  ],
+  "difficulty": "medium",
+  "question": "An organization is transitioning to autonomous IT operations. They want to utilize agentic AI to manage and complete Change Management tasks without constant manual intervention. Which feature set should they explore within the Change Management application?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "ITSM Change Management agentic workflows"
+    },
+    {
+      "id": "b",
+      "text": "Change Management Predictive Intelligence suite"
+    },
+    {
+      "id": "c",
+      "text": "Automated Change Request Templates"
+    },
+    {
+      "id": "d",
+      "text": "Change Management Lifecycle Automation policy"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "The documentation specifies that users can 'Use the ITSM Change Management agentic workflows' to manage and complete tasks autonomously, which directly addresses the requirement for AI-driven task completion.",
+  "pieges": [
+    "Confusing 'agentic workflows' with standard 'Automated Change Request' templates or policies.",
+    "Inventing features like 'Predictive Intelligence suite' which is not explicitly linked to the agentic workflow terminology in the provided text."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILChangeManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:35.282Z"
+  },
+  "addedAt": "2026-07-29T06:32:35.282Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "q_accesscontrolacl_scr_ms5pj60s",
+  "topic": "access-control-acl",
+  "tags": [
+    "ACL",
+    "Security",
+    "Evaluation Order"
+  ],
+  "difficulty": "hard",
+  "question": "A System Administrator is troubleshooting why a user cannot edit the 'Short description' field on the Incident form, even though the user has the 'itil' role. Upon inspection, there is a field-level ACL for 'incident.short_description' requiring the 'itil' role, and a table-level ACL for 'incident' requiring the 'itil' role. What is the standard order of evaluation for these ACLs?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The system evaluates the field-level ACL first; if it passes, the table-level ACL is ignored."
+    },
+    {
+      "id": "b",
+      "text": "The system evaluates the table-level ACL first; if it passes, it then evaluates the field-level ACL."
+    },
+    {
+      "id": "c",
+      "text": "The system evaluates both simultaneously; if either one fails, access is denied."
+    },
+    {
+      "id": "d",
+      "text": "The system evaluates the most specific ACL (field-level) first, and if it passes, the table-level ACL is not checked."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "In ServiceNow, ACL evaluation follows a specific hierarchy: it evaluates table-level permissions first (requiring both table-level and field-level access to be granted). If the user fails the table-level check, they are denied access to the field regardless of the field-level ACL result.",
+  "pieges": [
+    "Assuming field-level ACLs override table-level ACLs.",
+    "Thinking that 'most specific' means the system skips the broader table-level check."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=access-control-rules.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:11.068Z"
+  },
+  "addedAt": "2026-07-29T06:32:11.068Z"
+}

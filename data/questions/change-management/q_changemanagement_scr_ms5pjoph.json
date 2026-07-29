@@ -1,0 +1,40 @@
+{
+  "id": "q_changemanagement_scr_ms5pjoph",
+  "topic": "change-management",
+  "tags": [
+    "Change Management",
+    "Administration"
+  ],
+  "difficulty": "easy",
+  "question": "A Junior Administrator is setting up the Change Management environment and needs to locate documentation regarding the specific roles and dependent applications required for the module. Which section of the documentation should they reference?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Reference"
+    },
+    {
+      "id": "b",
+      "text": "Configure"
+    },
+    {
+      "id": "c",
+      "text": "Learn"
+    },
+    {
+      "id": "d",
+      "text": "Explore"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "According to the source text, the 'Reference' section provides details about Change Management components such as roles and dependent applications.",
+  "pieges": [
+    "Selecting 'Configure' because they are currently performing an administrative setup task.",
+    "Selecting 'Learn' or 'Explore' which are described as general information gathering phases rather than technical component reference material."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILChangeManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:35.285Z"
+  },
+  "addedAt": "2026-07-29T06:32:35.285Z"
+}

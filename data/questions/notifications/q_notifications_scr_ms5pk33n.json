@@ -1,0 +1,40 @@
+{
+  "id": "q_notifications_scr_ms5pk33n",
+  "topic": "notifications",
+  "tags": [
+    "Notifications",
+    "SMS"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator is setting up an email notification that also needs to be delivered via SMS. Which of the following statements is accurate regarding how the system handles the SMS content?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The system automatically truncates the full email body to 160 characters for the SMS message."
+    },
+    {
+      "id": "b",
+      "text": "The system always uses the email body as the SMS message content."
+    },
+    {
+      "id": "c",
+      "text": "The system uses the email subject line as the SMS message unless an alternate SMS message is specifically defined."
+    },
+    {
+      "id": "d",
+      "text": "SMS delivery is only possible if the email notification is configured to be part of an email digest."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "By default, the system uses the subject line of the email notification for the SMS message. However, administrators have the flexibility to define an alternate SMS message in the email template or notification form if the subject line is not appropriate.",
+  "pieges": [
+    "Thinking the system automatically manages the email body for SMS.",
+    "Believing SMS is tied to the Email Digest functionality."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_EmailNotifications.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:53.939Z"
+  },
+  "addedAt": "2026-07-29T06:32:53.939Z"
+}

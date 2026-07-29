@@ -1,0 +1,40 @@
+{
+  "id": "q_servicelevelmanagement_scr_ms5pjtta",
+  "topic": "service-level-management",
+  "tags": [
+    "SLA",
+    "System Maintenance"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator is tasked with optimizing the performance of the system's SLA tracking. They notice that the 'sla_breakdown_by_assignment' table is growing significantly. Which mechanism controls the automatic removal of this data, and where is that configuration stored?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The sys_auto_flush table"
+    },
+    {
+      "id": "b",
+      "text": "The sys_trigger table"
+    },
+    {
+      "id": "c",
+      "text": "The sla_properties table"
+    },
+    {
+      "id": "d",
+      "text": "The scheduled_job table"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "According to the documentation, table cleanup jobs, including the one for SLA breakdown data, are defined in the [sys_auto_flush] table.",
+  "pieges": [
+    "Assuming all automated tasks are found in the 'Scheduled Jobs' module.",
+    "Confusing the storage location of the definition with the actual scheduled job runner."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=sla-breakdown-definition.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:41.902Z"
+  },
+  "addedAt": "2026-07-29T06:32:41.902Z"
+}

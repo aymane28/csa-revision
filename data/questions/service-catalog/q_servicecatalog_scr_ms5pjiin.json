@@ -1,0 +1,40 @@
+{
+  "id": "q_servicecatalog_scr_ms5pjiin",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Catalog",
+    "Categories"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator creates a new category named 'Cloud Services' and adds three Catalog Items to it. However, after saving and publishing, the category is not visible to any end users in the Service Catalog. What is the most likely cause?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The 'Available For' list for the category has not been configured."
+    },
+    {
+      "id": "b",
+      "text": "The catalog items added to the category are currently inactive."
+    },
+    {
+      "id": "c",
+      "text": "The 'Catalog' field on the category record is empty."
+    },
+    {
+      "id": "d",
+      "text": "The 'glide.sc.category.canview.override' property is set to false."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "According to the documentation, if there are no active items in a category’s hierarchy, that category does not appear in the catalog. Even if the category is created, the system hides it until at least one active item is associated with it.",
+  "pieges": [
+    "Assuming that 'Available For' controls category visibility (it controls item/catalog visibility).",
+    "Confusing the need for an active item with the need for a catalog assignment."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ServiceCatalogCategories.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:27.263Z"
+  },
+  "addedAt": "2026-07-29T06:32:27.263Z"
+}

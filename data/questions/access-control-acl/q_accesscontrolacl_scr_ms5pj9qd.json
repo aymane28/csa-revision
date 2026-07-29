@@ -1,0 +1,42 @@
+{
+  "id": "q_accesscontrolacl_scr_ms5pj9qd",
+  "topic": "access-control-acl",
+  "tags": [
+    "ACL",
+    "Security",
+    "Configuration"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator is configuring an ACL to restrict access to the 'Priority' field on the 'Incident' table. They want to ensure that only users with the 'itil' role can edit this field, but only if the incident is not in a 'Closed' state. Which configuration approach is correct for this requirement?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Set the Operation to 'write', the Name to 'incident.priority', add the 'itil' role to the Requires Role list, and add a Data Condition of 'State is not Closed'."
+    },
+    {
+      "id": "b",
+      "text": "Set the Operation to 'write', the Name to 'incident.priority', and use a Script that evaluates 'current.state != 'closed' && gs.hasRole('itil')'."
+    },
+    {
+      "id": "c",
+      "text": "Set the Operation to 'edit', the Name to 'incident.priority', add the 'itil' role to the Requires Role list, and set the Applies-to field to 'State is not Closed'."
+    },
+    {
+      "id": "d",
+      "text": "Set the Operation to 'write', the Name to 'incident.priority', and set the Applies-to field to 'State is not Closed', leaving the Requires Role list empty."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "To secure a specific field, the Name must be 'table.field' (incident.priority). To restrict the action, the Operation must be 'write'. Since all conditions (roles and data conditions) must be met for access to be granted, adding the role to the 'Requires role' list and the state check to the 'Data Condition' correctly implements the security requirement.",
+  "pieges": [
+    "Confusing 'Applies-to' with 'Data Condition': Applies-to determines which records the ACL applies to, while Data Condition is an evaluation criteria for access.",
+    "Assuming 'edit' is the correct operation for field updates; 'write' is the standard operation for modifying field values.",
+    "Misunderstanding that all conditions are additive (AND logic); failing any one condition results in access denial."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-access-control-list.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:15.877Z"
+  },
+  "addedAt": "2026-07-29T06:32:15.877Z"
+}

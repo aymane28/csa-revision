@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T15:01:52.626Z",
+  "generatedAt": "2026-07-29T06:32:27.268Z",
   "fiches": [
     {
       "topic": "incident-management",
@@ -17,7 +17,10 @@
         "q_incidentmanagement_10",
         "q_incidentmanagement_11",
         "q_incidentmanagement_12",
-        "q_incidentmanagement_scr_ms3cta3x"
+        "q_incidentmanagement_scr_ms3cta3x",
+        "q_incidentmanagement_scr_ms5pizfp",
+        "q_incidentmanagement_scr_ms5pizfs",
+        "q_incidentmanagement_scr_ms5pizfu"
       ]
     },
     {
@@ -33,7 +36,13 @@
         "q_accesscontrolacl_07",
         "q_accesscontrolacl_08",
         "q_accesscontrolacl_scr_ms3ctnpa",
-        "q_accesscontrolacl_scr_ms3cu07u"
+        "q_accesscontrolacl_scr_ms3cu07u",
+        "q_accesscontrolacl_scr_ms5pj60s",
+        "q_accesscontrolacl_scr_ms5pj60v",
+        "q_accesscontrolacl_scr_ms5pj60x",
+        "q_accesscontrolacl_scr_ms5pj9qd",
+        "q_accesscontrolacl_scr_ms5pj9qf",
+        "q_accesscontrolacl_scr_ms5pj9qh"
       ]
     },
     {
@@ -47,7 +56,10 @@
         "q_updatesets_05",
         "q_updatesets_06",
         "q_updatesets_07",
-        "q_updatesets_scr_ms3cua6d"
+        "q_updatesets_scr_ms3cua6d",
+        "q_updatesets_scr_ms5pjcwo",
+        "q_updatesets_scr_ms5pjcwr",
+        "q_updatesets_scr_ms5pjcwt"
       ]
     },
     {
@@ -62,7 +74,10 @@
         "q_businessrulesclientscripts_06",
         "q_businessrulesclientscripts_07",
         "q_businessrulesclientscripts_08",
-        "q_businessrulesclientscripts_scr_ms3ctkg7"
+        "q_businessrulesclientscripts_scr_ms3ctkg7",
+        "q_businessrulesclientscripts_scr_ms5pj2pc",
+        "q_businessrulesclientscripts_scr_ms5pj2pf",
+        "q_businessrulesclientscripts_scr_ms5pj2pi"
       ]
     },
     {
@@ -78,7 +93,13 @@
         "q_servicecatalog_07",
         "q_servicecatalog_08",
         "q_servicecatalog_scr_ms3cumbg",
-        "q_servicecatalog_scr_ms3cuxki"
+        "q_servicecatalog_scr_ms3cuxki",
+        "q_servicecatalog_scr_ms5pjfnm",
+        "q_servicecatalog_scr_ms5pjfnp",
+        "q_servicecatalog_scr_ms5pjfnr",
+        "q_servicecatalog_scr_ms5pjiin",
+        "q_servicecatalog_scr_ms5pjiip",
+        "q_servicecatalog_scr_ms5pjiis"
       ]
     }
   ]

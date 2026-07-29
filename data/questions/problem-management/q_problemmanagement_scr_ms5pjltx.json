@@ -1,0 +1,41 @@
+{
+  "id": "q_problemmanagement_scr_ms5pjltx",
+  "topic": "problem-management",
+  "tags": [
+    "Problem Management",
+    "Reporting",
+    "Dashboards"
+  ],
+  "difficulty": "easy",
+  "question": "An organization is auditing their Problem Management process to identify bottlenecks and trends in their infrastructure errors. Which toolset within the Problem Management application should the administrator utilize to visualize data over time and identify areas for process improvement?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The Problem Management Reference documentation."
+    },
+    {
+      "id": "b",
+      "text": "The Known Error Portal analytics feed."
+    },
+    {
+      "id": "c",
+      "text": "Problem Management Dashboards."
+    },
+    {
+      "id": "d",
+      "text": "The ServiceNow Community forum search."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "ServiceNow provides native Dashboards within the Problem Management application specifically for visualizing data over time, analyzing business processes, and identifying trends or areas for improvement in the problem resolution lifecycle.",
+  "pieges": [
+    "Mistaking the ServiceNow Community forum for a reporting tool; the community is for troubleshooting and peer support, not for internal data visualization.",
+    "Confusing Reference documentation with operational reporting tools; documentation provides definitions and properties, not performance metrics."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ProblemManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:31.557Z"
+  },
+  "addedAt": "2026-07-29T06:32:31.557Z"
+}

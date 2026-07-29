@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T15:01:52.626Z",
+  "generatedAt": "2026-07-29T06:32:58.450Z",
   "questions": [
     {
       "id": "q_incidentmanagement_01",
@@ -1734,6 +1734,1599 @@
         "Confusing visibility with roles (the admin or catalog_admin role is needed for configuration, but visibility is governed by the presence of active items)."
       ],
       "addedAt": "2026-07-27T15:01:52.626Z"
+    },
+    {
+      "id": "q_incidentmanagement_scr_ms5pizfp",
+      "topic": "incident-management",
+      "tags": [
+        "Incident Management",
+        "Knowledge Management"
+      ],
+      "difficulty": "medium",
+      "question": "A Service Desk manager wants to identify if a recurring technical issue has already been documented to prevent redundant troubleshooting efforts. Which feature should the manager utilize to support this requirement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The Major Incident Workbench"
+        },
+        {
+          "id": "b",
+          "text": "The Known Error Portal"
+        },
+        {
+          "id": "c",
+          "text": "The Incident Management agentic workflow"
+        },
+        {
+          "id": "d",
+          "text": "The Service Level Management dashboard"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The Known Error Portal is specifically designed to house known error articles, allowing agents to search for existing solutions to recurring or previously identified technical issues, thereby streamlining the resolution process.",
+      "pieges": [
+        "Confusing the Known Error Portal with the Major Incident Workbench, which is for managing high-impact, widespread incidents.",
+        "Assuming the agentic AI workflow is the primary tool for knowledge retrieval rather than autonomous task management."
+      ],
+      "addedAt": "2026-07-29T06:32:02.533Z"
+    },
+    {
+      "id": "q_incidentmanagement_scr_ms5pizfs",
+      "topic": "incident-management",
+      "tags": [
+        "Incident Management",
+        "Major Incident"
+      ],
+      "difficulty": "medium",
+      "question": "During a widespread service disruption affecting the entire corporate email infrastructure, an administrator needs to coordinate response efforts, track communication, and visualize the incident's impact. Which tool provides a centralized interface for these activities?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The Incident Management overview dashboard"
+        },
+        {
+          "id": "b",
+          "text": "The Major Incident Workbench"
+        },
+        {
+          "id": "c",
+          "text": "The Agentic AI autonomous resolution console"
+        },
+        {
+          "id": "d",
+          "text": "The Service Desk incident queue"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The Major Incident Workbench is the specialized tool within the Incident Management module designed to manage, coordinate, and track major incidents through a single, comprehensive interface.",
+      "pieges": [
+        "Selecting the general incident dashboard, which is intended for monitoring general status and SLAs rather than managing complex, high-impact events.",
+        "Misidentifying the agentic AI workflow as a coordination tool, as it focuses on autonomous task execution."
+      ],
+      "addedAt": "2026-07-29T06:32:02.536Z"
+    },
+    {
+      "id": "q_incidentmanagement_scr_ms5pizfu",
+      "topic": "incident-management",
+      "tags": [
+        "Incident Management",
+        "Agentic AI"
+      ],
+      "difficulty": "hard",
+      "question": "An organization is implementing an autonomous workflow to handle low-complexity incidents. According to the Incident Management documentation, which capability allows the system to autonomously manage, resolve, and close incident tasks?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ITSM Incident Management agentic workflow"
+        },
+        {
+          "id": "b",
+          "text": "Automated Incident Escalation rules"
+        },
+        {
+          "id": "c",
+          "text": "Known Error Portal integration"
+        },
+        {
+          "id": "d",
+          "text": "Service Level Agreement (SLA) breach automation"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "The documentation explicitly identifies the ITSM Incident Management agentic workflow as the feature used to manage, resolve, and close incidents and incident tasks autonomously.",
+      "pieges": [
+        "Confusing 'agentic workflow' with standard Escalation rules, which are typically rule-based rather than AI-driven autonomous workflows.",
+        "Assuming that SLA automation is responsible for closing incidents, when it is actually responsible for tracking service level compliance."
+      ],
+      "addedAt": "2026-07-29T06:32:02.538Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_scr_ms5pj2pc",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "Business Rules",
+        "Scripting"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator is tasked with ensuring that whenever a user saves an Incident record, a specific calculation is performed on the server before the record is written to the database. Which Business Rule configuration should the administrator select to ensure this logic executes efficiently?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A 'Before' Business Rule with 'Insert' and 'Update' checked."
+        },
+        {
+          "id": "b",
+          "text": "An 'After' Business Rule with 'Insert' and 'Update' checked."
+        },
+        {
+          "id": "c",
+          "text": "A 'Display' Business Rule with 'Query' checked."
+        },
+        {
+          "id": "d",
+          "text": "A 'Async' Business Rule with 'Insert' and 'Update' checked."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "A 'Before' Business Rule runs before the record is saved to the database, making it the correct choice for calculations or modifications that should be applied to the record fields prior to the database write operation.",
+      "pieges": [
+        "Confusing 'Before' rules with 'After' rules, which run after the database write and would require an additional update() call, causing performance overhead.",
+        "Assuming 'Display' rules are for data modification during save operations."
+      ],
+      "addedAt": "2026-07-29T06:32:06.768Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_scr_ms5pj2pf",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "Business Rules",
+        "Workflow Studio",
+        "Architecture"
+      ],
+      "difficulty": "hard",
+      "question": "A developer is reviewing legacy automation to transition processes to Workflow Studio. They encounter a Business Rule that triggers when a list of records is viewed to determine which fields should be read-only for the current user. Why is this specific Business Rule type NOT suitable for direct replacement by a standard Workflow Studio flow?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Because 'Display' Business Rules run on the server before the form is rendered to the client, whereas Workflow Studio is designed for record-based state changes."
+        },
+        {
+          "id": "b",
+          "text": "Because 'Display' Business Rules are client-side scripts and Workflow Studio only handles server-side logic."
+        },
+        {
+          "id": "c",
+          "text": "Because 'Query' Business Rules are required for field-level security, which Workflow Studio cannot manage."
+        },
+        {
+          "id": "d",
+          "text": "Because Business Rules that run on 'Query' must be written in Java, not JavaScript."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Display Business Rules are specifically designed to pass server-side data to the client (often via g_scratchpad) before the form renders. Workflow Studio is intended for process automation (record state changes), not for preparing the client-side environment during form loading.",
+      "pieges": [
+        "Mistaking the purpose of 'Display' Business Rules as simple server-side automation rather than a mechanism to bridge server and client data.",
+        "Thinking all Business Rules are interchangeable with Flow Designer/Workflow Studio without considering the timing of the execution."
+      ],
+      "addedAt": "2026-07-29T06:32:06.771Z"
+    },
+    {
+      "id": "q_businessrulesclientscripts_scr_ms5pj2pi",
+      "topic": "business-rules-client-scripts",
+      "tags": [
+        "Business Rules",
+        "Performance",
+        "Query"
+      ],
+      "difficulty": "medium",
+      "question": "During a performance audit, an administrator notices that a specific Business Rule is causing long wait times for users whenever they perform a search on the 'Incident' table. The rule is configured to run on every query. Which configuration is most likely causing this performance degradation?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Business Rule configured with the 'Query' operation checked."
+        },
+        {
+          "id": "b",
+          "text": "A Business Rule configured with the 'Async' operation checked."
+        },
+        {
+          "id": "c",
+          "text": "A Business Rule configured with the 'Display' operation checked."
+        },
+        {
+          "id": "d",
+          "text": "A Business Rule configured with the 'Before' operation checked."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Business Rules set to run on 'Query' execute every time a table is queried. If the script within the rule is complex or performs heavy database operations, it will significantly slow down list views and search results for all users.",
+      "pieges": [
+        "Assuming all Business Rules affect performance equally regardless of the trigger operation.",
+        "Confusing 'Query' business rules with 'Insert/Update' rules which only trigger on specific record events, not every time data is retrieved."
+      ],
+      "addedAt": "2026-07-29T06:32:06.774Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms5pj60s",
+      "topic": "access-control-acl",
+      "tags": [
+        "ACL",
+        "Security",
+        "Evaluation Order"
+      ],
+      "difficulty": "hard",
+      "question": "A System Administrator is troubleshooting why a user cannot edit the 'Short description' field on the Incident form, even though the user has the 'itil' role. Upon inspection, there is a field-level ACL for 'incident.short_description' requiring the 'itil' role, and a table-level ACL for 'incident' requiring the 'itil' role. What is the standard order of evaluation for these ACLs?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The system evaluates the field-level ACL first; if it passes, the table-level ACL is ignored."
+        },
+        {
+          "id": "b",
+          "text": "The system evaluates the table-level ACL first; if it passes, it then evaluates the field-level ACL."
+        },
+        {
+          "id": "c",
+          "text": "The system evaluates both simultaneously; if either one fails, access is denied."
+        },
+        {
+          "id": "d",
+          "text": "The system evaluates the most specific ACL (field-level) first, and if it passes, the table-level ACL is not checked."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "In ServiceNow, ACL evaluation follows a specific hierarchy: it evaluates table-level permissions first (requiring both table-level and field-level access to be granted). If the user fails the table-level check, they are denied access to the field regardless of the field-level ACL result.",
+      "pieges": [
+        "Assuming field-level ACLs override table-level ACLs.",
+        "Thinking that 'most specific' means the system skips the broader table-level check."
+      ],
+      "addedAt": "2026-07-29T06:32:11.068Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms5pj60v",
+      "topic": "access-control-acl",
+      "tags": [
+        "ACL",
+        "Security",
+        "Configuration"
+      ],
+      "difficulty": "medium",
+      "question": "An organization requires that only members of the 'HR' group can view records in the 'Salary' table. Which configuration correctly utilizes the Access Control mechanism to enforce this requirement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Create a 'read' ACL on 'salary.*' and add the 'HR' group to the 'Requires role' field."
+        },
+        {
+          "id": "b",
+          "text": "Create a 'read' ACL on 'salary.None' and add the 'HR' role to the 'Requires role' field."
+        },
+        {
+          "id": "c",
+          "text": "Create a 'read' ACL on 'salary.None' and define a condition where 'Group is HR'."
+        },
+        {
+          "id": "d",
+          "text": "Create a 'read' ACL on 'salary.None' and add a script that checks for the 'HR' group."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "To restrict access to a table, you use the 'None' wildcard (table.None). Adding a condition 'Group is HR' is the standard way to restrict access based on group membership within an ACL. Adding a role is possible, but if the requirement is specifically group-based, the condition builder is the correct tool.",
+      "pieges": [
+        "Confusing 'salary.*' (field-level) with 'salary.None' (table-level).",
+        "Assuming roles are the only way to restrict access, ignoring the power of the condition builder."
+      ],
+      "addedAt": "2026-07-29T06:32:11.071Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms5pj60x",
+      "topic": "access-control-acl",
+      "tags": [
+        "ACL",
+        "Security",
+        "Fundamentals"
+      ],
+      "difficulty": "easy",
+      "question": "Which of the following describes the behavior of a user who has no ACLs matching a specific table or field?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The user is granted access by default as the system follows an 'Open Access' policy."
+        },
+        {
+          "id": "b",
+          "text": "The user is denied access by default because ServiceNow follows a 'Deny All' policy for non-matching records."
+        },
+        {
+          "id": "c",
+          "text": "The user is granted access only if they have the 'admin' role."
+        },
+        {
+          "id": "d",
+          "text": "The user is granted access to the record but cannot perform any actions (e.g., update or delete)."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "ServiceNow security operates on a 'Deny All' principle. If no ACL rules match a specific operation on a record or field, the user is denied access by default.",
+      "pieges": [
+        "Believing that if no rules exist, access is unrestricted.",
+        "Thinking that non-matching ACLs default to 'Allow' for standard users."
+      ],
+      "addedAt": "2026-07-29T06:32:11.073Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms5pj9qd",
+      "topic": "access-control-acl",
+      "tags": [
+        "ACL",
+        "Security",
+        "Configuration"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator is configuring an ACL to restrict access to the 'Priority' field on the 'Incident' table. They want to ensure that only users with the 'itil' role can edit this field, but only if the incident is not in a 'Closed' state. Which configuration approach is correct for this requirement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Set the Operation to 'write', the Name to 'incident.priority', add the 'itil' role to the Requires Role list, and add a Data Condition of 'State is not Closed'."
+        },
+        {
+          "id": "b",
+          "text": "Set the Operation to 'write', the Name to 'incident.priority', and use a Script that evaluates 'current.state != 'closed' && gs.hasRole('itil')'."
+        },
+        {
+          "id": "c",
+          "text": "Set the Operation to 'edit', the Name to 'incident.priority', add the 'itil' role to the Requires Role list, and set the Applies-to field to 'State is not Closed'."
+        },
+        {
+          "id": "d",
+          "text": "Set the Operation to 'write', the Name to 'incident.priority', and set the Applies-to field to 'State is not Closed', leaving the Requires Role list empty."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "To secure a specific field, the Name must be 'table.field' (incident.priority). To restrict the action, the Operation must be 'write'. Since all conditions (roles and data conditions) must be met for access to be granted, adding the role to the 'Requires role' list and the state check to the 'Data Condition' correctly implements the security requirement.",
+      "pieges": [
+        "Confusing 'Applies-to' with 'Data Condition': Applies-to determines which records the ACL applies to, while Data Condition is an evaluation criteria for access.",
+        "Assuming 'edit' is the correct operation for field updates; 'write' is the standard operation for modifying field values.",
+        "Misunderstanding that all conditions are additive (AND logic); failing any one condition results in access denial."
+      ],
+      "addedAt": "2026-07-29T06:32:15.877Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms5pj9qf",
+      "topic": "access-control-acl",
+      "tags": [
+        "ACL",
+        "Evaluation",
+        "Troubleshooting"
+      ],
+      "difficulty": "medium",
+      "question": "A user reports that they can see a specific field on a form, but the field appears as read-only. Which of the following scenarios most accurately explains why this is occurring based on the ACL evaluation process?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The user passed the 'read' ACL check, but failed the 'write' ACL check for that field."
+        },
+        {
+          "id": "b",
+          "text": "The user failed the 'read' ACL check, which triggered the system to default the field to read-only mode."
+        },
+        {
+          "id": "c",
+          "text": "The user failed the 'create' ACL, which prevents the field from being editable during the record lifecycle."
+        },
+        {
+          "id": "d",
+          "text": "The user passed the 'write' ACL check, but the 'Applies-to' condition is case-sensitive and failed."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "According to the documentation, failing a 'write' ACL results in the user seeing a read-only field in forms and lists. If the user had failed the 'read' ACL, they would not be able to see the object (field) at all.",
+      "pieges": [
+        "Thinking that a failed read ACL results in a read-only field (it actually hides the field).",
+        "Confusing 'write' operation failures with 'create' operation failures.",
+        "Assuming the system defaults to read-only on error; the system actually denies access based on the outcome of specific operations."
+      ],
+      "addedAt": "2026-07-29T06:32:15.879Z"
+    },
+    {
+      "id": "q_accesscontrolacl_scr_ms5pj9qh",
+      "topic": "access-control-acl",
+      "tags": [
+        "ACL",
+        "Security",
+        "Deny-by-default"
+      ],
+      "difficulty": "hard",
+      "question": "During a security audit, you discover an ACL that has no roles defined, no security attributes, no data conditions, and no scripts. Based on the documentation regarding 'Deny by default' behavior, what is the status of this ACL?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It is an 'Empty ACL' and the system will deny access by default."
+        },
+        {
+          "id": "b",
+          "text": "It is a 'Global ACL' that grants access to everyone since no restrictions are defined."
+        },
+        {
+          "id": "c",
+          "text": "It is an 'Invalid ACL' and the system will ignore it, defaulting to the next ACL in the evaluation order."
+        },
+        {
+          "id": "d",
+          "text": "It is an 'Open ACL' that grants access unless a Deny-Unless rule is found elsewhere."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "The documentation explicitly states that 'Empty ACLs are defined as ACLs without one or more of these components: Defined role, Security attribute, Data condition, or Script'. It further specifies that by default, the ACL engine completely denies access if an ACL is empty or invalid.",
+      "pieges": [
+        "Assuming an empty ACL means 'no restrictions' (i.e., open access).",
+        "Confusing 'Empty ACL' with 'Invalid ACL' (though both result in denial, they are distinct definitions).",
+        "Believing the system grants access when no matching ACLs are found vs. when an empty ACL exists."
+      ],
+      "addedAt": "2026-07-29T06:32:15.881Z"
+    },
+    {
+      "id": "q_updatesets_scr_ms5pjcwo",
+      "topic": "update-sets",
+      "tags": [
+        "Update Sets",
+        "Deployment"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator is preparing to move a series of configuration changes from a development instance to a test instance. They have created multiple update sets to organize different functional modules. Which of the following best describes the recommended approach for managing these changes?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Merge the individual update sets into a single update set before moving to the test instance."
+        },
+        {
+          "id": "b",
+          "text": "Manually export each update set as an XML file and import them sequentially into the test instance."
+        },
+        {
+          "id": "c",
+          "text": "Use Batched Update Sets to group the related update sets into a parent-child hierarchy to ensure deployment order."
+        },
+        {
+          "id": "d",
+          "text": "Apply the update sets directly to the production instance to bypass the test instance validation step."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "Batched Update Sets allow administrators to group multiple update sets into a parent-child relationship. This is the official mechanism to manage dependencies and deployment order when moving complex configurations, ensuring that related changes are handled as a cohesive unit.",
+      "pieges": [
+        "Assuming merging is the only way to group changes (merging is destructive and permanent).",
+        "Thinking manual XML export is the standard procedure for simple configuration moves."
+      ],
+      "addedAt": "2026-07-29T06:32:19.992Z"
+    },
+    {
+      "id": "q_updatesets_scr_ms5pjcwr",
+      "topic": "update-sets",
+      "tags": [
+        "Update Sets",
+        "Best Practices"
+      ],
+      "difficulty": "hard",
+      "question": "A developer has been working on a custom application feature within the 'Default' update set. They realize the changes should have been captured in a specific, named update set to facilitate migration to the production instance. What is the most appropriate action to take?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Delete the 'Default' update set and recreate the changes in a new update set."
+        },
+        {
+          "id": "b",
+          "text": "Use the 'Merge' functionality to move the changes from the 'Default' update set into a new, named update set."
+        },
+        {
+          "id": "c",
+          "text": "Create a new update set, set it to 'In Progress', and manually recreate the configuration changes."
+        },
+        {
+          "id": "d",
+          "text": "Move the update set to 'Complete' and rename it to the desired functional name."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "The 'Default' update set cannot be moved or merged. Changes captured in 'Default' are not intended for migration. The only way to capture these changes in a transportable update set is to recreate them while the new, named update set is active.",
+      "pieges": [
+        "Believing that the 'Default' update set can be renamed or merged.",
+        "Assuming there is an automated tool to 'move' records from one update set to another."
+      ],
+      "addedAt": "2026-07-29T06:32:19.995Z"
+    },
+    {
+      "id": "q_updatesets_scr_ms5pjcwt",
+      "topic": "update-sets",
+      "tags": [
+        "Update Sets",
+        "Scope"
+      ],
+      "difficulty": "easy",
+      "question": "Which of the following scenarios is a valid use case for using System Update Sets?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Transferring data records from the Incident table between two instances."
+        },
+        {
+          "id": "b",
+          "text": "Moving a new custom table definition and its associated form layout from a development instance to a production instance."
+        },
+        {
+          "id": "c",
+          "text": "Synchronizing user profile record updates between a production and a sub-production instance."
+        },
+        {
+          "id": "d",
+          "text": "Updating the system version of the ServiceNow instance to a newer release."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Update sets are designed to capture configuration changes (metadata), such as new tables, form layouts, business rules, and client scripts. They are explicitly not designed for transferring transactional data records or performing system upgrades.",
+      "pieges": [
+        "Confusing configuration metadata with transactional data records.",
+        "Assuming update sets are used for system-wide platform version upgrades."
+      ],
+      "addedAt": "2026-07-29T06:32:19.997Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms5pjfnm",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Catalog",
+        "Service Portal",
+        "Plugins"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator at a company that recently upgraded to a newer version of ServiceNow notices that the Service Portal Catalog landing page is missing. Which action must the administrator perform to enable this functionality?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Navigate to the Service Portal configuration and enable 'Catalog Landing' in the portal record."
+        },
+        {
+          "id": "b",
+          "text": "Activate the Service Portal - Service Catalog v2 plugin (com.glideapp.servicecatalog.portal)."
+        },
+        {
+          "id": "c",
+          "text": "Update the 'My Request Filter' module to point to the new catalog landing page."
+        },
+        {
+          "id": "d",
+          "text": "Assign the 'catalog_admin' role to the users who need to access the landing page."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "According to the documentation, upgrade users must specifically activate the 'Service Portal - Service Catalog v2' plugin (com.glideapp.servicecatalog.portal) to access the Catalog landing page, as it is only available by default for zBoot users.",
+      "pieges": [
+        "Assuming the page is enabled by default for all users.",
+        "Confusing plugin activation with user role assignment or portal record configuration."
+      ],
+      "addedAt": "2026-07-29T06:32:23.554Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms5pjfnp",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Catalog",
+        "Search",
+        "Configuration"
+      ],
+      "difficulty": "medium",
+      "question": "A user complains that they cannot find a specific catalog item when using the search bar on the Service Portal Catalog landing page. What is the most likely cause for this issue?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The catalog item does not have a user criteria defined for the 'search' role."
+        },
+        {
+          "id": "b",
+          "text": "The catalog item is not associated with any catalog or category."
+        },
+        {
+          "id": "c",
+          "text": "The catalog item has not been added to the 'Popular Items' widget."
+        },
+        {
+          "id": "d",
+          "text": "The 'My Request Filter' module has not been configured to include the specific item."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The documentation states that only items associated with a catalog and category are searchable. If an item lacks these associations, it will not appear in the search results.",
+      "pieges": [
+        "Thinking search results are driven by the 'Popular Items' widget.",
+        "Assuming search is controlled by the 'My Request Filter' module, which actually controls request and approval lists."
+      ],
+      "addedAt": "2026-07-29T06:32:23.557Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms5pjfnr",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Portal",
+        "Widgets",
+        "Configuration"
+      ],
+      "difficulty": "hard",
+      "question": "Which statement accurately describes the behavior of the 'My Recent Items' widget on the Service Portal Catalog landing page?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It displays items that are currently in the user's active shopping cart."
+        },
+        {
+          "id": "b",
+          "text": "It can be configured via an instance option to display either viewed or requested items."
+        },
+        {
+          "id": "c",
+          "text": "It automatically shows items that have been marked as 'Favorites' by the user."
+        },
+        {
+          "id": "d",
+          "text": "It remains visible on the page even if the user has no history of viewed or requested items."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The documentation explicitly mentions that an instance option on the 'My Recent Items' widget allows you to display either the viewed or requested items, and that the widget is not displayed when it has no data.",
+      "pieges": [
+        "Assuming the widget is always visible (it disappears if there is no data).",
+        "Confusing 'Recent Items' with 'Saved Bundles' or 'Favorites'."
+      ],
+      "addedAt": "2026-07-29T06:32:23.559Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms5pjiin",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Catalog",
+        "Categories"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator creates a new category named 'Cloud Services' and adds three Catalog Items to it. However, after saving and publishing, the category is not visible to any end users in the Service Catalog. What is the most likely cause?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The 'Available For' list for the category has not been configured."
+        },
+        {
+          "id": "b",
+          "text": "The catalog items added to the category are currently inactive."
+        },
+        {
+          "id": "c",
+          "text": "The 'Catalog' field on the category record is empty."
+        },
+        {
+          "id": "d",
+          "text": "The 'glide.sc.category.canview.override' property is set to false."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "According to the documentation, if there are no active items in a category’s hierarchy, that category does not appear in the catalog. Even if the category is created, the system hides it until at least one active item is associated with it.",
+      "pieges": [
+        "Assuming that 'Available For' controls category visibility (it controls item/catalog visibility).",
+        "Confusing the need for an active item with the need for a catalog assignment."
+      ],
+      "addedAt": "2026-07-29T06:32:27.263Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms5pjiip",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Catalog",
+        "Roles",
+        "Categories"
+      ],
+      "difficulty": "medium",
+      "question": "A Catalog Manager is assigned to the 'Hardware' category. They attempt to modify the 'Software' category, but the options to edit are missing. Which of the following best describes this behavior?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Catalog Managers only have read-only access to subcategories of their assigned parent."
+        },
+        {
+          "id": "b",
+          "text": "Catalog Managers can only configure categories to which they are explicitly assigned."
+        },
+        {
+          "id": "c",
+          "text": "The 'catalog_admin' role is required to modify any category regardless of assignment."
+        },
+        {
+          "id": "d",
+          "text": "System properties globally restrict Catalog Managers from editing categories."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The documentation explicitly states that catalog managers and catalog editors can configure categories, but only those to which they are assigned.",
+      "pieges": [
+        "Assuming Catalog Managers have global authority over the catalog.",
+        "Confusing the role of a Catalog Manager with a Catalog Administrator."
+      ],
+      "addedAt": "2026-07-29T06:32:27.266Z"
+    },
+    {
+      "id": "q_servicecatalog_scr_ms5pjiis",
+      "topic": "service-catalog",
+      "tags": [
+        "Service Catalog",
+        "Catalog Items"
+      ],
+      "difficulty": "hard",
+      "question": "An organization wants to make a specific 'High-Performance Laptop' item available under both the 'Workstations' category and the 'New Hire' category. How can the administrator achieve this?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Create a subcategory under 'Workstations' and move the item to that subcategory."
+        },
+        {
+          "id": "b",
+          "text": "Create a parent-child relationship between 'Workstations' and 'New Hire'."
+        },
+        {
+          "id": "c",
+          "text": "Associate the same catalog item record with multiple categories."
+        },
+        {
+          "id": "d",
+          "text": "Create two separate catalog item records, one for each category."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "The documentation states that a catalog item can exist in multiple categories, providing the flexibility to offer the same service from multiple places within the catalog.",
+      "pieges": [
+        "Thinking that an item can only belong to one category (the 'one-to-many' limitation).",
+        "Assuming that duplicating the item record is the required way to achieve multi-category availability."
+      ],
+      "addedAt": "2026-07-29T06:32:27.268Z"
+    },
+    {
+      "id": "q_problemmanagement_scr_ms5pjlts",
+      "topic": "problem-management",
+      "tags": [
+        "Problem Management",
+        "Incident Management"
+      ],
+      "difficulty": "medium",
+      "question": "A Service Desk manager notices that multiple incidents are being reported regarding a recurring application slowness. To support the Problem Management process, the manager wants to ensure that these incidents are linked to a single root cause investigation. Which ServiceNow feature should the manager use to effectively transition from reactive incident handling to proactive problem identification?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Create a Problem record directly from the Incident record using the context menu or related link."
+        },
+        {
+          "id": "b",
+          "text": "Merge all relevant incidents into a single Request record to consolidate the workload."
+        },
+        {
+          "id": "c",
+          "text": "Use the Known Error Portal to automatically close all incidents related to the infrastructure error."
+        },
+        {
+          "id": "d",
+          "text": "Assign all incidents to a Change Request to force an immediate deployment of a fix."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "In ServiceNow, the standard workflow for Problem Management involves identifying a pattern in incidents and creating a Problem record to investigate the root cause. Using the 'Create Problem' related link or context menu allows the system to map the incident to the new problem, preserving the link for reporting and tracking.",
+      "pieges": [
+        "Confusing Problem management with Change management; a problem identifies the root cause, while a change implements the fix.",
+        "Believing incidents can be 'merged' into Requests; Requests are for service catalog items, not incident remediation."
+      ],
+      "addedAt": "2026-07-29T06:32:31.552Z"
+    },
+    {
+      "id": "q_problemmanagement_scr_ms5pjltv",
+      "topic": "problem-management",
+      "tags": [
+        "Problem Management",
+        "Known Error Portal"
+      ],
+      "difficulty": "medium",
+      "question": "An IT administrator is configuring the Problem Management lifecycle. They want to ensure that once a root cause is identified and a workaround is established, this information is easily accessible to Service Desk agents to improve resolution times. Which component of the Problem Management ecosystem is specifically designed for this purpose?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The Problem Management dashboard analytics."
+        },
+        {
+          "id": "b",
+          "text": "The Known Error Portal."
+        },
+        {
+          "id": "c",
+          "text": "The Incident Management configuration properties."
+        },
+        {
+          "id": "d",
+          "text": "The Problem Task assignment rules."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The Known Error Portal is the centralized location where known errors and workarounds are published. It allows Service Desk agents to search for existing solutions to reported incidents, preventing duplicate root cause investigations and speeding up incident resolution.",
+      "pieges": [
+        "Assuming the dashboard contains operational workarounds; dashboards are for visualization and reporting, not for storing searchable knowledge.",
+        "Confusing Problem Tasks with Knowledge Articles; while related, the portal is the interface for accessing the information."
+      ],
+      "addedAt": "2026-07-29T06:32:31.555Z"
+    },
+    {
+      "id": "q_problemmanagement_scr_ms5pjltx",
+      "topic": "problem-management",
+      "tags": [
+        "Problem Management",
+        "Reporting",
+        "Dashboards"
+      ],
+      "difficulty": "easy",
+      "question": "An organization is auditing their Problem Management process to identify bottlenecks and trends in their infrastructure errors. Which toolset within the Problem Management application should the administrator utilize to visualize data over time and identify areas for process improvement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The Problem Management Reference documentation."
+        },
+        {
+          "id": "b",
+          "text": "The Known Error Portal analytics feed."
+        },
+        {
+          "id": "c",
+          "text": "Problem Management Dashboards."
+        },
+        {
+          "id": "d",
+          "text": "The ServiceNow Community forum search."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "ServiceNow provides native Dashboards within the Problem Management application specifically for visualizing data over time, analyzing business processes, and identifying trends or areas for improvement in the problem resolution lifecycle.",
+      "pieges": [
+        "Mistaking the ServiceNow Community forum for a reporting tool; the community is for troubleshooting and peer support, not for internal data visualization.",
+        "Confusing Reference documentation with operational reporting tools; documentation provides definitions and properties, not performance metrics."
+      ],
+      "addedAt": "2026-07-29T06:32:31.557Z"
+    },
+    {
+      "id": "q_changemanagement_scr_ms5pjopc",
+      "topic": "change-management",
+      "tags": [
+        "Change Management",
+        "Integration"
+      ],
+      "difficulty": "medium",
+      "question": "A Change Manager wants to ensure that the Change Management application can automatically identify and address security risks during the change lifecycle. Based on the integration capabilities of Change Management, which plugin should the administrator enable?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Vulnerability Response"
+        },
+        {
+          "id": "b",
+          "text": "ITSM Intelligence"
+        },
+        {
+          "id": "c",
+          "text": "Predictive Intelligence"
+        },
+        {
+          "id": "d",
+          "text": "Security Operations Orchestration"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "The provided text explicitly states that the ServiceNow Change Management application integrates with the Vulnerability Response plugin to introduce extra functionality, which allows for linking security vulnerabilities directly to the change lifecycle.",
+      "pieges": [
+        "Candidates often confuse general ITSM Intelligence or AI features with specific plugin-based integrations mentioned in the documentation.",
+        "Assuming that Vulnerability Response is a default feature rather than a specific integration point."
+      ],
+      "addedAt": "2026-07-29T06:32:35.280Z"
+    },
+    {
+      "id": "q_changemanagement_scr_ms5pjope",
+      "topic": "change-management",
+      "tags": [
+        "Change Management",
+        "AI"
+      ],
+      "difficulty": "medium",
+      "question": "An organization is transitioning to autonomous IT operations. They want to utilize agentic AI to manage and complete Change Management tasks without constant manual intervention. Which feature set should they explore within the Change Management application?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ITSM Change Management agentic workflows"
+        },
+        {
+          "id": "b",
+          "text": "Change Management Predictive Intelligence suite"
+        },
+        {
+          "id": "c",
+          "text": "Automated Change Request Templates"
+        },
+        {
+          "id": "d",
+          "text": "Change Management Lifecycle Automation policy"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "The documentation specifies that users can 'Use the ITSM Change Management agentic workflows' to manage and complete tasks autonomously, which directly addresses the requirement for AI-driven task completion.",
+      "pieges": [
+        "Confusing 'agentic workflows' with standard 'Automated Change Request' templates or policies.",
+        "Inventing features like 'Predictive Intelligence suite' which is not explicitly linked to the agentic workflow terminology in the provided text."
+      ],
+      "addedAt": "2026-07-29T06:32:35.282Z"
+    },
+    {
+      "id": "q_changemanagement_scr_ms5pjoph",
+      "topic": "change-management",
+      "tags": [
+        "Change Management",
+        "Administration"
+      ],
+      "difficulty": "easy",
+      "question": "A Junior Administrator is setting up the Change Management environment and needs to locate documentation regarding the specific roles and dependent applications required for the module. Which section of the documentation should they reference?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reference"
+        },
+        {
+          "id": "b",
+          "text": "Configure"
+        },
+        {
+          "id": "c",
+          "text": "Learn"
+        },
+        {
+          "id": "d",
+          "text": "Explore"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "According to the source text, the 'Reference' section provides details about Change Management components such as roles and dependent applications.",
+      "pieges": [
+        "Selecting 'Configure' because they are currently performing an administrative setup task.",
+        "Selecting 'Learn' or 'Explore' which are described as general information gathering phases rather than technical component reference material."
+      ],
+      "addedAt": "2026-07-29T06:32:35.285Z"
+    },
+    {
+      "id": "q_knowledgemanagement_scr_ms5pjr96",
+      "topic": "knowledge-management",
+      "tags": [
+        "Knowledge Management",
+        "UI Configuration"
+      ],
+      "difficulty": "medium",
+      "question": "A Knowledge Manager is frustrated because the 'Import Articles' button is missing from the Knowledge v3 homepage, despite them having the necessary roles to contribute. Which action most likely caused this behavior?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The administrator added the 'Import Articles' module to the Application Navigator."
+        },
+        {
+          "id": "b",
+          "text": "The 'glide.knowman.show_number_on_categories' property was set to false."
+        },
+        {
+          "id": "c",
+          "text": "The user is accessing the system via Internet Explorer 9."
+        },
+        {
+          "id": "d",
+          "text": "The Knowledge Management Service Portal plugin was disabled by the admin."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "According to the documentation, if the 'Import Articles' module is added to the Application Navigator, the 'Import Articles' button will no longer appear on the Knowledge v3 homepage.",
+      "pieges": [
+        "Assuming that contribute access is the only requirement for buttons to appear.",
+        "Confusing the legacy browser redirection behavior with the removal of UI elements."
+      ],
+      "addedAt": "2026-07-29T06:32:38.586Z"
+    },
+    {
+      "id": "q_knowledgemanagement_scr_ms5pjr99",
+      "topic": "knowledge-management",
+      "tags": [
+        "Knowledge Management",
+        "Navigation"
+      ],
+      "difficulty": "hard",
+      "question": "A user complains that they cannot see a specific knowledge article on the Knowledge v3 homepage, even though they have read access to the knowledge base. The article is currently in the 'Published' state and has not reached its 'Valid to' date. What is the most plausible explanation?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The article does not have any tags assigned to it."
+        },
+        {
+          "id": "b",
+          "text": "The user is accessing the homepage via a service management application, which opens a different homepage."
+        },
+        {
+          "id": "c",
+          "text": "The article contains HTML formatting, which is not supported on the Knowledge v3 homepage."
+        },
+        {
+          "id": "d",
+          "text": "The article is located in a subcategory, and subcategory articles are hidden by default."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The documentation states: 'If you access knowledge from a service management application, the knowledge homepage for the associate application opens.' This explains why the user might not see the expected content found on the standard Knowledge v3 homepage.",
+      "pieges": [
+        "Thinking that articles must have tags to appear (categories are the primary organization).",
+        "Believing HTML formatting prevents an article from appearing (only comments lack HTML support)."
+      ],
+      "addedAt": "2026-07-29T06:32:38.589Z"
+    },
+    {
+      "id": "q_knowledgemanagement_scr_ms5pjr9b",
+      "topic": "knowledge-management",
+      "tags": [
+        "System Properties",
+        "Knowledge Management"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator wants to display the number of articles within each category on the Knowledge v3 homepage, including those nested within subcategories. Which configuration step is required?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Navigate to the Knowledge v3 homepage settings and toggle the 'Show article counts' checkbox."
+        },
+        {
+          "id": "b",
+          "text": "Modify the Knowledge v3 homepage layout using the Service Portal Designer."
+        },
+        {
+          "id": "c",
+          "text": "Set the system property 'glide.knowman.show_number_on_categories' to true."
+        },
+        {
+          "id": "d",
+          "text": "Ensure that all articles in the subcategories are tagged with the parent category name."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "The documentation explicitly states that to display the article count (including subcategories), an administrator must set the 'glide.knowman.show_number_on_categories' property to true.",
+      "pieges": [
+        "Assuming the Knowledge v3 homepage is customizable via the Service Portal Designer (it is not).",
+        "Assuming article counts require manual tagging or metadata updates."
+      ],
+      "addedAt": "2026-07-29T06:32:38.591Z"
+    },
+    {
+      "id": "q_servicelevelmanagement_scr_ms5pjtta",
+      "topic": "service-level-management",
+      "tags": [
+        "SLA",
+        "System Maintenance"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator is tasked with optimizing the performance of the system's SLA tracking. They notice that the 'sla_breakdown_by_assignment' table is growing significantly. Which mechanism controls the automatic removal of this data, and where is that configuration stored?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The sys_auto_flush table"
+        },
+        {
+          "id": "b",
+          "text": "The sys_trigger table"
+        },
+        {
+          "id": "c",
+          "text": "The sla_properties table"
+        },
+        {
+          "id": "d",
+          "text": "The scheduled_job table"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "According to the documentation, table cleanup jobs, including the one for SLA breakdown data, are defined in the [sys_auto_flush] table.",
+      "pieges": [
+        "Assuming all automated tasks are found in the 'Scheduled Jobs' module.",
+        "Confusing the storage location of the definition with the actual scheduled job runner."
+      ],
+      "addedAt": "2026-07-29T06:32:41.902Z"
+    },
+    {
+      "id": "q_servicelevelmanagement_scr_ms5pjttc",
+      "topic": "service-level-management",
+      "tags": [
+        "SLA",
+        "Service Level Management"
+      ],
+      "difficulty": "medium",
+      "question": "A Service Desk Manager requests that the platform tracks detailed task ownership and duration data for all P1 and P2 incidents to identify bottlenecks in resolution. Which feature should the administrator configure to meet this requirement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "SLA Breakdown"
+        },
+        {
+          "id": "b",
+          "text": "SLA Definition"
+        },
+        {
+          "id": "c",
+          "text": "SLA Workflow"
+        },
+        {
+          "id": "d",
+          "text": "SLA Percentage"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "SLA Breakdown is the specific feature designed to provide detailed task ownership and SLA duration data, helping managers determine which teams or users are contributing to compliance.",
+      "pieges": [
+        "Confusing SLA Definition (which defines the criteria) with SLA Breakdown (which analyzes the duration/ownership).",
+        "Assuming standard SLA reporting provides granular ownership duration without specific SLA Breakdown configuration."
+      ],
+      "addedAt": "2026-07-29T06:32:41.904Z"
+    },
+    {
+      "id": "q_servicelevelmanagement_scr_ms5pjttf",
+      "topic": "service-level-management",
+      "tags": [
+        "SLA",
+        "Data Retention"
+      ],
+      "difficulty": "hard",
+      "question": "Regarding the default behavior of SLA Breakdown data, which of the following statements is true?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The system automatically purges SLA breakdown records exceeding one year of age."
+        },
+        {
+          "id": "b",
+          "text": "SLA breakdown data is stored indefinitely to ensure auditability for compliance reporting."
+        },
+        {
+          "id": "c",
+          "text": "SLA breakdown records are purged daily by a business rule on the task_sla table."
+        },
+        {
+          "id": "d",
+          "text": "The system only purges SLA breakdown data if the associated Task SLA is marked as 'Cancelled'."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "The source explicitly states that by default, the system deletes SLA breakdown data that is more than one year old via a table cleanup job.",
+      "pieges": [
+        "Assuming that all SLA data is kept indefinitely for audit purposes.",
+        "Incorrectly identifying the method of deletion (e.g., Business Rules vs. Table Cleanup jobs)."
+      ],
+      "addedAt": "2026-07-29T06:32:41.907Z"
+    },
+    {
+      "id": "q_cmdb_scr_ms5pjwfd",
+      "topic": "cmdb",
+      "tags": [
+        "CMDB",
+        "Data Lifecycle"
+      ],
+      "difficulty": "medium",
+      "question": "A ServiceNow administrator is tasked with performing a bulk archival of outdated server CIs that have reached the end of their lifecycle. Which tool should the administrator use to manage this operation efficiently?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "CI Class Manager"
+        },
+        {
+          "id": "b",
+          "text": "CMDB Data Manager"
+        },
+        {
+          "id": "c",
+          "text": "Duplicate CI Remediator"
+        },
+        {
+          "id": "d",
+          "text": "CMDB Query Builder"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "CMDB Data Manager is specifically designed to perform bulk management of CI lifecycle operations, including deletion, archival, and attestation. The CI Class Manager is for defining class structures, the Duplicate CI Remediator is for de-duplication tasks, and the Query Builder is for infrastructure visualization.",
+      "pieges": [
+        "Confusing CI lifecycle management with CI class definition.",
+        "Assuming the Duplicate CI Remediator can handle general lifecycle operations like archival."
+      ],
+      "addedAt": "2026-07-29T06:32:45.289Z"
+    },
+    {
+      "id": "q_cmdb_scr_ms5pjwfg",
+      "topic": "cmdb",
+      "tags": [
+        "CMDB",
+        "Data Management"
+      ],
+      "difficulty": "hard",
+      "question": "An administrator receives a requirement to track and manage how multiple data sources, such as Discovery and third-party integrations, populate the same attributes on a single Configuration Item. Which feature is best suited for this requirement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "CMDB 360"
+        },
+        {
+          "id": "b",
+          "text": "Data Certification"
+        },
+        {
+          "id": "c",
+          "text": "CMDB Health"
+        },
+        {
+          "id": "d",
+          "text": "Identification and Reconciliation Engine (IRE)"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "CMDB 360 is the specific feature provided by ServiceNow to track and manage how multiple data sources populate the same CI attributes, providing visibility into data provenance.",
+      "pieges": [
+        "Confusing CMDB 360 with the IRE, which handles identification and reconciliation, but does not provide the '360' view of multiple source attribution.",
+        "Assuming CMDB Health is for source tracking rather than health metrics."
+      ],
+      "addedAt": "2026-07-29T06:32:45.292Z"
+    },
+    {
+      "id": "q_cmdb_scr_ms5pjwfi",
+      "topic": "cmdb",
+      "tags": [
+        "CMDB",
+        "Mobile"
+      ],
+      "difficulty": "easy",
+      "question": "A junior administrator attempts to use the mobile application to access the CI Class Manager to quickly verify a class definition while on-site. Why does this action fail?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The administrator lacks the 'cmdb_admin' role."
+        },
+        {
+          "id": "b",
+          "text": "CI Class Manager is only available through the Service Portal."
+        },
+        {
+          "id": "c",
+          "text": "CMDB features, including the CI Class Manager, are not supported on mobile devices."
+        },
+        {
+          "id": "d",
+          "text": "The administrator must first use the CMDB Query Builder to enable mobile access for classes."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "The source documentation explicitly states that CMDB modules, features, and wizards—specifically including the CI Class Manager—are not supported on mobile devices.",
+      "pieges": [
+        "Thinking it is a permissions issue (role-based) rather than a platform limitation.",
+        "Assuming modern ServiceNow mobile apps support all desktop modules."
+      ],
+      "addedAt": "2026-07-29T06:32:45.294Z"
+    },
+    {
+      "id": "q_uipolicies_scr_ms5pjzru",
+      "topic": "ui-policies",
+      "tags": [
+        "UI Policies",
+        "Best Practices"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator is tasked with ensuring that the 'Priority' field on the Incident form becomes mandatory only when the 'Impact' field is set to 'High' and the 'Urgency' field is set to 'High'. Which approach provides the best performance and maintainability for this requirement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Create a Client Script with an onChange event on the Impact and Urgency fields to set the mandatory property."
+        },
+        {
+          "id": "b",
+          "text": "Create a UI Policy with the condition 'Impact is High AND Urgency is High' and a UI Policy Action to set 'Priority' to Mandatory."
+        },
+        {
+          "id": "c",
+          "text": "Create a Business Rule with an 'onBefore' update trigger to enforce the mandatory field requirement server-side."
+        },
+        {
+          "id": "d",
+          "text": "Create a Data Policy with the condition 'Impact is High AND Urgency is High' to enforce the mandatory field at the database level."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "UI Policies are designed for client-side form behavior and are preferred over Client Scripts for simple field manipulations like setting fields to mandatory, read-only, or hidden because they are faster and do not require writing custom JavaScript. Data Policies run server-side and are typically used for data integrity, not form behavior.",
+      "pieges": [
+        "Assuming Data Policies should be used for UI form behavior.",
+        "Over-engineering the solution by using a Client Script when a UI Policy suffices."
+      ],
+      "addedAt": "2026-07-29T06:32:49.626Z"
+    },
+    {
+      "id": "q_uipolicies_scr_ms5pjzs3",
+      "topic": "ui-policies",
+      "tags": [
+        "UI Policies",
+        "Scripting"
+      ],
+      "difficulty": "hard",
+      "question": "A developer needs to implement a complex requirement where a field must be hidden based on a combination of form field values and a calculation that cannot be expressed via the standard UI Policy condition builder. What is the recommended strategy?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Create a UI Policy, check the 'Run scripts' option, and use the 'Execute if true' and 'Execute if false' script fields."
+        },
+        {
+          "id": "b",
+          "text": "Abandon the UI Policy and write an onChange Client Script to handle the entire logic."
+        },
+        {
+          "id": "c",
+          "text": "Create two separate UI Policies: one for the condition builder and one for the script."
+        },
+        {
+          "id": "d",
+          "text": "Create a UI Policy Action that triggers an asynchronous Business Rule to hide the field."
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "UI Policies support advanced logic through the 'Run scripts' option. This allows the administrator to benefit from the built-in UI Policy framework (like automatic reversal of actions when conditions are false) while handling complex logic via script.",
+      "pieges": [
+        "Believing UI Policies strictly forbid any scripting.",
+        "Thinking that a script-based requirement automatically invalidates the use of a UI Policy."
+      ],
+      "addedAt": "2026-07-29T06:32:49.635Z"
+    },
+    {
+      "id": "q_uipolicies_scr_ms5pjzs5",
+      "topic": "ui-policies",
+      "tags": [
+        "UI Policies",
+        "Performance"
+      ],
+      "difficulty": "medium",
+      "question": "Which of the following statements accurately describes the relationship between UI Policies and Client Scripts regarding form performance?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "UI Policies and Client Scripts have identical execution times, so the choice between them is purely a matter of personal preference."
+        },
+        {
+          "id": "b",
+          "text": "Client Scripts are always faster than UI Policies because they execute directly in the browser without framework overhead."
+        },
+        {
+          "id": "c",
+          "text": "UI Policies should be used whenever possible instead of Client Scripts because they are optimized for faster load times."
+        },
+        {
+          "id": "d",
+          "text": "UI Policies execute on the server, while Client Scripts execute on the client, making UI Policies slower for form manipulation."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "ServiceNow documentation explicitly states that while both UI Policies and Client Scripts can perform similar actions (like making fields mandatory or read-only), UI Policies are preferred for faster load times and better performance when scripting is not strictly necessary.",
+      "pieges": [
+        "Confusing the execution environment of UI Policies (client-side) with server-side rules.",
+        "Assuming Client Scripts are always the more performant option for developers."
+      ],
+      "addedAt": "2026-07-29T06:32:49.637Z"
+    },
+    {
+      "id": "q_notifications_scr_ms5pk33k",
+      "topic": "notifications",
+      "tags": [
+        "Notifications",
+        "Rich HTML"
+      ],
+      "difficulty": "medium",
+      "question": "A system administrator is configuring a new notification and decides to use the rich HTML format. Which of the following describes a specific benefit of using this format regarding email content?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It automatically encrypts the email body to ensure data security for sensitive information."
+        },
+        {
+          "id": "b",
+          "text": "Relative URLs for items like incidents or images are automatically converted to absolute links to prevent broken links."
+        },
+        {
+          "id": "c",
+          "text": "It allows the system to bypass the Email Digest configuration for faster delivery."
+        },
+        {
+          "id": "d",
+          "text": "It enables the system to receive encrypted incoming emails by decrypting them before processing."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The rich HTML format automatically converts relative URLs (like links to incidents) into absolute links to ensure that users can successfully access the linked records from their email clients without encountering broken links.",
+      "pieges": [
+        "Assuming the system can handle encrypted emails (it explicitly cannot).",
+        "Confusing rich HTML benefits with email digest settings."
+      ],
+      "addedAt": "2026-07-29T06:32:53.936Z"
+    },
+    {
+      "id": "q_notifications_scr_ms5pk33n",
+      "topic": "notifications",
+      "tags": [
+        "Notifications",
+        "SMS"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator is setting up an email notification that also needs to be delivered via SMS. Which of the following statements is accurate regarding how the system handles the SMS content?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The system automatically truncates the full email body to 160 characters for the SMS message."
+        },
+        {
+          "id": "b",
+          "text": "The system always uses the email body as the SMS message content."
+        },
+        {
+          "id": "c",
+          "text": "The system uses the email subject line as the SMS message unless an alternate SMS message is specifically defined."
+        },
+        {
+          "id": "d",
+          "text": "SMS delivery is only possible if the email notification is configured to be part of an email digest."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "By default, the system uses the subject line of the email notification for the SMS message. However, administrators have the flexibility to define an alternate SMS message in the email template or notification form if the subject line is not appropriate.",
+      "pieges": [
+        "Thinking the system automatically manages the email body for SMS.",
+        "Believing SMS is tied to the Email Digest functionality."
+      ],
+      "addedAt": "2026-07-29T06:32:53.939Z"
+    },
+    {
+      "id": "q_notifications_scr_ms5pk33q",
+      "topic": "notifications",
+      "tags": [
+        "Notifications",
+        "Troubleshooting"
+      ],
+      "difficulty": "hard",
+      "question": "A user reports that they are not receiving the expected information in their email notifications from the ServiceNow instance, specifically noting that the email body appears empty. Upon investigation, the administrator confirms the email is being triggered by an encrypted email source. What is the cause of this behavior?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The notification is not marked as 'Mandatory', so the content is stripped by the system."
+        },
+        {
+          "id": "b",
+          "text": "The system cannot process encrypted email messages and strips the body because it cannot read plain text or HTML from encrypted content."
+        },
+        {
+          "id": "c",
+          "text": "The email notification is missing a configured mail script to decrypt the incoming data."
+        },
+        {
+          "id": "d",
+          "text": "The user's notification channel is set to 'Digest' mode, which prevents the display of encrypted email bodies."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "ServiceNow instances cannot send or receive encrypted email messages. When an encrypted email is received, the system is unable to process the encrypted content, resulting in the system stripping the body of the message.",
+      "pieges": [
+        "Assuming a mail script can fix encryption issues.",
+        "Believing that marking a notification as 'Mandatory' overrides security processing."
+      ],
+      "addedAt": "2026-07-29T06:32:53.942Z"
+    },
+    {
+      "id": "q_usersgroupsroles_scr_ms5pk6kn",
+      "topic": "users-groups-roles",
+      "tags": [
+        "Users",
+        "Groups",
+        "Roles"
+      ],
+      "difficulty": "medium",
+      "question": "An administrator wants to simplify access management for a new team of 'Service Desk Analysts'. Following ServiceNow best practices, which approach should the administrator take to grant these users the necessary permissions?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Assign the required roles directly to each individual user account in the User [sys_user] table."
+        },
+        {
+          "id": "b",
+          "text": "Create a new group, add the users to the group, and assign the required roles to that group."
+        },
+        {
+          "id": "c",
+          "text": "Assign the roles to a Business Rule that triggers when users from that team log in."
+        },
+        {
+          "id": "d",
+          "text": "Create a new role for the team and assign that role directly to the individual user records."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "The documentation explicitly states that when possible, you should simplify user administration by assigning roles to groups. By creating a group with the necessary roles and adding users to that group, you ensure that permissions are managed collectively rather than individually, which is more scalable and easier to maintain.",
+      "pieges": [
+        "Thinking that assigning roles directly to users is the preferred method for small teams.",
+        "Assuming that roles must be assigned to individual users to be effective."
+      ],
+      "addedAt": "2026-07-29T06:32:58.439Z"
+    },
+    {
+      "id": "q_usersgroupsroles_scr_ms5pk6kp",
+      "topic": "users-groups-roles",
+      "tags": [
+        "Groups",
+        "Roles"
+      ],
+      "difficulty": "medium",
+      "question": "A System Administrator needs to verify which specific roles are currently assigned to a group. Where should the administrator navigate to find this information within the platform?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Navigate to All > User Administration > Roles and filter by the group name."
+        },
+        {
+          "id": "b",
+          "text": "Open the specific Group record and check the 'Roles' related list."
+        },
+        {
+          "id": "c",
+          "text": "Navigate to All > User Administration > User Preferences to view role distribution."
+        },
+        {
+          "id": "d",
+          "text": "Open the 'Group Members' related list on the Group record to see the inherited roles."
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Roles are managed within the context of the group record. To see which roles are assigned to a group, one must open the group record and look at the Roles related list. The 'Group Members' related list shows the users in the group, not the roles assigned to the group itself.",
+      "pieges": [
+        "Confusing the 'Group Members' related list (which lists users) with the 'Roles' related list (which lists permissions assigned to the group).",
+        "Looking in the Roles [sys_user_role] table directly, which lists all roles in the system but does not provide a group-centric view of assignments."
+      ],
+      "addedAt": "2026-07-29T06:32:58.441Z"
+    },
+    {
+      "id": "q_usersgroupsroles_scr_ms5pk6ky",
+      "topic": "users-groups-roles",
+      "tags": [
+        "Groups",
+        "Roles",
+        "Inheritance"
+      ],
+      "difficulty": "hard",
+      "question": "When a role is assigned to a group, what happens to the existing members of that group and any users added to that group in the future?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Existing members must manually re-login for the role to take effect, but new members receive the role automatically."
+        },
+        {
+          "id": "b",
+          "text": "The role is only applied to users who were members at the time the role was assigned."
+        },
+        {
+          "id": "c",
+          "text": "All existing and future members of the group automatically inherit the permissions associated with that role."
+        },
+        {
+          "id": "d",
+          "text": "The administrator must run a 'Refresh Access' business rule to propagate the role to all group members."
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "The documentation states that any system roles or attributes that refer to a group apply to all group members automatically. This inheritance model ensures that group membership is the primary driver for permission sets, making access management dynamic as users join or leave the group.",
+      "pieges": [
+        "Believing that role assignments are 'point-in-time' and do not automatically apply to future group members.",
+        "Assuming that manual intervention (like refreshing or re-logging) is required to activate group-based permissions."
+      ],
+      "addedAt": "2026-07-29T06:32:58.450Z"
     }
   ]
 }

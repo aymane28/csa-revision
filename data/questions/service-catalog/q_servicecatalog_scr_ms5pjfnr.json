@@ -1,0 +1,41 @@
+{
+  "id": "q_servicecatalog_scr_ms5pjfnr",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Portal",
+    "Widgets",
+    "Configuration"
+  ],
+  "difficulty": "hard",
+  "question": "Which statement accurately describes the behavior of the 'My Recent Items' widget on the Service Portal Catalog landing page?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "It displays items that are currently in the user's active shopping cart."
+    },
+    {
+      "id": "b",
+      "text": "It can be configured via an instance option to display either viewed or requested items."
+    },
+    {
+      "id": "c",
+      "text": "It automatically shows items that have been marked as 'Favorites' by the user."
+    },
+    {
+      "id": "d",
+      "text": "It remains visible on the page even if the user has no history of viewed or requested items."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The documentation explicitly mentions that an instance option on the 'My Recent Items' widget allows you to display either the viewed or requested items, and that the widget is not displayed when it has no data.",
+  "pieges": [
+    "Assuming the widget is always visible (it disappears if there is no data).",
+    "Confusing 'Recent Items' with 'Saved Bundles' or 'Favorites'."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=catalog-on-portal.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:23.559Z"
+  },
+  "addedAt": "2026-07-29T06:32:23.559Z"
+}

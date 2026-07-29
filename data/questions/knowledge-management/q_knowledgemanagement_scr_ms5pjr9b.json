@@ -1,0 +1,40 @@
+{
+  "id": "q_knowledgemanagement_scr_ms5pjr9b",
+  "topic": "knowledge-management",
+  "tags": [
+    "System Properties",
+    "Knowledge Management"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator wants to display the number of articles within each category on the Knowledge v3 homepage, including those nested within subcategories. Which configuration step is required?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Navigate to the Knowledge v3 homepage settings and toggle the 'Show article counts' checkbox."
+    },
+    {
+      "id": "b",
+      "text": "Modify the Knowledge v3 homepage layout using the Service Portal Designer."
+    },
+    {
+      "id": "c",
+      "text": "Set the system property 'glide.knowman.show_number_on_categories' to true."
+    },
+    {
+      "id": "d",
+      "text": "Ensure that all articles in the subcategories are tagged with the parent category name."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "The documentation explicitly states that to display the article count (including subcategories), an administrator must set the 'glide.knowman.show_number_on_categories' property to true.",
+  "pieges": [
+    "Assuming the Knowledge v3 homepage is customizable via the Service Portal Designer (it is not).",
+    "Assuming article counts require manual tagging or metadata updates."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_KnowledgeHomepage.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:38.591Z"
+  },
+  "addedAt": "2026-07-29T06:32:38.591Z"
+}

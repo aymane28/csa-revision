@@ -1,0 +1,40 @@
+{
+  "id": "q_incidentmanagement_scr_ms5pizfs",
+  "topic": "incident-management",
+  "tags": [
+    "Incident Management",
+    "Major Incident"
+  ],
+  "difficulty": "medium",
+  "question": "During a widespread service disruption affecting the entire corporate email infrastructure, an administrator needs to coordinate response efforts, track communication, and visualize the incident's impact. Which tool provides a centralized interface for these activities?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The Incident Management overview dashboard"
+    },
+    {
+      "id": "b",
+      "text": "The Major Incident Workbench"
+    },
+    {
+      "id": "c",
+      "text": "The Agentic AI autonomous resolution console"
+    },
+    {
+      "id": "d",
+      "text": "The Service Desk incident queue"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The Major Incident Workbench is the specialized tool within the Incident Management module designed to manage, coordinate, and track major incidents through a single, comprehensive interface.",
+  "pieges": [
+    "Selecting the general incident dashboard, which is intended for monitoring general status and SLAs rather than managing complex, high-impact events.",
+    "Misidentifying the agentic AI workflow as a coordination tool, as it focuses on autonomous task execution."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_IncidentManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:02.536Z"
+  },
+  "addedAt": "2026-07-29T06:32:02.536Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "q_notifications_scr_ms5pk33q",
+  "topic": "notifications",
+  "tags": [
+    "Notifications",
+    "Troubleshooting"
+  ],
+  "difficulty": "hard",
+  "question": "A user reports that they are not receiving the expected information in their email notifications from the ServiceNow instance, specifically noting that the email body appears empty. Upon investigation, the administrator confirms the email is being triggered by an encrypted email source. What is the cause of this behavior?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The notification is not marked as 'Mandatory', so the content is stripped by the system."
+    },
+    {
+      "id": "b",
+      "text": "The system cannot process encrypted email messages and strips the body because it cannot read plain text or HTML from encrypted content."
+    },
+    {
+      "id": "c",
+      "text": "The email notification is missing a configured mail script to decrypt the incoming data."
+    },
+    {
+      "id": "d",
+      "text": "The user's notification channel is set to 'Digest' mode, which prevents the display of encrypted email bodies."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "ServiceNow instances cannot send or receive encrypted email messages. When an encrypted email is received, the system is unable to process the encrypted content, resulting in the system stripping the body of the message.",
+  "pieges": [
+    "Assuming a mail script can fix encryption issues.",
+    "Believing that marking a notification as 'Mandatory' overrides security processing."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_EmailNotifications.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:53.942Z"
+  },
+  "addedAt": "2026-07-29T06:32:53.942Z"
+}

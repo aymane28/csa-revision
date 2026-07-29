@@ -1,0 +1,40 @@
+{
+  "id": "q_knowledgemanagement_scr_ms5pjr96",
+  "topic": "knowledge-management",
+  "tags": [
+    "Knowledge Management",
+    "UI Configuration"
+  ],
+  "difficulty": "medium",
+  "question": "A Knowledge Manager is frustrated because the 'Import Articles' button is missing from the Knowledge v3 homepage, despite them having the necessary roles to contribute. Which action most likely caused this behavior?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The administrator added the 'Import Articles' module to the Application Navigator."
+    },
+    {
+      "id": "b",
+      "text": "The 'glide.knowman.show_number_on_categories' property was set to false."
+    },
+    {
+      "id": "c",
+      "text": "The user is accessing the system via Internet Explorer 9."
+    },
+    {
+      "id": "d",
+      "text": "The Knowledge Management Service Portal plugin was disabled by the admin."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "According to the documentation, if the 'Import Articles' module is added to the Application Navigator, the 'Import Articles' button will no longer appear on the Knowledge v3 homepage.",
+  "pieges": [
+    "Assuming that contribute access is the only requirement for buttons to appear.",
+    "Confusing the legacy browser redirection behavior with the removal of UI elements."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_KnowledgeHomepage.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:38.586Z"
+  },
+  "addedAt": "2026-07-29T06:32:38.586Z"
+}

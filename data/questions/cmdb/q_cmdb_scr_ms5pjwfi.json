@@ -1,0 +1,40 @@
+{
+  "id": "q_cmdb_scr_ms5pjwfi",
+  "topic": "cmdb",
+  "tags": [
+    "CMDB",
+    "Mobile"
+  ],
+  "difficulty": "easy",
+  "question": "A junior administrator attempts to use the mobile application to access the CI Class Manager to quickly verify a class definition while on-site. Why does this action fail?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The administrator lacks the 'cmdb_admin' role."
+    },
+    {
+      "id": "b",
+      "text": "CI Class Manager is only available through the Service Portal."
+    },
+    {
+      "id": "c",
+      "text": "CMDB features, including the CI Class Manager, are not supported on mobile devices."
+    },
+    {
+      "id": "d",
+      "text": "The administrator must first use the CMDB Query Builder to enable mobile access for classes."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "The source documentation explicitly states that CMDB modules, features, and wizards—specifically including the CI Class Manager—are not supported on mobile devices.",
+  "pieges": [
+    "Thinking it is a permissions issue (role-based) rather than a platform limitation.",
+    "Assuming modern ServiceNow mobile apps support all desktop modules."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILConfigurationManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:45.294Z"
+  },
+  "addedAt": "2026-07-29T06:32:45.294Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "q_cmdb_scr_ms5pjwfg",
+  "topic": "cmdb",
+  "tags": [
+    "CMDB",
+    "Data Management"
+  ],
+  "difficulty": "hard",
+  "question": "An administrator receives a requirement to track and manage how multiple data sources, such as Discovery and third-party integrations, populate the same attributes on a single Configuration Item. Which feature is best suited for this requirement?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "CMDB 360"
+    },
+    {
+      "id": "b",
+      "text": "Data Certification"
+    },
+    {
+      "id": "c",
+      "text": "CMDB Health"
+    },
+    {
+      "id": "d",
+      "text": "Identification and Reconciliation Engine (IRE)"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "CMDB 360 is the specific feature provided by ServiceNow to track and manage how multiple data sources populate the same CI attributes, providing visibility into data provenance.",
+  "pieges": [
+    "Confusing CMDB 360 with the IRE, which handles identification and reconciliation, but does not provide the '360' view of multiple source attribution.",
+    "Assuming CMDB Health is for source tracking rather than health metrics."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILConfigurationManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:45.292Z"
+  },
+  "addedAt": "2026-07-29T06:32:45.292Z"
+}

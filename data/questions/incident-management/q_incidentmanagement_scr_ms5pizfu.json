@@ -1,0 +1,40 @@
+{
+  "id": "q_incidentmanagement_scr_ms5pizfu",
+  "topic": "incident-management",
+  "tags": [
+    "Incident Management",
+    "Agentic AI"
+  ],
+  "difficulty": "hard",
+  "question": "An organization is implementing an autonomous workflow to handle low-complexity incidents. According to the Incident Management documentation, which capability allows the system to autonomously manage, resolve, and close incident tasks?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "ITSM Incident Management agentic workflow"
+    },
+    {
+      "id": "b",
+      "text": "Automated Incident Escalation rules"
+    },
+    {
+      "id": "c",
+      "text": "Known Error Portal integration"
+    },
+    {
+      "id": "d",
+      "text": "Service Level Agreement (SLA) breach automation"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "The documentation explicitly identifies the ITSM Incident Management agentic workflow as the feature used to manage, resolve, and close incidents and incident tasks autonomously.",
+  "pieges": [
+    "Confusing 'agentic workflow' with standard Escalation rules, which are typically rule-based rather than AI-driven autonomous workflows.",
+    "Assuming that SLA automation is responsible for closing incidents, when it is actually responsible for tracking service level compliance."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_IncidentManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:02.538Z"
+  },
+  "addedAt": "2026-07-29T06:32:02.538Z"
+}

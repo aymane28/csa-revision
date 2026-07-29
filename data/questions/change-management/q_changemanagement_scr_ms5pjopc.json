@@ -1,0 +1,40 @@
+{
+  "id": "q_changemanagement_scr_ms5pjopc",
+  "topic": "change-management",
+  "tags": [
+    "Change Management",
+    "Integration"
+  ],
+  "difficulty": "medium",
+  "question": "A Change Manager wants to ensure that the Change Management application can automatically identify and address security risks during the change lifecycle. Based on the integration capabilities of Change Management, which plugin should the administrator enable?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Vulnerability Response"
+    },
+    {
+      "id": "b",
+      "text": "ITSM Intelligence"
+    },
+    {
+      "id": "c",
+      "text": "Predictive Intelligence"
+    },
+    {
+      "id": "d",
+      "text": "Security Operations Orchestration"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "The provided text explicitly states that the ServiceNow Change Management application integrates with the Vulnerability Response plugin to introduce extra functionality, which allows for linking security vulnerabilities directly to the change lifecycle.",
+  "pieges": [
+    "Candidates often confuse general ITSM Intelligence or AI features with specific plugin-based integrations mentioned in the documentation.",
+    "Assuming that Vulnerability Response is a default feature rather than a specific integration point."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILChangeManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:35.280Z"
+  },
+  "addedAt": "2026-07-29T06:32:35.280Z"
+}

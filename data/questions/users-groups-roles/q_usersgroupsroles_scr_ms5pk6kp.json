@@ -1,0 +1,40 @@
+{
+  "id": "q_usersgroupsroles_scr_ms5pk6kp",
+  "topic": "users-groups-roles",
+  "tags": [
+    "Groups",
+    "Roles"
+  ],
+  "difficulty": "medium",
+  "question": "A System Administrator needs to verify which specific roles are currently assigned to a group. Where should the administrator navigate to find this information within the platform?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Navigate to All > User Administration > Roles and filter by the group name."
+    },
+    {
+      "id": "b",
+      "text": "Open the specific Group record and check the 'Roles' related list."
+    },
+    {
+      "id": "c",
+      "text": "Navigate to All > User Administration > User Preferences to view role distribution."
+    },
+    {
+      "id": "d",
+      "text": "Open the 'Group Members' related list on the Group record to see the inherited roles."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Roles are managed within the context of the group record. To see which roles are assigned to a group, one must open the group record and look at the Roles related list. The 'Group Members' related list shows the users in the group, not the roles assigned to the group itself.",
+  "pieges": [
+    "Confusing the 'Group Members' related list (which lists users) with the 'Roles' related list (which lists permissions assigned to the group).",
+    "Looking in the Roles [sys_user_role] table directly, which lists all roles in the system but does not provide a group-centric view of assignments."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-user-administration.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:58.441Z"
+  },
+  "addedAt": "2026-07-29T06:32:58.441Z"
+}

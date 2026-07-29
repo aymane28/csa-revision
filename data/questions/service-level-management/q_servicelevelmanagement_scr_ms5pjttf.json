@@ -1,0 +1,40 @@
+{
+  "id": "q_servicelevelmanagement_scr_ms5pjttf",
+  "topic": "service-level-management",
+  "tags": [
+    "SLA",
+    "Data Retention"
+  ],
+  "difficulty": "hard",
+  "question": "Regarding the default behavior of SLA Breakdown data, which of the following statements is true?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The system automatically purges SLA breakdown records exceeding one year of age."
+    },
+    {
+      "id": "b",
+      "text": "SLA breakdown data is stored indefinitely to ensure auditability for compliance reporting."
+    },
+    {
+      "id": "c",
+      "text": "SLA breakdown records are purged daily by a business rule on the task_sla table."
+    },
+    {
+      "id": "d",
+      "text": "The system only purges SLA breakdown data if the associated Task SLA is marked as 'Cancelled'."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "The source explicitly states that by default, the system deletes SLA breakdown data that is more than one year old via a table cleanup job.",
+  "pieges": [
+    "Assuming that all SLA data is kept indefinitely for audit purposes.",
+    "Incorrectly identifying the method of deletion (e.g., Business Rules vs. Table Cleanup jobs)."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=sla-breakdown-definition.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:41.907Z"
+  },
+  "addedAt": "2026-07-29T06:32:41.907Z"
+}

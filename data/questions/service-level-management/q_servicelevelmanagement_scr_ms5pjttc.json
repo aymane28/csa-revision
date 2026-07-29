@@ -1,0 +1,40 @@
+{
+  "id": "q_servicelevelmanagement_scr_ms5pjttc",
+  "topic": "service-level-management",
+  "tags": [
+    "SLA",
+    "Service Level Management"
+  ],
+  "difficulty": "medium",
+  "question": "A Service Desk Manager requests that the platform tracks detailed task ownership and duration data for all P1 and P2 incidents to identify bottlenecks in resolution. Which feature should the administrator configure to meet this requirement?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "SLA Breakdown"
+    },
+    {
+      "id": "b",
+      "text": "SLA Definition"
+    },
+    {
+      "id": "c",
+      "text": "SLA Workflow"
+    },
+    {
+      "id": "d",
+      "text": "SLA Percentage"
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "SLA Breakdown is the specific feature designed to provide detailed task ownership and SLA duration data, helping managers determine which teams or users are contributing to compliance.",
+  "pieges": [
+    "Confusing SLA Definition (which defines the criteria) with SLA Breakdown (which analyzes the duration/ownership).",
+    "Assuming standard SLA reporting provides granular ownership duration without specific SLA Breakdown configuration."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=sla-breakdown-definition.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:41.904Z"
+  },
+  "addedAt": "2026-07-29T06:32:41.904Z"
+}

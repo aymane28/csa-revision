@@ -1,0 +1,40 @@
+{
+  "id": "q_servicecatalog_scr_ms5pjiis",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Catalog",
+    "Catalog Items"
+  ],
+  "difficulty": "hard",
+  "question": "An organization wants to make a specific 'High-Performance Laptop' item available under both the 'Workstations' category and the 'New Hire' category. How can the administrator achieve this?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Create a subcategory under 'Workstations' and move the item to that subcategory."
+    },
+    {
+      "id": "b",
+      "text": "Create a parent-child relationship between 'Workstations' and 'New Hire'."
+    },
+    {
+      "id": "c",
+      "text": "Associate the same catalog item record with multiple categories."
+    },
+    {
+      "id": "d",
+      "text": "Create two separate catalog item records, one for each category."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "The documentation states that a catalog item can exist in multiple categories, providing the flexibility to offer the same service from multiple places within the catalog.",
+  "pieges": [
+    "Thinking that an item can only belong to one category (the 'one-to-many' limitation).",
+    "Assuming that duplicating the item record is the required way to achieve multi-category availability."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ServiceCatalogCategories.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:27.268Z"
+  },
+  "addedAt": "2026-07-29T06:32:27.268Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "q_businessrulesclientscripts_scr_ms5pj2pi",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "Business Rules",
+    "Performance",
+    "Query"
+  ],
+  "difficulty": "medium",
+  "question": "During a performance audit, an administrator notices that a specific Business Rule is causing long wait times for users whenever they perform a search on the 'Incident' table. The rule is configured to run on every query. Which configuration is most likely causing this performance degradation?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "A Business Rule configured with the 'Query' operation checked."
+    },
+    {
+      "id": "b",
+      "text": "A Business Rule configured with the 'Async' operation checked."
+    },
+    {
+      "id": "c",
+      "text": "A Business Rule configured with the 'Display' operation checked."
+    },
+    {
+      "id": "d",
+      "text": "A Business Rule configured with the 'Before' operation checked."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Business Rules set to run on 'Query' execute every time a table is queried. If the script within the rule is complex or performs heavy database operations, it will significantly slow down list views and search results for all users.",
+  "pieges": [
+    "Assuming all Business Rules affect performance equally regardless of the trigger operation.",
+    "Confusing 'Query' business rules with 'Insert/Update' rules which only trigger on specific record events, not every time data is retrieved."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_BusinessRules.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:06.774Z"
+  },
+  "addedAt": "2026-07-29T06:32:06.774Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "q_accesscontrolacl_scr_ms5pj60v",
+  "topic": "access-control-acl",
+  "tags": [
+    "ACL",
+    "Security",
+    "Configuration"
+  ],
+  "difficulty": "medium",
+  "question": "An organization requires that only members of the 'HR' group can view records in the 'Salary' table. Which configuration correctly utilizes the Access Control mechanism to enforce this requirement?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Create a 'read' ACL on 'salary.*' and add the 'HR' group to the 'Requires role' field."
+    },
+    {
+      "id": "b",
+      "text": "Create a 'read' ACL on 'salary.None' and add the 'HR' role to the 'Requires role' field."
+    },
+    {
+      "id": "c",
+      "text": "Create a 'read' ACL on 'salary.None' and define a condition where 'Group is HR'."
+    },
+    {
+      "id": "d",
+      "text": "Create a 'read' ACL on 'salary.None' and add a script that checks for the 'HR' group."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "To restrict access to a table, you use the 'None' wildcard (table.None). Adding a condition 'Group is HR' is the standard way to restrict access based on group membership within an ACL. Adding a role is possible, but if the requirement is specifically group-based, the condition builder is the correct tool.",
+  "pieges": [
+    "Confusing 'salary.*' (field-level) with 'salary.None' (table-level).",
+    "Assuming roles are the only way to restrict access, ignoring the power of the condition builder."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=access-control-rules.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:11.071Z"
+  },
+  "addedAt": "2026-07-29T06:32:11.071Z"
+}

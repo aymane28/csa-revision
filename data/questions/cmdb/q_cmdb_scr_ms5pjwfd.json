@@ -1,0 +1,40 @@
+{
+  "id": "q_cmdb_scr_ms5pjwfd",
+  "topic": "cmdb",
+  "tags": [
+    "CMDB",
+    "Data Lifecycle"
+  ],
+  "difficulty": "medium",
+  "question": "A ServiceNow administrator is tasked with performing a bulk archival of outdated server CIs that have reached the end of their lifecycle. Which tool should the administrator use to manage this operation efficiently?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "CI Class Manager"
+    },
+    {
+      "id": "b",
+      "text": "CMDB Data Manager"
+    },
+    {
+      "id": "c",
+      "text": "Duplicate CI Remediator"
+    },
+    {
+      "id": "d",
+      "text": "CMDB Query Builder"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "CMDB Data Manager is specifically designed to perform bulk management of CI lifecycle operations, including deletion, archival, and attestation. The CI Class Manager is for defining class structures, the Duplicate CI Remediator is for de-duplication tasks, and the Query Builder is for infrastructure visualization.",
+  "pieges": [
+    "Confusing CI lifecycle management with CI class definition.",
+    "Assuming the Duplicate CI Remediator can handle general lifecycle operations like archival."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ITILConfigurationManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:45.289Z"
+  },
+  "addedAt": "2026-07-29T06:32:45.289Z"
+}

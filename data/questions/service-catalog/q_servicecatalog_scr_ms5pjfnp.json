@@ -1,0 +1,41 @@
+{
+  "id": "q_servicecatalog_scr_ms5pjfnp",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Catalog",
+    "Search",
+    "Configuration"
+  ],
+  "difficulty": "medium",
+  "question": "A user complains that they cannot find a specific catalog item when using the search bar on the Service Portal Catalog landing page. What is the most likely cause for this issue?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The catalog item does not have a user criteria defined for the 'search' role."
+    },
+    {
+      "id": "b",
+      "text": "The catalog item is not associated with any catalog or category."
+    },
+    {
+      "id": "c",
+      "text": "The catalog item has not been added to the 'Popular Items' widget."
+    },
+    {
+      "id": "d",
+      "text": "The 'My Request Filter' module has not been configured to include the specific item."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The documentation states that only items associated with a catalog and category are searchable. If an item lacks these associations, it will not appear in the search results.",
+  "pieges": [
+    "Thinking search results are driven by the 'Popular Items' widget.",
+    "Assuming search is controlled by the 'My Request Filter' module, which actually controls request and approval lists."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=catalog-on-portal.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:23.557Z"
+  },
+  "addedAt": "2026-07-29T06:32:23.557Z"
+}

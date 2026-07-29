@@ -1,0 +1,42 @@
+{
+  "id": "q_accesscontrolacl_scr_ms5pj9qh",
+  "topic": "access-control-acl",
+  "tags": [
+    "ACL",
+    "Security",
+    "Deny-by-default"
+  ],
+  "difficulty": "hard",
+  "question": "During a security audit, you discover an ACL that has no roles defined, no security attributes, no data conditions, and no scripts. Based on the documentation regarding 'Deny by default' behavior, what is the status of this ACL?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "It is an 'Empty ACL' and the system will deny access by default."
+    },
+    {
+      "id": "b",
+      "text": "It is a 'Global ACL' that grants access to everyone since no restrictions are defined."
+    },
+    {
+      "id": "c",
+      "text": "It is an 'Invalid ACL' and the system will ignore it, defaulting to the next ACL in the evaluation order."
+    },
+    {
+      "id": "d",
+      "text": "It is an 'Open ACL' that grants access unless a Deny-Unless rule is found elsewhere."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "The documentation explicitly states that 'Empty ACLs are defined as ACLs without one or more of these components: Defined role, Security attribute, Data condition, or Script'. It further specifies that by default, the ACL engine completely denies access if an ACL is empty or invalid.",
+  "pieges": [
+    "Assuming an empty ACL means 'no restrictions' (i.e., open access).",
+    "Confusing 'Empty ACL' with 'Invalid ACL' (though both result in denial, they are distinct definitions).",
+    "Believing the system grants access when no matching ACLs are found vs. when an empty ACL exists."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-access-control-list.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:15.881Z"
+  },
+  "addedAt": "2026-07-29T06:32:15.881Z"
+}

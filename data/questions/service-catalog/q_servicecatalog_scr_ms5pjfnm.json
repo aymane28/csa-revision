@@ -1,0 +1,41 @@
+{
+  "id": "q_servicecatalog_scr_ms5pjfnm",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Catalog",
+    "Service Portal",
+    "Plugins"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator at a company that recently upgraded to a newer version of ServiceNow notices that the Service Portal Catalog landing page is missing. Which action must the administrator perform to enable this functionality?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Navigate to the Service Portal configuration and enable 'Catalog Landing' in the portal record."
+    },
+    {
+      "id": "b",
+      "text": "Activate the Service Portal - Service Catalog v2 plugin (com.glideapp.servicecatalog.portal)."
+    },
+    {
+      "id": "c",
+      "text": "Update the 'My Request Filter' module to point to the new catalog landing page."
+    },
+    {
+      "id": "d",
+      "text": "Assign the 'catalog_admin' role to the users who need to access the landing page."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "According to the documentation, upgrade users must specifically activate the 'Service Portal - Service Catalog v2' plugin (com.glideapp.servicecatalog.portal) to access the Catalog landing page, as it is only available by default for zBoot users.",
+  "pieges": [
+    "Assuming the page is enabled by default for all users.",
+    "Confusing plugin activation with user role assignment or portal record configuration."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=catalog-on-portal.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:23.554Z"
+  },
+  "addedAt": "2026-07-29T06:32:23.554Z"
+}

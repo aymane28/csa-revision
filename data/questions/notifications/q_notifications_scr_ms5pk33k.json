@@ -1,0 +1,40 @@
+{
+  "id": "q_notifications_scr_ms5pk33k",
+  "topic": "notifications",
+  "tags": [
+    "Notifications",
+    "Rich HTML"
+  ],
+  "difficulty": "medium",
+  "question": "A system administrator is configuring a new notification and decides to use the rich HTML format. Which of the following describes a specific benefit of using this format regarding email content?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "It automatically encrypts the email body to ensure data security for sensitive information."
+    },
+    {
+      "id": "b",
+      "text": "Relative URLs for items like incidents or images are automatically converted to absolute links to prevent broken links."
+    },
+    {
+      "id": "c",
+      "text": "It allows the system to bypass the Email Digest configuration for faster delivery."
+    },
+    {
+      "id": "d",
+      "text": "It enables the system to receive encrypted incoming emails by decrypting them before processing."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The rich HTML format automatically converts relative URLs (like links to incidents) into absolute links to ensure that users can successfully access the linked records from their email clients without encountering broken links.",
+  "pieges": [
+    "Assuming the system can handle encrypted emails (it explicitly cannot).",
+    "Confusing rich HTML benefits with email digest settings."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_EmailNotifications.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:53.936Z"
+  },
+  "addedAt": "2026-07-29T06:32:53.936Z"
+}

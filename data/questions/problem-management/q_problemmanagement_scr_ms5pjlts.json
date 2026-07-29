@@ -1,0 +1,40 @@
+{
+  "id": "q_problemmanagement_scr_ms5pjlts",
+  "topic": "problem-management",
+  "tags": [
+    "Problem Management",
+    "Incident Management"
+  ],
+  "difficulty": "medium",
+  "question": "A Service Desk manager notices that multiple incidents are being reported regarding a recurring application slowness. To support the Problem Management process, the manager wants to ensure that these incidents are linked to a single root cause investigation. Which ServiceNow feature should the manager use to effectively transition from reactive incident handling to proactive problem identification?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Create a Problem record directly from the Incident record using the context menu or related link."
+    },
+    {
+      "id": "b",
+      "text": "Merge all relevant incidents into a single Request record to consolidate the workload."
+    },
+    {
+      "id": "c",
+      "text": "Use the Known Error Portal to automatically close all incidents related to the infrastructure error."
+    },
+    {
+      "id": "d",
+      "text": "Assign all incidents to a Change Request to force an immediate deployment of a fix."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "In ServiceNow, the standard workflow for Problem Management involves identifying a pattern in incidents and creating a Problem record to investigate the root cause. Using the 'Create Problem' related link or context menu allows the system to map the incident to the new problem, preserving the link for reporting and tracking.",
+  "pieges": [
+    "Confusing Problem management with Change management; a problem identifies the root cause, while a change implements the fix.",
+    "Believing incidents can be 'merged' into Requests; Requests are for service catalog items, not incident remediation."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ProblemManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:31.552Z"
+  },
+  "addedAt": "2026-07-29T06:32:31.552Z"
+}

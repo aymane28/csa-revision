@@ -1,0 +1,41 @@
+{
+  "id": "q_accesscontrolacl_scr_ms5pj60x",
+  "topic": "access-control-acl",
+  "tags": [
+    "ACL",
+    "Security",
+    "Fundamentals"
+  ],
+  "difficulty": "easy",
+  "question": "Which of the following describes the behavior of a user who has no ACLs matching a specific table or field?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The user is granted access by default as the system follows an 'Open Access' policy."
+    },
+    {
+      "id": "b",
+      "text": "The user is denied access by default because ServiceNow follows a 'Deny All' policy for non-matching records."
+    },
+    {
+      "id": "c",
+      "text": "The user is granted access only if they have the 'admin' role."
+    },
+    {
+      "id": "d",
+      "text": "The user is granted access to the record but cannot perform any actions (e.g., update or delete)."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "ServiceNow security operates on a 'Deny All' principle. If no ACL rules match a specific operation on a record or field, the user is denied access by default.",
+  "pieges": [
+    "Believing that if no rules exist, access is unrestricted.",
+    "Thinking that non-matching ACLs default to 'Allow' for standard users."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=access-control-rules.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:11.073Z"
+  },
+  "addedAt": "2026-07-29T06:32:11.073Z"
+}

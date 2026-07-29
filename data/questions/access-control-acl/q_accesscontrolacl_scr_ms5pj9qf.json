@@ -1,0 +1,42 @@
+{
+  "id": "q_accesscontrolacl_scr_ms5pj9qf",
+  "topic": "access-control-acl",
+  "tags": [
+    "ACL",
+    "Evaluation",
+    "Troubleshooting"
+  ],
+  "difficulty": "medium",
+  "question": "A user reports that they can see a specific field on a form, but the field appears as read-only. Which of the following scenarios most accurately explains why this is occurring based on the ACL evaluation process?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The user passed the 'read' ACL check, but failed the 'write' ACL check for that field."
+    },
+    {
+      "id": "b",
+      "text": "The user failed the 'read' ACL check, which triggered the system to default the field to read-only mode."
+    },
+    {
+      "id": "c",
+      "text": "The user failed the 'create' ACL, which prevents the field from being editable during the record lifecycle."
+    },
+    {
+      "id": "d",
+      "text": "The user passed the 'write' ACL check, but the 'Applies-to' condition is case-sensitive and failed."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "According to the documentation, failing a 'write' ACL results in the user seeing a read-only field in forms and lists. If the user had failed the 'read' ACL, they would not be able to see the object (field) at all.",
+  "pieges": [
+    "Thinking that a failed read ACL results in a read-only field (it actually hides the field).",
+    "Confusing 'write' operation failures with 'create' operation failures.",
+    "Assuming the system defaults to read-only on error; the system actually denies access based on the outcome of specific operations."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-access-control-list.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:15.879Z"
+  },
+  "addedAt": "2026-07-29T06:32:15.879Z"
+}

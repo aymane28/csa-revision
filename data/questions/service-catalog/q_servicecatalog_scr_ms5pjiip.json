@@ -1,0 +1,41 @@
+{
+  "id": "q_servicecatalog_scr_ms5pjiip",
+  "topic": "service-catalog",
+  "tags": [
+    "Service Catalog",
+    "Roles",
+    "Categories"
+  ],
+  "difficulty": "medium",
+  "question": "A Catalog Manager is assigned to the 'Hardware' category. They attempt to modify the 'Software' category, but the options to edit are missing. Which of the following best describes this behavior?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Catalog Managers only have read-only access to subcategories of their assigned parent."
+    },
+    {
+      "id": "b",
+      "text": "Catalog Managers can only configure categories to which they are explicitly assigned."
+    },
+    {
+      "id": "c",
+      "text": "The 'catalog_admin' role is required to modify any category regardless of assignment."
+    },
+    {
+      "id": "d",
+      "text": "System properties globally restrict Catalog Managers from editing categories."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The documentation explicitly states that catalog managers and catalog editors can configure categories, but only those to which they are assigned.",
+  "pieges": [
+    "Assuming Catalog Managers have global authority over the catalog.",
+    "Confusing the role of a Catalog Manager with a Catalog Administrator."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ServiceCatalogCategories.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:27.265Z"
+  },
+  "addedAt": "2026-07-29T06:32:27.266Z"
+}

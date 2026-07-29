@@ -1,0 +1,40 @@
+{
+  "id": "q_updatesets_scr_ms5pjcwt",
+  "topic": "update-sets",
+  "tags": [
+    "Update Sets",
+    "Scope"
+  ],
+  "difficulty": "easy",
+  "question": "Which of the following scenarios is a valid use case for using System Update Sets?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Transferring data records from the Incident table between two instances."
+    },
+    {
+      "id": "b",
+      "text": "Moving a new custom table definition and its associated form layout from a development instance to a production instance."
+    },
+    {
+      "id": "c",
+      "text": "Synchronizing user profile record updates between a production and a sub-production instance."
+    },
+    {
+      "id": "d",
+      "text": "Updating the system version of the ServiceNow instance to a newer release."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "Update sets are designed to capture configuration changes (metadata), such as new tables, form layouts, business rules, and client scripts. They are explicitly not designed for transferring transactional data records or performing system upgrades.",
+  "pieges": [
+    "Confusing configuration metadata with transactional data records.",
+    "Assuming update sets are used for system-wide platform version upgrades."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=system-update-sets.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:19.997Z"
+  },
+  "addedAt": "2026-07-29T06:32:19.997Z"
+}

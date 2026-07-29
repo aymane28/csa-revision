@@ -1,0 +1,40 @@
+{
+  "id": "q_uipolicies_scr_ms5pjzs5",
+  "topic": "ui-policies",
+  "tags": [
+    "UI Policies",
+    "Performance"
+  ],
+  "difficulty": "medium",
+  "question": "Which of the following statements accurately describes the relationship between UI Policies and Client Scripts regarding form performance?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "UI Policies and Client Scripts have identical execution times, so the choice between them is purely a matter of personal preference."
+    },
+    {
+      "id": "b",
+      "text": "Client Scripts are always faster than UI Policies because they execute directly in the browser without framework overhead."
+    },
+    {
+      "id": "c",
+      "text": "UI Policies should be used whenever possible instead of Client Scripts because they are optimized for faster load times."
+    },
+    {
+      "id": "d",
+      "text": "UI Policies execute on the server, while Client Scripts execute on the client, making UI Policies slower for form manipulation."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "ServiceNow documentation explicitly states that while both UI Policies and Client Scripts can perform similar actions (like making fields mandatory or read-only), UI Policies are preferred for faster load times and better performance when scripting is not strictly necessary.",
+  "pieges": [
+    "Confusing the execution environment of UI Policies (client-side) with server-side rules.",
+    "Assuming Client Scripts are always the more performant option for developers."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=t_CreateAUIPolicy.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:49.637Z"
+  },
+  "addedAt": "2026-07-29T06:32:49.637Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "q_businessrulesclientscripts_scr_ms5pj2pc",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "Business Rules",
+    "Scripting"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator is tasked with ensuring that whenever a user saves an Incident record, a specific calculation is performed on the server before the record is written to the database. Which Business Rule configuration should the administrator select to ensure this logic executes efficiently?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "A 'Before' Business Rule with 'Insert' and 'Update' checked."
+    },
+    {
+      "id": "b",
+      "text": "An 'After' Business Rule with 'Insert' and 'Update' checked."
+    },
+    {
+      "id": "c",
+      "text": "A 'Display' Business Rule with 'Query' checked."
+    },
+    {
+      "id": "d",
+      "text": "A 'Async' Business Rule with 'Insert' and 'Update' checked."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "A 'Before' Business Rule runs before the record is saved to the database, making it the correct choice for calculations or modifications that should be applied to the record fields prior to the database write operation.",
+  "pieges": [
+    "Confusing 'Before' rules with 'After' rules, which run after the database write and would require an additional update() call, causing performance overhead.",
+    "Assuming 'Display' rules are for data modification during save operations."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_BusinessRules.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:06.768Z"
+  },
+  "addedAt": "2026-07-29T06:32:06.768Z"
+}

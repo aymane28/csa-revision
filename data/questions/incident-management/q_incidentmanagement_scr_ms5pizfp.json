@@ -1,0 +1,40 @@
+{
+  "id": "q_incidentmanagement_scr_ms5pizfp",
+  "topic": "incident-management",
+  "tags": [
+    "Incident Management",
+    "Knowledge Management"
+  ],
+  "difficulty": "medium",
+  "question": "A Service Desk manager wants to identify if a recurring technical issue has already been documented to prevent redundant troubleshooting efforts. Which feature should the manager utilize to support this requirement?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The Major Incident Workbench"
+    },
+    {
+      "id": "b",
+      "text": "The Known Error Portal"
+    },
+    {
+      "id": "c",
+      "text": "The Incident Management agentic workflow"
+    },
+    {
+      "id": "d",
+      "text": "The Service Level Management dashboard"
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The Known Error Portal is specifically designed to house known error articles, allowing agents to search for existing solutions to recurring or previously identified technical issues, thereby streamlining the resolution process.",
+  "pieges": [
+    "Confusing the Known Error Portal with the Major Incident Workbench, which is for managing high-impact, widespread incidents.",
+    "Assuming the agentic AI workflow is the primary tool for knowledge retrieval rather than autonomous task management."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_IncidentManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:02.533Z"
+  },
+  "addedAt": "2026-07-29T06:32:02.533Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "q_updatesets_scr_ms5pjcwr",
+  "topic": "update-sets",
+  "tags": [
+    "Update Sets",
+    "Best Practices"
+  ],
+  "difficulty": "hard",
+  "question": "A developer has been working on a custom application feature within the 'Default' update set. They realize the changes should have been captured in a specific, named update set to facilitate migration to the production instance. What is the most appropriate action to take?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Delete the 'Default' update set and recreate the changes in a new update set."
+    },
+    {
+      "id": "b",
+      "text": "Use the 'Merge' functionality to move the changes from the 'Default' update set into a new, named update set."
+    },
+    {
+      "id": "c",
+      "text": "Create a new update set, set it to 'In Progress', and manually recreate the configuration changes."
+    },
+    {
+      "id": "d",
+      "text": "Move the update set to 'Complete' and rename it to the desired functional name."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "The 'Default' update set cannot be moved or merged. Changes captured in 'Default' are not intended for migration. The only way to capture these changes in a transportable update set is to recreate them while the new, named update set is active.",
+  "pieges": [
+    "Believing that the 'Default' update set can be renamed or merged.",
+    "Assuming there is an automated tool to 'move' records from one update set to another."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=system-update-sets.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:19.995Z"
+  },
+  "addedAt": "2026-07-29T06:32:19.995Z"
+}

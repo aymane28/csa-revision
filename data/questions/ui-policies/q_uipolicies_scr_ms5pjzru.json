@@ -1,0 +1,40 @@
+{
+  "id": "q_uipolicies_scr_ms5pjzru",
+  "topic": "ui-policies",
+  "tags": [
+    "UI Policies",
+    "Best Practices"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator is tasked with ensuring that the 'Priority' field on the Incident form becomes mandatory only when the 'Impact' field is set to 'High' and the 'Urgency' field is set to 'High'. Which approach provides the best performance and maintainability for this requirement?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Create a Client Script with an onChange event on the Impact and Urgency fields to set the mandatory property."
+    },
+    {
+      "id": "b",
+      "text": "Create a UI Policy with the condition 'Impact is High AND Urgency is High' and a UI Policy Action to set 'Priority' to Mandatory."
+    },
+    {
+      "id": "c",
+      "text": "Create a Business Rule with an 'onBefore' update trigger to enforce the mandatory field requirement server-side."
+    },
+    {
+      "id": "d",
+      "text": "Create a Data Policy with the condition 'Impact is High AND Urgency is High' to enforce the mandatory field at the database level."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "UI Policies are designed for client-side form behavior and are preferred over Client Scripts for simple field manipulations like setting fields to mandatory, read-only, or hidden because they are faster and do not require writing custom JavaScript. Data Policies run server-side and are typically used for data integrity, not form behavior.",
+  "pieges": [
+    "Assuming Data Policies should be used for UI form behavior.",
+    "Over-engineering the solution by using a Client Script when a UI Policy suffices."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=t_CreateAUIPolicy.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:49.626Z"
+  },
+  "addedAt": "2026-07-29T06:32:49.626Z"
+}

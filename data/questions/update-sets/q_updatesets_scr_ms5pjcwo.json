@@ -1,0 +1,40 @@
+{
+  "id": "q_updatesets_scr_ms5pjcwo",
+  "topic": "update-sets",
+  "tags": [
+    "Update Sets",
+    "Deployment"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator is preparing to move a series of configuration changes from a development instance to a test instance. They have created multiple update sets to organize different functional modules. Which of the following best describes the recommended approach for managing these changes?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Merge the individual update sets into a single update set before moving to the test instance."
+    },
+    {
+      "id": "b",
+      "text": "Manually export each update set as an XML file and import them sequentially into the test instance."
+    },
+    {
+      "id": "c",
+      "text": "Use Batched Update Sets to group the related update sets into a parent-child hierarchy to ensure deployment order."
+    },
+    {
+      "id": "d",
+      "text": "Apply the update sets directly to the production instance to bypass the test instance validation step."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "Batched Update Sets allow administrators to group multiple update sets into a parent-child relationship. This is the official mechanism to manage dependencies and deployment order when moving complex configurations, ensuring that related changes are handled as a cohesive unit.",
+  "pieges": [
+    "Assuming merging is the only way to group changes (merging is destructive and permanent).",
+    "Thinking manual XML export is the standard procedure for simple configuration moves."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=system-update-sets.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:19.992Z"
+  },
+  "addedAt": "2026-07-29T06:32:19.992Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "q_usersgroupsroles_scr_ms5pk6kn",
+  "topic": "users-groups-roles",
+  "tags": [
+    "Users",
+    "Groups",
+    "Roles"
+  ],
+  "difficulty": "medium",
+  "question": "An administrator wants to simplify access management for a new team of 'Service Desk Analysts'. Following ServiceNow best practices, which approach should the administrator take to grant these users the necessary permissions?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Assign the required roles directly to each individual user account in the User [sys_user] table."
+    },
+    {
+      "id": "b",
+      "text": "Create a new group, add the users to the group, and assign the required roles to that group."
+    },
+    {
+      "id": "c",
+      "text": "Assign the roles to a Business Rule that triggers when users from that team log in."
+    },
+    {
+      "id": "d",
+      "text": "Create a new role for the team and assign that role directly to the individual user records."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The documentation explicitly states that when possible, you should simplify user administration by assigning roles to groups. By creating a group with the necessary roles and adding users to that group, you ensure that permissions are managed collectively rather than individually, which is more scalable and easier to maintain.",
+  "pieges": [
+    "Thinking that assigning roles directly to users is the preferred method for small teams.",
+    "Assuming that roles must be assigned to individual users to be effective."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-user-administration.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:58.439Z"
+  },
+  "addedAt": "2026-07-29T06:32:58.439Z"
+}

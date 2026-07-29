@@ -1,0 +1,40 @@
+{
+  "id": "q_knowledgemanagement_scr_ms5pjr99",
+  "topic": "knowledge-management",
+  "tags": [
+    "Knowledge Management",
+    "Navigation"
+  ],
+  "difficulty": "hard",
+  "question": "A user complains that they cannot see a specific knowledge article on the Knowledge v3 homepage, even though they have read access to the knowledge base. The article is currently in the 'Published' state and has not reached its 'Valid to' date. What is the most plausible explanation?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The article does not have any tags assigned to it."
+    },
+    {
+      "id": "b",
+      "text": "The user is accessing the homepage via a service management application, which opens a different homepage."
+    },
+    {
+      "id": "c",
+      "text": "The article contains HTML formatting, which is not supported on the Knowledge v3 homepage."
+    },
+    {
+      "id": "d",
+      "text": "The article is located in a subcategory, and subcategory articles are hidden by default."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The documentation states: 'If you access knowledge from a service management application, the knowledge homepage for the associate application opens.' This explains why the user might not see the expected content found on the standard Knowledge v3 homepage.",
+  "pieges": [
+    "Thinking that articles must have tags to appear (categories are the primary organization).",
+    "Believing HTML formatting prevents an article from appearing (only comments lack HTML support)."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_KnowledgeHomepage.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:38.589Z"
+  },
+  "addedAt": "2026-07-29T06:32:38.589Z"
+}

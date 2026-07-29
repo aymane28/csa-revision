@@ -1,0 +1,40 @@
+{
+  "id": "q_problemmanagement_scr_ms5pjltv",
+  "topic": "problem-management",
+  "tags": [
+    "Problem Management",
+    "Known Error Portal"
+  ],
+  "difficulty": "medium",
+  "question": "An IT administrator is configuring the Problem Management lifecycle. They want to ensure that once a root cause is identified and a workaround is established, this information is easily accessible to Service Desk agents to improve resolution times. Which component of the Problem Management ecosystem is specifically designed for this purpose?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "The Problem Management dashboard analytics."
+    },
+    {
+      "id": "b",
+      "text": "The Known Error Portal."
+    },
+    {
+      "id": "c",
+      "text": "The Incident Management configuration properties."
+    },
+    {
+      "id": "d",
+      "text": "The Problem Task assignment rules."
+    }
+  ],
+  "correctChoiceId": "b",
+  "explanation": "The Known Error Portal is the centralized location where known errors and workarounds are published. It allows Service Desk agents to search for existing solutions to reported incidents, preventing duplicate root cause investigations and speeding up incident resolution.",
+  "pieges": [
+    "Assuming the dashboard contains operational workarounds; dashboards are for visualization and reporting, not for storing searchable knowledge.",
+    "Confusing Problem Tasks with Knowledge Articles; while related, the portal is the interface for accessing the information."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_ProblemManagement.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:31.555Z"
+  },
+  "addedAt": "2026-07-29T06:32:31.555Z"
+}

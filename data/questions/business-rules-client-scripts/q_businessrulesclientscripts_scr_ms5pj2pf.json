@@ -1,0 +1,41 @@
+{
+  "id": "q_businessrulesclientscripts_scr_ms5pj2pf",
+  "topic": "business-rules-client-scripts",
+  "tags": [
+    "Business Rules",
+    "Workflow Studio",
+    "Architecture"
+  ],
+  "difficulty": "hard",
+  "question": "A developer is reviewing legacy automation to transition processes to Workflow Studio. They encounter a Business Rule that triggers when a list of records is viewed to determine which fields should be read-only for the current user. Why is this specific Business Rule type NOT suitable for direct replacement by a standard Workflow Studio flow?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Because 'Display' Business Rules run on the server before the form is rendered to the client, whereas Workflow Studio is designed for record-based state changes."
+    },
+    {
+      "id": "b",
+      "text": "Because 'Display' Business Rules are client-side scripts and Workflow Studio only handles server-side logic."
+    },
+    {
+      "id": "c",
+      "text": "Because 'Query' Business Rules are required for field-level security, which Workflow Studio cannot manage."
+    },
+    {
+      "id": "d",
+      "text": "Because Business Rules that run on 'Query' must be written in Java, not JavaScript."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "Display Business Rules are specifically designed to pass server-side data to the client (often via g_scratchpad) before the form renders. Workflow Studio is intended for process automation (record state changes), not for preparing the client-side environment during form loading.",
+  "pieges": [
+    "Mistaking the purpose of 'Display' Business Rules as simple server-side automation rather than a mechanism to bridge server and client data.",
+    "Thinking all Business Rules are interchangeable with Flow Designer/Workflow Studio without considering the timing of the execution."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=c_BusinessRules.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:06.771Z"
+  },
+  "addedAt": "2026-07-29T06:32:06.771Z"
+}

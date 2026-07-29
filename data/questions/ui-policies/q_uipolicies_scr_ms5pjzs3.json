@@ -1,0 +1,40 @@
+{
+  "id": "q_uipolicies_scr_ms5pjzs3",
+  "topic": "ui-policies",
+  "tags": [
+    "UI Policies",
+    "Scripting"
+  ],
+  "difficulty": "hard",
+  "question": "A developer needs to implement a complex requirement where a field must be hidden based on a combination of form field values and a calculation that cannot be expressed via the standard UI Policy condition builder. What is the recommended strategy?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Create a UI Policy, check the 'Run scripts' option, and use the 'Execute if true' and 'Execute if false' script fields."
+    },
+    {
+      "id": "b",
+      "text": "Abandon the UI Policy and write an onChange Client Script to handle the entire logic."
+    },
+    {
+      "id": "c",
+      "text": "Create two separate UI Policies: one for the condition builder and one for the script."
+    },
+    {
+      "id": "d",
+      "text": "Create a UI Policy Action that triggers an asynchronous Business Rule to hide the field."
+    }
+  ],
+  "correctChoiceId": "a",
+  "explanation": "UI Policies support advanced logic through the 'Run scripts' option. This allows the administrator to benefit from the built-in UI Policy framework (like automatic reversal of actions when conditions are false) while handling complex logic via script.",
+  "pieges": [
+    "Believing UI Policies strictly forbid any scripting.",
+    "Thinking that a script-based requirement automatically invalidates the use of a UI Policy."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=t_CreateAUIPolicy.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:49.635Z"
+  },
+  "addedAt": "2026-07-29T06:32:49.635Z"
+}

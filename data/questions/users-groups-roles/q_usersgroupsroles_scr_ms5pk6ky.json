@@ -1,0 +1,41 @@
+{
+  "id": "q_usersgroupsroles_scr_ms5pk6ky",
+  "topic": "users-groups-roles",
+  "tags": [
+    "Groups",
+    "Roles",
+    "Inheritance"
+  ],
+  "difficulty": "hard",
+  "question": "When a role is assigned to a group, what happens to the existing members of that group and any users added to that group in the future?",
+  "choices": [
+    {
+      "id": "a",
+      "text": "Existing members must manually re-login for the role to take effect, but new members receive the role automatically."
+    },
+    {
+      "id": "b",
+      "text": "The role is only applied to users who were members at the time the role was assigned."
+    },
+    {
+      "id": "c",
+      "text": "All existing and future members of the group automatically inherit the permissions associated with that role."
+    },
+    {
+      "id": "d",
+      "text": "The administrator must run a 'Refresh Access' business rule to propagate the role to all group members."
+    }
+  ],
+  "correctChoiceId": "c",
+  "explanation": "The documentation states that any system roles or attributes that refer to a group apply to all group members automatically. This inheritance model ensures that group membership is the primary driver for permission sets, making access management dynamic as users join or leave the group.",
+  "pieges": [
+    "Believing that role assignments are 'point-in-time' and do not automatically apply to future group members.",
+    "Assuming that manual intervention (like refreshing or re-logging) is required to activate group-based permissions."
+  ],
+  "source": {
+    "type": "generated",
+    "url": "https://docs.servicenow.com/csh?topicname=exploring-user-administration.html&version=latest",
+    "retrievedAt": "2026-07-29T06:32:58.450Z"
+  },
+  "addedAt": "2026-07-29T06:32:58.450Z"
+}
