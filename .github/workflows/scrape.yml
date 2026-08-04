@@ -1,8 +1,11 @@
 name: Daily CSA question scrape
 
 on:
-  schedule:
-    - cron: "0 4 * * *" # 04:00 UTC ≈ matin en France (heure d'été/hiver)
+  # EN STAND-BY : le scrape quotidien automatique est désactivé.
+  # Le workflow reste lançable à la main via l'onglet Actions ("Run workflow").
+  # Pour le réactiver, décommenter le bloc `schedule` ci-dessous.
+  # schedule:
+  #   - cron: "0 4 * * *" # 04:00 UTC ≈ matin en France (heure d'été/hiver)
   workflow_dispatch: {}
 
 permissions:
